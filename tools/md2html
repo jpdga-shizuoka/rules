@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const SOURCES = [
+  '800',
+  '801',
+  '80101',
+  '80102',
+  '80103',
+];
+const srcPath = '../rules/';
+const dstPath = '../src/assets/rules/'
+const fs = require('fs');
+const MarkdownIt = require('markdown-it');
+const md = new MarkdownIt();
+
+SOURCES.forEach(filename => {
+  const filepath = srcPath + filename + '.md';
+  const mdContent = fs.readFileSync(filepath, 'utf8');
+  const htmlContent = md.render(mdContent).replace(/\<a href=\"\#/g, '<a routerLink=\"rule/');
+
+  fs.writeFileSync(dstPath + filename + '.html', htmlContent);
+});
