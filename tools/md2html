@@ -10,33 +10,70 @@ const SOURCES = [
 const srcPath = '../rules/';
 const dstPath = '../src/app/rules/'
 const fs = require('fs');
-const MarkdownIt = require('markdown-it');
-const md = new MarkdownIt();
+const md = require('markdown-it')({
+  replaceLink: (link, env) => link
+}).use(replaceLink);
 
 SOURCES.forEach(ruleId => {
   const filepath = srcPath + ruleId + '.md';
   const mdContent = fs.readFileSync(filepath, 'utf8');
-  const htmlContent = md.render(mdContent).replace(/\<a href=\"\#/g, '<a routerLink=\"/');
+  const htmlContent = md.render(mdContent);
 
   makeHtml(ruleId, htmlContent);
   makeComponent(ruleId);
 });
 
 function makeHtml(ruleId, html) {
-  const content =`
-<div class="app-rule">
-${html}
-</div>`;
+  const content =`<div class="app-rule">
+${html}</div>`;
   fs.writeFileSync(dstPath + ruleId + '.html', content);
 }
 
 function makeComponent(ruleId) {
-  const content =`
-import {Component} from '@angular/core';
+  const content =`import {Component} from '@angular/core';
 @Component({
   selector: 'app-rule${ruleId}',
   templateUrl: './${ruleId}.html',
 })
 export class Rule${ruleId}Component { }`;
   fs.writeFileSync(dstPath + 'rule' + ruleId + '.component.ts', content);
+}
+
+//
+// @ see https://github.com/martinheidegger/markdown-it-replace-link
+//
+function replaceLink(md) {
+  md.core.ruler.after(
+    'inline',
+    'replace-link',
+    state => {
+      const replace = md.options.replaceLink;
+      if (typeof replace === 'function') {
+        state.tokens.forEach(blockToken => {
+          if (blockToken.type === 'inline' && blockToken.children) {
+            blockToken.children.forEach(token => {
+              const type = token.type;
+              if (type === 'link_open') {
+                replaceAttr(token, 'href', replace, state.env);
+              } else if (type === 'image') {
+                replaceAttr(token, 'src', replace, state.env);
+              }
+            });
+          }
+        });
+      }
+      return false;
+    }
+  );
+};
+
+function replaceAttr(token, attrName, replace, env) {
+  token.attrs.forEach(attr => {
+    if (attr[0] === attrName) {
+      if (attr[0] === 'href') {
+        attr[0] = 'routerLink'; // replace href with routerLink
+      }
+      attr[1] = replace(attr[1], env, token);
+    }
+  });
 }
