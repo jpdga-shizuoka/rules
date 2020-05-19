@@ -8,15 +8,35 @@ const SOURCES = [
   '80103',
 ];
 const srcPath = '../rules/';
-const dstPath = '../src/assets/rules/'
+const dstPath = '../src/app/rules/'
 const fs = require('fs');
 const MarkdownIt = require('markdown-it');
 const md = new MarkdownIt();
 
-SOURCES.forEach(filename => {
-  const filepath = srcPath + filename + '.md';
+SOURCES.forEach(ruleId => {
+  const filepath = srcPath + ruleId + '.md';
   const mdContent = fs.readFileSync(filepath, 'utf8');
-  const htmlContent = md.render(mdContent).replace(/\<a href=\"\#/g, '<a routerLink=\"rule/');
+  const htmlContent = md.render(mdContent).replace(/\<a href=\"\#/g, '<a routerLink=\"/');
 
-  fs.writeFileSync(dstPath + filename + '.html', htmlContent);
+  makeHtml(ruleId, htmlContent);
+  makeComponent(ruleId);
 });
+
+function makeHtml(ruleId, html) {
+  const content =`
+<div class="app-rule">
+${html}
+</div>`;
+  fs.writeFileSync(dstPath + ruleId + '.html', content);
+}
+
+function makeComponent(ruleId) {
+  const content =`
+import {Component} from '@angular/core';
+@Component({
+  selector: 'app-rule${ruleId}',
+  templateUrl: './${ruleId}.html',
+})
+export class Rule${ruleId}Component { }`;
+  fs.writeFileSync(dstPath + 'rule' + ruleId + '.component.ts', content);
+}
