@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.app-rule {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.app-rule h1 {
+  font-size: 1.2rem;
+}
+.app-rule h2 {
+  font-size: 1rem;
+}
+.app-rule ol {
+  list-style-type: upper-alpha;
+}
