@@ -16,7 +16,9 @@
 .sidenav .mat-toolbar {
   background: inherit;
 }
-
+.nav-active {
+  background-color: #efe5fd;
+}
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
