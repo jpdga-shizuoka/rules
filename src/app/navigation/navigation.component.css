@@ -3,9 +3,16 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 250px;
+  font-size: 1rem;
 }
-
+.mat-list-base .mat-list-item {
+  font-size: 1rem;
+  height: 32px;
+}
+.mat-list-item.ss {
+  margin-left: 1rem;
+}
 .sidenav .mat-toolbar {
   background: inherit;
 }
