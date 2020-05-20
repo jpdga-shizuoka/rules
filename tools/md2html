@@ -19,6 +19,7 @@ const SOURCES = [
   '80302',
   '80303',
 ];
+const external = /^http/i;
 const srcPath = '../rules/';
 const dstPath = '../src/app/rules/'
 const fs = require('fs');
@@ -82,10 +83,10 @@ function replaceLink(md) {
 function replaceAttr(token, attrName, replace, env) {
   token.attrs.forEach(attr => {
     if (attr[0] === attrName) {
-      if (attr[0] === 'href') {
+      if (attr[0] === 'href' && !external.test(attr[1]) ) {
         attr[0] = 'routerLink'; // replace href with routerLink
+        attr[1] = replace(attr[1], env, token);
       }
-      attr[1] = replace(attr[1], env, token);
     }
   });
 }
