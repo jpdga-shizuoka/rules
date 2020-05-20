@@ -24,6 +24,10 @@ import { Rule80204Component } from './rules/rule80204.component';
 import { Rule80205Component } from './rules/rule80205.component';
 import { Rule80206Component } from './rules/rule80206.component';
 import { Rule80207Component } from './rules/rule80207.component';
+import { Rule803Component } from './rules/rule803.component';
+import { Rule80301Component } from './rules/rule80301.component';
+import { Rule80302Component } from './rules/rule80302.component';
+import { Rule80303Component } from './rules/rule80303.component';
 
 @NgModule({
   declarations: [

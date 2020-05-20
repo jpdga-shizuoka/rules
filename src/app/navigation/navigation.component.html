@@ -3,7 +3,7 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>目次</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/800">800 ゲームの説明</a>
       <a mat-list-item routerLink="/801">801 ルールの適用</a>
@@ -18,6 +18,10 @@
       <a mat-list-item routerLink="/80205" class="ss">802.05 ライ</a>
       <a mat-list-item routerLink="/80206" class="ss">802.06 ライのマーキング</a>
       <a mat-list-item routerLink="/80207" class="ss">802.07 スタンス</a>
+      <a mat-list-item routerLink="/803">803 障害物と救済</a>
+      <a mat-list-item routerLink="/80301" class="ss">803.01 動かせる障害物</a>
+      <a mat-list-item routerLink="/80302" class="ss">803.02 障害物からの救済</a>
+      <a mat-list-item routerLink="/80303" class="ss">803.03 コースの損壊</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
