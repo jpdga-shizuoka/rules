@@ -24,6 +24,12 @@ import { Rule805Component } from './rules/rule805.component';
 import { Rule80501Component } from './rules/rule80501.component';
 import { Rule80502Component } from './rules/rule80502.component';
 import { Rule80503Component } from './rules/rule80503.component';
+import { Rule806Component } from './rules/rule806.component';
+import { Rule80601Component } from './rules/rule80601.component';
+import { Rule80602Component } from './rules/rule80602.component';
+import { Rule80603Component } from './rules/rule80603.component';
+import { Rule80604Component } from './rules/rule80604.component';
+import { Rule80605Component } from './rules/rule80605.component';
 
 const routes: Routes = [
   { path: '800', component: Rule800Component},
@@ -50,6 +56,12 @@ const routes: Routes = [
   { path: '80501', component: Rule80501Component},
   { path: '80502', component: Rule80502Component},
   { path: '80503', component: Rule80503Component},
+  { path: '806', component: Rule806Component},
+  { path: '80601', component: Rule80601Component},
+  { path: '80602', component: Rule80602Component},
+  { path: '80603', component: Rule80603Component},
+  { path: '80604', component: Rule80604Component},
+  { path: '80605', component: Rule80605Component},
 ];
 
 @NgModule({

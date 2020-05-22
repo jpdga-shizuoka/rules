@@ -35,6 +35,12 @@ import { Rule805Component } from './rules/rule805.component';
 import { Rule80501Component } from './rules/rule80501.component';
 import { Rule80502Component } from './rules/rule80502.component';
 import { Rule80503Component } from './rules/rule80503.component';
+import { Rule806Component } from './rules/rule806.component';
+import { Rule80601Component } from './rules/rule80601.component';
+import { Rule80602Component } from './rules/rule80602.component';
+import { Rule80603Component } from './rules/rule80603.component';
+import { Rule80604Component } from './rules/rule80604.component';
+import { Rule80605Component } from './rules/rule80605.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +70,12 @@ import { Rule80503Component } from './rules/rule80503.component';
     Rule80501Component,
     Rule80502Component,
     Rule80503Component,
+    Rule806Component,
+    Rule80601Component,
+    Rule80602Component,
+    Rule80603Component,
+    Rule80604Component,
+    Rule80605Component,
   ],
   imports: [
     AppRoutingModule,
