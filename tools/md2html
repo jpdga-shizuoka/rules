@@ -31,6 +31,8 @@ const SOURCES = [
   '80603',
   '80604',
   '80605',
+  '807',
+  '808',
 ];
 const external = /^http/i;
 const srcPath = '../rules/';
