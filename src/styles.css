@@ -29,6 +29,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   list-style-type: upper-alpha;
   padding-left: 1.3rem;
 }
+.app-rule li > ol {
+  padding-left: 1.3rem;
+}
+.app-rule li > ol > li > ol {
+  list-style-type: lower-alpha;
+}
+.app-rule p {
+  line-height: 1.5rem;
+}
 .app-rule a {
   text-decoration: none;
 }
@@ -37,7 +46,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background: url("assets/img/open_in_new-24px.svg") no-repeat right center;
   background-size: 1rem 1rem;
   padding-right: 1.1rem;
-}
-.app-rule li > ol {
-  padding-left: 1.3rem;
 }

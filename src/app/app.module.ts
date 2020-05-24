@@ -43,6 +43,10 @@ import { Rule80604Component } from './rules/rule80604.component';
 import { Rule80605Component } from './rules/rule80605.component';
 import { Rule807Component } from './rules/rule807.component';
 import { Rule808Component } from './rules/rule808.component';
+import { Rule809Component } from './rules/rule809.component';
+import { Rule80901Component } from './rules/rule80901.component';
+import { Rule80902Component } from './rules/rule80902.component';
+import { Rule80903Component } from './rules/rule80903.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +84,10 @@ import { Rule808Component } from './rules/rule808.component';
     Rule80605Component,
     Rule807Component,
     Rule808Component,
+    Rule809Component,
+    Rule80901Component,
+    Rule80902Component,
+    Rule80903Component,
   ],
   imports: [
     AppRoutingModule,
