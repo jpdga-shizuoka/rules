@@ -76,11 +76,12 @@ ${html}</div>`;
 
 function makeComponent(ruleId) {
   const content =`import {Component} from '@angular/core';
+import {RuleComponent} from './rule.component';
 @Component({
   selector: 'app-rule${ruleId}',
   templateUrl: './${ruleId}.html',
 })
-export class Rule${ruleId}Component { }`;
+export class Rule${ruleId}Component extends RuleComponent { }`;
   fs.writeFileSync(dstPath + 'rule' + ruleId + '.component.ts', content);
 }
 
