@@ -5,42 +5,13 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>目次</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/800" routerLinkActive="nav-active">800 ゲームの説明</a>
-      <a mat-list-item routerLink="/801" routerLinkActive="nav-active">801 規則の適用</a>
-      <a mat-list-item routerLink="/80101" routerLinkActive="nav-active" class="ss">801.01 公平性</a>
-      <a mat-list-item routerLink="/80102" routerLinkActive="nav-active" class="ss">801.02 実施</a>
-      <a mat-list-item routerLink="/80103" routerLinkActive="nav-active" class="ss">801.03 抗議</a>
-      <a mat-list-item routerLink="/802" routerLinkActive="nav-active">802 スローイング</a>
-      <a mat-list-item routerLink="/80201" routerLinkActive="nav-active" class="ss">802.01 スロー</a>
-      <a mat-list-item routerLink="/80202" routerLinkActive="nav-active" class="ss">802.02 プレーの順番</a>
-      <a mat-list-item routerLink="/80203" routerLinkActive="nav-active" class="ss">802.03 時間超過</a>
-      <a mat-list-item routerLink="/80204" routerLinkActive="nav-active" class="ss">802.04 ティーオフ</a>
-      <a mat-list-item routerLink="/80205" routerLinkActive="nav-active" class="ss">802.05 ライ</a>
-      <a mat-list-item routerLink="/80206" routerLinkActive="nav-active" class="ss">802.06 ライのマーキング</a>
-      <a mat-list-item routerLink="/80207" routerLinkActive="nav-active" class="ss">802.07 スタンス</a>
-      <a mat-list-item routerLink="/803" routerLinkActive="nav-active">803 障害物と救済</a>
-      <a mat-list-item routerLink="/80301" routerLinkActive="nav-active" class="ss">803.01 動かせる障害物</a>
-      <a mat-list-item routerLink="/80302" routerLinkActive="nav-active" class="ss">803.02 障害物からの救済</a>
-      <a mat-list-item routerLink="/80303" routerLinkActive="nav-active" class="ss">803.03 コースの損壊</a>
-      <a mat-list-item routerLink="/804" routerLinkActive="nav-active">804 経路の規制</a>
-      <a mat-list-item routerLink="/80401" routerLinkActive="nav-active" class="ss">804.01 マンダトリーの経路と目標物</a>
-      <a mat-list-item routerLink="/80402" routerLinkActive="nav-active" class="ss">804.02 経路の禁止</a>
-      <a mat-list-item routerLink="/805" routerLinkActive="nav-active">805 位置の規制</a>
-      <a mat-list-item routerLink="/80501" routerLinkActive="nav-active" class="ss">805.01 位置の確定</a>
-      <a mat-list-item routerLink="/80502" routerLinkActive="nav-active" class="ss">805.02 2mより上にあるディスク</a>
-      <a mat-list-item routerLink="/80503" routerLinkActive="nav-active" class="ss">805.03 ディスクの紛失</a>
-      <a mat-list-item routerLink="/806" routerLinkActive="nav-active">806 区域の規制</a>
-      <a mat-list-item routerLink="/80601" routerLinkActive="nav-active" class="ss">806.01 パッティングエリア</a>
-      <a mat-list-item routerLink="/80602" routerLinkActive="nav-active" class="ss">806.02 アウト•オブ•バウンズ</a>
-      <a mat-list-item routerLink="/80603" routerLinkActive="nav-active" class="ss">806.03 カジュアルエリア</a>
-      <a mat-list-item routerLink="/80604" routerLinkActive="nav-active" class="ss">806.04 救済区域</a>
-      <a mat-list-item routerLink="/80605" routerLinkActive="nav-active" class="ss">806.05 ハザード</a>
-      <a mat-list-item routerLink="/807" routerLinkActive="nav-active">807 ホールの完了</a>
-      <a mat-list-item routerLink="/808" routerLinkActive="nav-active">808 スコアリング</a>
-      <a mat-list-item routerLink="/809" routerLinkActive="nav-active">809 その他のスロー</a>
-      <a mat-list-item routerLink="/80901" routerLinkActive="nav-active" class="ss">809.01 スローの放棄</a>
-      <a mat-list-item routerLink="/80902" routerLinkActive="nav-active" class="ss">809.02 暫定スロー</a>
-      <a mat-list-item routerLink="/80903" routerLinkActive="nav-active" class="ss">809.03 練習スロー</a>
+      <ng-template ngFor let-rule [ngForOf]="toc">
+        <a mat-list-item routerLinkActive="nav-active"
+          routerLink="/{{rule.id}}"
+          [ngClass]="{'ss':isSubsection(rule.id)}">
+          {{rule.title}}
+        </a>
+      </ng-template>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

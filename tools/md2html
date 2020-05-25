@@ -41,6 +41,9 @@ const SOURCES = [
 const external = /^http/i;
 const srcPath = '../rules/';
 const dstPath = '../src/app/rules/'
+const tocFile = '../src/assets/rules/toc.json';
+const header = /^\#+ ([\d\.]+ \S+)/m;
+const toc = [];
 const fs = require('fs');
 const md = require('markdown-it')({
   replaceLink: (link, env) => '/' + link
@@ -51,9 +54,19 @@ SOURCES.forEach(ruleId => {
   const mdContent = fs.readFileSync(filepath, 'utf8');
   const htmlContent = md.render(mdContent);
 
+  makeToc(ruleId, mdContent);
   makeHtml(ruleId, htmlContent);
   makeComponent(ruleId);
 });
+fs.writeFileSync(tocFile, JSON.stringify(toc, null, '  '), {flag:'w'});
+
+function makeToc(ruleId, content) {
+  const title = content.match(header);
+  toc.push({
+    id: ruleId,
+    title: title[1]
+  });
+}
 
 function makeHtml(ruleId, html) {
   const content =`<div class="app-rule">
