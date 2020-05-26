@@ -15,9 +15,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   flex: 1;
 }
 .app-rule {
-  max-width: 400px;
+  max-width: 500px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px 20px 50px;
 }
 .app-rule h1 {
   font-size: 1.2rem;
@@ -35,7 +35,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .app-rule li > ol > li > ol {
   list-style-type: lower-alpha;
 }
-.app-rule p {
+.app-rule > * {
   line-height: 1.5rem;
 }
 .app-rule a {

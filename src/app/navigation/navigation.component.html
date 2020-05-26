@@ -6,7 +6,7 @@
     <mat-toolbar>目次</mat-toolbar>
     <mat-nav-list>
       <ng-template ngFor let-rule [ngForOf]="toc">
-        <a mat-list-item routerLinkActive="nav-active"
+        <a mat-list-item routerLinkActive="nav-active" (click)="onClickMenu(rule.id)"
           routerLink="/{{rule.id}}"
           [ngClass]="{'ss':isSubsection(rule.id)}">
           {{rule.title}}
@@ -24,8 +24,17 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>rules</span>
+      <span>{{title}}</span>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<button class="app-nav-button" id="prev" (click)="onClickPrev()"
+  mat-fab color="primary" aria-label="previous rule" *ngIf="isPrev">
+  <mat-icon>arrow_back_ios</mat-icon>
+</button>
+<button class="app-nav-button" id="next" (click)="onClickNext()"
+  mat-fab color="primary" aria-label="next rule" *ngIf="isNext">
+  <mat-icon>arrow_forward_ios</mat-icon>
+</button>

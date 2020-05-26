@@ -1,7 +1,6 @@
 .sidenav-container {
   height: 100%;
 }
-
 .sidenav {
   width: 280px;
   font-size: 1rem;
@@ -16,6 +15,9 @@
 .mat-list-item.ss {
   margin-left: 1rem;
 }
+.mat-toolbar > span {
+  font-size: 1.1rem;
+}
 .sidenav .mat-toolbar {
   background: inherit;
 }
@@ -26,4 +28,16 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+.app-nav-button {
+  position: absolute;
+  z-index: 1;
+  opacity: 100%;
+  bottom: 15px;
+}
+#prev {
+  left: 15px;
+}
+#next {
+  right: 15px;
 }
