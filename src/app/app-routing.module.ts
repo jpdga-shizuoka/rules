@@ -36,7 +36,7 @@ import { Rule809Component } from './rules/rule809.component';
 import { Rule80901Component } from './rules/rule80901.component';
 import { Rule80902Component } from './rules/rule80902.component';
 import { Rule80903Component } from './rules/rule80903.component';
-
+import { Rule810Component } from './rules/rule810.component';
 import { Rule811Component } from './rules/rule811.component';
 import { Rule812Component } from './rules/rule812.component';
 import { Rule813Component } from './rules/rule813.component';
@@ -80,7 +80,7 @@ const routes: Routes = [
   { path: '80901', component: Rule80901Component},
   { path: '80902', component: Rule80902Component},
   { path: '80903', component: Rule80903Component},
-
+  { path: '810', component: Rule810Component},
   { path: '811', component: Rule811Component},
   { path: '812', component: Rule812Component},
   { path: '813', component: Rule813Component},

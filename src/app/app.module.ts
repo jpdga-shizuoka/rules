@@ -47,7 +47,7 @@ import { Rule809Component } from './rules/rule809.component';
 import { Rule80901Component } from './rules/rule80901.component';
 import { Rule80902Component } from './rules/rule80902.component';
 import { Rule80903Component } from './rules/rule80903.component';
-
+import { Rule810Component } from './rules/rule810.component';
 import { Rule811Component } from './rules/rule811.component';
 import { Rule812Component } from './rules/rule812.component';
 import { Rule813Component } from './rules/rule813.component';
@@ -94,6 +94,7 @@ import { Rule81302Component } from './rules/rule81302.component';
     Rule80901Component,
     Rule80902Component,
     Rule80903Component,
+    Rule810Component,
     Rule811Component,
     Rule812Component,
     Rule813Component,
