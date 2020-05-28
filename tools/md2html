@@ -44,6 +44,9 @@ const SOURCES = [
   '81301',
   '81302',
 ];
+const TOC2 = [
+  {"id": "appendixe", "title": "用語定義"},
+];
 const external = /^http/i;
 const srcPath = '../rules/';
 const dstPath = '../src/app/rules/'
@@ -64,7 +67,9 @@ SOURCES.forEach(ruleId => {
   makeHtml(ruleId, htmlContent);
   makeComponent(ruleId);
 });
-fs.writeFileSync(tocFile, JSON.stringify(toc, null, '  '), {flag:'w'});
+fs.writeFileSync(tocFile, JSON.stringify(
+  toc.concat(TOC2), null, '  '), {flag:'w'}
+);
 
 function makeToc(ruleId, content) {
   const title = content.match(header);

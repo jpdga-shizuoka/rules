@@ -25,10 +25,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
     }
     this._section = section;
     const title = section.title.match(TITLE_PATTERN);
-    if (title == null) {
-      return;
-    }
-    this.title = title[1];
+    this.title = title != null ? title[1] : section.title;
   }
   title: string;
   isHandset: boolean;

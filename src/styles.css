@@ -11,9 +11,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   -moz-osx-font-smoothing: grayscale;
 }
 
-.spacer {
-  flex: 1;
-}
 .app-rule {
   max-width: 500px;
   margin: 20px auto;
@@ -46,4 +43,59 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background: url("assets/img/open_in_new-24px.svg") no-repeat right center;
   background-size: 1rem 1rem;
   padding-right: 1.1rem;
+}
+
+
+ul.app-index {
+  max-width: 40rem;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+  font-size: 0.9rem;
+}
+ul.app-index li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+}
+ul.app-index span:first-child {
+  padding-right: 0.33rem;
+  background: white;
+}
+ul.app-index span + span {
+  float: right;
+  padding-left: 0.33rem;
+  background: white;
+}
+@media screen and (max-width: 414px) {
+  .app-rule {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ul.app-index {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .app-rule {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ul.app-index {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .app-rule {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  ul.app-index {
+    font-size: 0.7rem;
+  }
 }
