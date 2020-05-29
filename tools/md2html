@@ -54,9 +54,10 @@ const tocFile = '../src/assets/rules/toc.json';
 const header = /^\#+ ([\d\.]+ \S+)/m;
 const toc = [];
 const fs = require('fs');
-const md = require('markdown-it')({
-  replaceLink: (link, env) => '/' + link
-}).use(replaceLink);
+const md = require('markdown-it')({replaceLink: replaceLink})
+.use(require('markdown-it-footnote'))
+.use(replaceLinkPlugIn);
+md.renderer.rules.footnote_ref = render_footnote_ref;
 
 SOURCES.forEach(ruleId => {
   const filepath = srcPath + ruleId + '.md';
@@ -99,7 +100,7 @@ export class Rule${ruleId}Component extends RuleComponent { }`;
 //
 // @ see https://github.com/martinheidegger/markdown-it-replace-link
 //
-function replaceLink(md) {
+function replaceLinkPlugIn(md) {
   md.core.ruler.after(
     'inline',
     'replace-link',
@@ -133,4 +134,29 @@ function replaceAttr(token, attrName, replace, env) {
       }
     }
   });
+}
+
+function replaceLink(link, env) {
+  const pattern = /(\w*)+\#(\w+)/;
+  const result = link.match(pattern);
+  if (result != null) {
+    return '/' + result[1];
+  } else {
+    return '/' + link;
+  }
+}
+
+//
+//  @see https://github.com/markdown-it/markdown-it-footnote/blob/master/index.js
+//
+function render_footnote_ref(tokens, idx, options, env, slf) {
+  var id      = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf);
+  var caption = slf.rules.footnote_caption(tokens, idx, options, env, slf);
+  var refid   = id;
+
+  if (tokens[idx].meta.subId > 0) {
+    refid += ':' + tokens[idx].meta.subId;
+  }
+
+  return '<sup class="footnote-ref"><a routerLink="." fragment="fn' + id + '" id="fnref' + refid + '">' + caption + '</a></sup>';
 }
