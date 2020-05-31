@@ -44,6 +44,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-size: 1rem 1rem;
   padding-right: 1.1rem;
 }
+.app-rule img {
+  width: 100%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
 hr.footnotes-sep {
   margin-top: 40px;
 }
