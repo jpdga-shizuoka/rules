@@ -43,6 +43,7 @@ import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
 import { AppendixEComponent } from './rules/appendix-e.component';
+import { PenaltiesComponent } from './rules/penalties.component';
 
 const routes: Routes = [
   { path: '800', component: Rule800Component},
@@ -88,6 +89,7 @@ const routes: Routes = [
   { path: '81301', component: Rule81301Component},
   { path: '81302', component: Rule81302Component},
   { path: 'appendixe', component: AppendixEComponent},
+  { path: 'penalties', component: PenaltiesComponent},
 ];
 
 @NgModule({

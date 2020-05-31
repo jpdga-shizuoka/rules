@@ -10,7 +10,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+#penalties h2 {
+  margin-bottom: 0;
+}
+#penalties hr {
+  margin: 0;
+}
+#penalties ul {
+  margin: 0.5rem 0 2rem;
+}
 .app-rule {
   max-width: 500px;
   margin: 20px auto;

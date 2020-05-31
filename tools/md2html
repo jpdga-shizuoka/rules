@@ -46,6 +46,7 @@ const SOURCES = [
 ];
 const TOC2 = [
   {"id": "appendixe", "title": "用語定義"},
+  {"id": "penalties", "title": "規則違反集"},
 ];
 const external = /^http/i;
 const srcPath = '../rules/';
