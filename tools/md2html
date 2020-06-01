@@ -44,37 +44,52 @@ const SOURCES = [
   '81301',
   '81302',
 ];
+const SOURCES2 = [
+  'obstacles',
+  'reliefs'
+];
 const TOC2 = [
   {"id": "appendixe", "title": "用語定義"},
-  {"id": "penalties", "title": "規則違反集"},
+];
+const TOC3 = [
+  {"id": "penalties", "title": "規則違反の分類"},
 ];
 const external = /^http/i;
 const srcPath = '../rules/';
 const dstPath = '../src/app/rules/'
 const tocFile = '../src/assets/rules/toc.json';
 const header = /^\#+ ([\d\.]+ \S+)/m;
-const toc = [];
 const fs = require('fs');
 const md = require('markdown-it')({replaceLink: replaceLink})
 .use(require('markdown-it-footnote'))
 .use(replaceLinkPlugIn);
+let toc = [];
 md.renderer.rules.footnote_ref = render_footnote_ref;
 
-SOURCES.forEach(ruleId => {
-  const filepath = srcPath + ruleId + '.md';
-  const mdContent = fs.readFileSync(filepath, 'utf8');
-  const htmlContent = md.render(mdContent);
+createComponents(SOURCES);
+toc = toc.concat(TOC2);
+createComponents(SOURCES2);
+toc = toc.concat(TOC3);
+fs.writeFileSync(tocFile, JSON.stringify(toc, null, '  '), {flag:'w'});
 
-  makeToc(ruleId, mdContent);
-  makeHtml(ruleId, htmlContent);
-  makeComponent(ruleId);
-});
-fs.writeFileSync(tocFile, JSON.stringify(
-  toc.concat(TOC2), null, '  '), {flag:'w'}
-);
+//////////////////////////////////////////////////////////////////////
+// end of program
+//////////////////////////////////////////////////////////////////////
+
+function createComponents(sources) {
+  sources.forEach(ruleId => {
+    const filepath = srcPath + ruleId + '.md';
+    const mdContent = fs.readFileSync(filepath, 'utf8');
+    const htmlContent = md.render(mdContent);
+
+    makeToc(ruleId, mdContent);
+    makeHtml(ruleId, htmlContent);
+    makeComponent(ruleId);
+  });
+}
 
 function makeToc(ruleId, content) {
-  const title = content.match(header);
+  const title = content.match(header) || content.match(/^\#+ (\S+)$/m);
   toc.push({
     id: ruleId,
     title: title[1]
@@ -82,7 +97,7 @@ function makeToc(ruleId, content) {
 }
 
 function makeHtml(ruleId, html) {
-  const content =`<div class="app-rule">
+  const content =`<div class="app-rule" id="app-${ruleId}">
 ${html}</div>`;
   fs.writeFileSync(dstPath + ruleId + '.html', content);
 }

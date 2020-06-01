@@ -19,6 +19,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 #penalties ul {
   margin: 0.5rem 0 2rem;
 }
+#obstacles  img ,
+#reliefs  img {
+  width: 100%;
+}
 .app-rule {
   max-width: 500px;
   margin: 20px auto;

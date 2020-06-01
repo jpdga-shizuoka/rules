@@ -55,6 +55,8 @@ import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
 import { AppendixEComponent } from './rules/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
+import { RuleobstaclesComponent } from './rules/ruleobstacles.component';
+import { RulereliefsComponent } from './rules/rulereliefs.component';
 
 @NgModule({
   declarations: [
@@ -104,6 +106,8 @@ import { PenaltiesComponent } from './rules/penalties.component';
     Rule81302Component,
     AppendixEComponent,
     PenaltiesComponent,
+    RuleobstaclesComponent,
+    RulereliefsComponent,
   ],
   imports: [
     AppRoutingModule,
