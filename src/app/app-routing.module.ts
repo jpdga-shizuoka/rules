@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+import { RuleprefaceComponent } from './rules/rulepreface.component';
 import { Rule800Component } from './rules/rule800.component';
 import { Rule801Component } from './rules/rule801.component';
 import { Rule80101Component } from './rules/rule80101.component';
@@ -48,6 +50,8 @@ import { RuleobstaclesComponent } from './rules/ruleobstacles.component';
 import { RulereliefsComponent } from './rules/rulereliefs.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'preface'},
+  { path: 'preface', component: RuleprefaceComponent},
   { path: '800', component: Rule800Component},
   { path: '801', component: Rule801Component},
   { path: '80101', component: Rule80101Component},

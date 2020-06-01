@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const SOURCES = [
+  'preface',
   '800',
   '801',
   '80101',

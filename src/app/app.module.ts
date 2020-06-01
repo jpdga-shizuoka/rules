@@ -11,6 +11,8 @@ import { MatListModule } from '@angular/material/list';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
+
+import { RuleprefaceComponent } from './rules/rulepreface.component';
 import { Rule800Component } from './rules/rule800.component';
 import { Rule801Component } from './rules/rule801.component';
 import { Rule80101Component } from './rules/rule80101.component';
@@ -62,6 +64,7 @@ import { RulereliefsComponent } from './rules/rulereliefs.component';
   declarations: [
     AppComponent,
     NavigationComponent,
+    RuleprefaceComponent,
     Rule800Component,
     Rule801Component,
     Rule80101Component,
