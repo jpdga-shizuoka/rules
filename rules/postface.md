@@ -10,7 +10,7 @@ JPDGA公式ルールブック(2013年版)及び
 
 ただし2018年版とは表現や用語が多少異なるところがあるかと思います.
 用語の違いに関しては
-[ルールブック気づき事項2018/10/13](https://jpdga-shizuoka.github.io/rule/assets/about-rule-book.2018-10-13.pdf)
+[ルールブック気づき事項2018/10/13](https://jpdga-shizuoka.github.io/rules/assets/about-rule-book.2018-10-13.pdf)
 にまとめています,ご参考までに.
 
 ### 外来語表記に関して
