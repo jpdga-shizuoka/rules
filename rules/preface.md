@@ -23,15 +23,16 @@
 
 ## 大目次
 
-* [ゲームの定義](800)
+* [ゲームの説明](800)
 * [用語の定義](appendixe)
 * [規則違反の分類](penalties)
 * [障害物の分類](obstacles)
 * [救済の分類](reliefs)
+* [あとがき](postface)
 
 ## Copyright ©
 
-The original and full copyright of this online rule book is reserved by [PDGA](https://www.pdga.com).
+The original copyright of this online rule book is reserved by [PDGA](https://www.pdga.com).
 
 ---
 
