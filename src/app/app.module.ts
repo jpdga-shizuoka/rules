@@ -59,6 +59,7 @@ import { AppendixEComponent } from './rules/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
 import { RuleobstaclesComponent } from './rules/ruleobstacles.component';
 import { RulereliefsComponent } from './rules/rulereliefs.component';
+import { RulepostfaceComponent } from './rules/rulepostface.component';
 
 @NgModule({
   declarations: [
@@ -111,6 +112,7 @@ import { RulereliefsComponent } from './rules/rulereliefs.component';
     PenaltiesComponent,
     RuleobstaclesComponent,
     RulereliefsComponent,
+    RulepostfaceComponent,
   ],
   imports: [
     AppRoutingModule,

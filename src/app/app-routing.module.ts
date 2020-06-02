@@ -48,6 +48,7 @@ import { AppendixEComponent } from './rules/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
 import { RuleobstaclesComponent } from './rules/ruleobstacles.component';
 import { RulereliefsComponent } from './rules/rulereliefs.component';
+import { RulepostfaceComponent } from './rules/rulepostface.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'preface'},
@@ -98,6 +99,7 @@ const routes: Routes = [
   { path: 'obstacles', component: RuleobstaclesComponent},
   { path: 'reliefs', component: RulereliefsComponent},
   { path: 'penalties', component: PenaltiesComponent},
+  { path: 'postface', component: RulepostfaceComponent},
 ];
 
 @NgModule({

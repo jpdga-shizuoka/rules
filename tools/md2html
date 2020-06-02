@@ -47,7 +47,8 @@ const SOURCES = [
 ];
 const SOURCES2 = [
   'obstacles',
-  'reliefs'
+  'reliefs',
+  'postface'
 ];
 const TOC2 = [
   {"id": "appendixe", "title": "用語定義"},
@@ -69,8 +70,8 @@ md.renderer.rules.footnote_ref = render_footnote_ref;
 
 createComponents(SOURCES);
 toc = toc.concat(TOC2);
-createComponents(SOURCES2);
 toc = toc.concat(TOC3);
+createComponents(SOURCES2);
 fs.writeFileSync(tocFile, JSON.stringify(toc, null, '  '), {flag:'w'});
 
 //////////////////////////////////////////////////////////////////////

@@ -10,13 +10,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#app-postface > p,
 #app-preface > p {
   margin-left: 1rem;
 }
+#app-postface > hr,
 #app-preface > hr {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+#app-postface > hr + p,
 #app-preface > hr + p {
   text-align: right;
 }

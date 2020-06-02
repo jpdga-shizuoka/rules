@@ -176,6 +176,10 @@
     "title": "用語定義"
   },
   {
+    "id": "penalties",
+    "title": "規則違反の分類"
+  },
+  {
     "id": "obstacles",
     "title": "障害物の分類"
   },
@@ -184,7 +188,7 @@
     "title": "救済の分類"
   },
   {
-    "id": "penalties",
-    "title": "規則違反の分類"
+    "id": "postface",
+    "title": "あとがき"
   }
 ]
