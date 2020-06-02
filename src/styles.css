@@ -137,4 +137,8 @@ ul.app-index span + span {
   ul.app-index {
     font-size: 0.7rem;
   }
+  #app-postface > p,
+  #app-preface > p {
+    margin-left: 0;
+  }
 }
