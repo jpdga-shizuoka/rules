@@ -1,0 +1,180 @@
+#!/usr/bin/env node
+
+const SOURCES = [
+  'preface',
+  '800',
+  '801',
+  '80101',
+  '80102',
+  '80103',
+  '802',
+  '80201',
+  '80202',
+  '80203',
+  '80204',
+  '80205',
+  '80206',
+  '80207',
+  '803',
+  '80301',
+  '80302',
+  '80303',
+  '804',
+  '80401',
+  '80402',
+  '805',
+  '80501',
+  '80502',
+  '80503',
+  '806',
+  '80601',
+  '80602',
+  '80603',
+  '80604',
+  '80605',
+  '807',
+  '808',
+  '809',
+  '80901',
+  '80902',
+  '80903',
+  '810',
+  '811',
+  '812',
+  '813',
+  '81301',
+  '81302',
+];
+const SOURCES2 = [
+  'obstacles',
+  'reliefs',
+  'postface'
+];
+const TOC2 = [
+  {"id": "appendixe", "title": "用語定義"},
+];
+const TOC3 = [
+  {"id": "penalties", "title": "規則違反の分類"},
+];
+const external = /^http/i;
+const srcPath = '../rules/';
+const dstPath = '../src/app/rules/'
+const tocFile = '../src/assets/rules/toc.json';
+const header = /^\#+ ([\d\.]+ \S+)/m;
+const fs = require('fs');
+const md = require('markdown-it')({replaceLink: replaceLink})
+.use(require('markdown-it-footnote'))
+.use(replaceLinkPlugIn);
+let toc = [];
+md.renderer.rules.footnote_ref = render_footnote_ref;
+
+createComponents(SOURCES);
+toc = toc.concat(TOC2);
+toc = toc.concat(TOC3);
+createComponents(SOURCES2);
+fs.writeFileSync(tocFile, JSON.stringify(toc, null, '  '), {flag:'w'});
+
+//////////////////////////////////////////////////////////////////////
+// end of program
+//////////////////////////////////////////////////////////////////////
+
+function createComponents(sources) {
+  sources.forEach(ruleId => {
+    const filepath = srcPath + ruleId + '.md';
+    const mdContent = fs.readFileSync(filepath, 'utf8');
+    const htmlContent = md.render(mdContent);
+
+    makeToc(ruleId, mdContent);
+    makeHtml(ruleId, htmlContent);
+    makeComponent(ruleId);
+  });
+}
+
+function makeToc(ruleId, content) {
+  const title = content.match(header) || content.match(/^\#+ (\S+)$/m);
+  toc.push({
+    id: ruleId,
+    title: title[1]
+  });
+}
+
+function makeHtml(ruleId, html) {
+  const content =`<div class="app-rule" id="app-${ruleId}">
+${html}</div>`;
+  fs.writeFileSync(dstPath + ruleId + '.html', content);
+}
+
+function makeComponent(ruleId) {
+  const content =`import {Component} from '@angular/core';
+import {RuleComponent} from './rule.component';
+@Component({
+  selector: 'app-rule${ruleId}',
+  templateUrl: './${ruleId}.html',
+})
+export class Rule${ruleId}Component extends RuleComponent { }`;
+  fs.writeFileSync(dstPath + 'rule' + ruleId + '.component.ts', content);
+}
+
+//
+// @ see https://github.com/martinheidegger/markdown-it-replace-link
+//
+function replaceLinkPlugIn(md) {
+  md.core.ruler.after(
+    'inline',
+    'replace-link',
+    state => {
+      const replace = md.options.replaceLink;
+      if (typeof replace === 'function') {
+        state.tokens.forEach(blockToken => {
+          if (blockToken.type === 'inline' && blockToken.children) {
+            blockToken.children.forEach(token => {
+              const type = token.type;
+              if (type === 'link_open') {
+                replaceAttr(token, 'href', replace, state.env);
+              } else if (type === 'image') {
+                replaceAttr(token, 'src', replace, state.env);
+              }
+            });
+          }
+        });
+      }
+      return false;
+    }
+  );
+};
+
+function replaceAttr(token, attrName, replace, env) {
+  token.attrs.forEach(attr => {
+    if (attr[0] === attrName) {
+      if (attr[0] === 'href' && !external.test(attr[1]) ) {
+        attr[0] = 'routerLink'; // replace href with routerLink
+        attr[1] = replace(attr[1], env, token);
+      }
+    }
+  });
+}
+
+function replaceLink(link, env) {
+  const pattern = /(\w*)+\#(\w+)/;
+  const result = link.match(pattern);
+  if (result != null) {
+    return '/' + result[1];
+  } else {
+    return '/' + link;
+  }
+}
+
+//
+//  @see https://github.com/markdown-it/markdown-it-footnote/blob/master/index.js
+//
+function render_footnote_ref(tokens, idx, options, env, slf) {
+  var id      = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf);
+  var caption = slf.rules.footnote_caption(tokens, idx, options, env, slf);
+  var refid   = id;
+
+  if (tokens[idx].meta.subId > 0) {
+    refid += ':' + tokens[idx].meta.subId;
+  }
+
+  return '<sup class="footnote-ref"><a routerLink="." fragment="fn' + id + '" id="fnref' + refid + '">' + caption + '</a></sup>';
+}

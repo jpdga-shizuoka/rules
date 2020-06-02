@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+span.spacer {
+  flex: 1;
+}
+#github {
+  color: white;
+}
+#app-postface > p,
+#app-preface > p {
+  margin-left: 1rem;
+}
+#app-postface > hr,
+#app-preface > hr {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+#app-postface > hr + p,
+#app-preface > hr + p {
+  text-align: right;
+}
+#penalties h2 {
+  margin-bottom: 0;
+}
+#penalties hr {
+  margin: 0;
+}
+#penalties ul {
+  margin: 0.5rem 0 2rem;
+}
+#obstacles  img ,
+#reliefs  img {
+  width: 100%;
+}
+.app-rule {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px 20px 50px;
+}
+.app-rule h1 {
+  font-size: 1.2rem;
+}
+.app-rule h2 {
+  font-size: 1rem;
+}
+.app-rule > ol {
+  list-style-type: upper-alpha;
+  padding-left: 1.3rem;
+}
+.app-rule li > ol {
+  padding-left: 1.3rem;
+}
+.app-rule li > ol > li > ol {
+  list-style-type: lower-alpha;
+}
+.app-rule > * {
+  line-height: 1.5rem;
+}
+.app-rule a {
+  text-decoration: none;
+}
+.app-rule a[href^="http"] {
+  display: inline-block;
+  background: url("assets/img/open_in_new-24px.svg") no-repeat right center;
+  background-size: 1rem 1rem;
+  padding-right: 1.1rem;
+}
+.app-rule img {
+  width: 100%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+hr.footnotes-sep {
+  margin-top: 40px;
+}
+.footnote-item {
+  font-size: 0.8rem;
+}
+ul.app-index {
+  max-width: 40rem;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+  font-size: 0.9rem;
+}
+ul.app-index li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+}
+ul.app-index span:first-child {
+  padding-right: 0.33rem;
+  background: white;
+}
+ul.app-index span + span {
+  float: right;
+  padding-left: 0.33rem;
+  background: white;
+}
+@media screen and (max-width: 414px) {
+  .app-rule {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ul.app-index {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .app-rule {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ul.app-index {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .app-rule {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  ul.app-index {
+    font-size: 0.7rem;
+  }
+  #app-postface > p,
+  #app-preface > p {
+    margin-left: 0;
+  }
+}
