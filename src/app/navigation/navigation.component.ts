@@ -25,8 +25,11 @@ export class NavigationComponent implements OnInit, OnDestroy {
     }
     this._section = section;
     const title = section.title.match(TITLE_PATTERN);
-    this.title = title != null ? title[1] : section.title;
-    this.title = this.title === 'はじめに' ? 'ディスクゴルフ競技規則' : this.title;
+    if (this.section.id === 'preface') {
+      this.title = 'ディスクゴルフ競技規則';
+    } else {
+      this.title = title != null ? title[1] : section.title;      
+    }
   }
   title: string;
   isHandset: boolean;
