@@ -25,7 +25,11 @@ export class NavigationComponent implements OnInit, OnDestroy {
     }
     this._section = section;
     const title = section.title.match(TITLE_PATTERN);
-    this.title = title != null ? title[1] : section.title;
+    if (this.section.id === 'preface') {
+      this.title = 'ディスクゴルフ競技規則';
+    } else {
+      this.title = title != null ? title[1] : section.title;      
+    }
   }
   title: string;
   isHandset: boolean;
@@ -44,7 +48,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
     router.events.pipe(
       filter(event => event instanceof NavigationEnd),
     ).subscribe((event: NavigationEnd) =>
-      this.section = getSection(url2id(event.url)));
+      this.section = getSection(url2id(event.urlAfterRedirects)));
   }
 
   ngOnInit() {
