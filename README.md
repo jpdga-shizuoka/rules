@@ -1,6 +1,9 @@
 # ディスクゴルフ競技規則プロジェクト
 
 これはディスクゴルフ競技規則のための公開プロジェクトです.
+本プロジェクトの成果は,
+[https://jpdga-shizuoka.github.io/rules](https://jpdga-shizuoka.github.io/rules)
+にて公開されています.
 
 ## License
 
