@@ -104,12 +104,12 @@ ul.app-index li:before {
 }
 ul.app-index span:first-child {
   padding-right: 0.33rem;
-  background: white;
+  background: #fafafa;
 }
 ul.app-index span + span {
   float: right;
   padding-left: 0.33rem;
-  background: white;
+  background: #fafafa;
 }
 @media screen and (max-width: 414px) {
   .app-rule {
