@@ -57,9 +57,9 @@ const TOC3 = [
   {"id": "penalties", "title": "規則違反の分類"},
 ];
 const external = /^http/i;
-const srcPath = '../rules/';
-const dstPath = '../src/app/rules/'
-const tocFile = '../src/assets/rules/toc.json';
+const srcPath = './rules/';
+const dstPath = './src/app/rules/'
+const tocFile = './src/assets/rules/toc.json';
 const header = /^\#+ ([\d\.]+ \S+)/m;
 const fs = require('fs');
 const md = require('markdown-it')({replaceLink: replaceLink})
