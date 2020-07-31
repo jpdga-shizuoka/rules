@@ -60,6 +60,8 @@ import { PenaltiesComponent } from './rules/penalties.component';
 import { RuleobstaclesComponent } from './rules/ruleobstacles.component';
 import { RulereliefsComponent } from './rules/rulereliefs.component';
 import { RulepostfaceComponent } from './rules/rulepostface.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -124,6 +126,7 @@ import { RulepostfaceComponent } from './rules/rulepostface.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
