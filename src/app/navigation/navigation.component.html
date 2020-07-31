@@ -22,7 +22,9 @@
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-icon aria-label="Side nav toggle icon">
+          <img src="assets/img/menu-24px.svg" alt="menu">
+        </mat-icon>
       </button>
       <span>{{title}}</span>
       <span class="spacer"></span>
@@ -43,9 +45,13 @@
 
 <button class="app-nav-button" id="prev" (click)="onClickPrev()"
   mat-fab color="primary" aria-label="previous rule" *ngIf="isPrev">
-  <mat-icon>arrow_back_ios</mat-icon>
+  <mat-icon>
+    <img src="assets/img/arrow_back_ios-24px.svg" alt="back">
+  </mat-icon>
 </button>
 <button class="app-nav-button" id="next" (click)="onClickNext()"
   mat-fab color="primary" aria-label="next rule" *ngIf="isNext">
-  <mat-icon>arrow_forward_ios</mat-icon>
+  <mat-icon>
+    <img src="assets/img/arrow_forward_ios-24px.svg" alt="forward">
+  </mat-icon>
 </button>
