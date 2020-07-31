@@ -1,0 +1,144 @@
+{
+  "configVersion": 1,
+  "timestamp": 1596208560468,
+  "index": "https://jpdga-shizuoka.github.io/rules/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://jpdga-shizuoka.github.io/rules/favicon.ico",
+        "https://jpdga-shizuoka.github.io/rules/index.html",
+        "https://jpdga-shizuoka.github.io/rules/main-es2015.5f06d439e4c3ffc3838f.js",
+        "https://jpdga-shizuoka.github.io/rules/main-es5.5f06d439e4c3ffc3838f.js",
+        "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest",
+        "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.95bb65e853d2781ac3bd.js",
+        "https://jpdga-shizuoka.github.io/rules/polyfills-es5.341d48ffc88eaeae911d.js",
+        "https://jpdga-shizuoka.github.io/rules/runtime-es2015.409e6590615fb48d139f.js",
+        "https://jpdga-shizuoka.github.io/rules/runtime-es5.409e6590615fb48d139f.js",
+        "https://jpdga-shizuoka.github.io/rules/styles.64ac434abe0e0b081f4b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://jpdga-shizuoka.github.io/rules/assets/about-rule-book.2018-10-13.pdf",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-120x120.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-128x128.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-144x144.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-152x152.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-167x167.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-180x180.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-192x192.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-384x384.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-512x512.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-630x630.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-72x72.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-96x96.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/bascket-target.jpg",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/double-mandatory.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/kiyosato.jpg",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/kodomonokuni.jpg",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/lie.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/lie_stance.jpg",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/maiko.jpg",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/mandatory-failed.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/mandatory-playline.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/marking.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/nippon-open.jpg",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/ob-optional-relief.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/obstacles.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/open_in_new-24px.svg",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/optional-relief.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/relief-from-casual-area.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/relief-from-ob.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/reliefs.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/rulebook.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/scorecard1.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/scorecard2.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/single-mandatory.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/rules/toc.json",
+        "https://jpdga-shizuoka.github.io/rules/open_in_new-24px.5d965d7917e76b6bba38.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://jpdga-shizuoka.github.io/rules/assets/about-rule-book.2018-10-13.pdf": "5722ca001383d4441705dc662c6ccdb77835b7b7",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-120x120.png": "ae73b22fe0ca8b2b490873c0f75a338bd7e5b1b8",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-128x128.png": "43e91c1fb331efea6a236aa8724c992250b0e61a",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-144x144.png": "d189e9e2ec40a912d57a461673f5498dfe38e38e",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-152x152.png": "6bc1c2a8bbe75c07ef8839bffcae4f4968819aa3",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-167x167.png": "e8ddf72b4e519d23ba13d3672aebcc346ceff70f",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-180x180.png": "d5a70d4883dad78684811fb4d900423a5a7c4cf7",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-192x192.png": "5948a7418bbe367d6aab0469b9be9eb23ff266e4",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-384x384.png": "32cde294561d07ec6f48ad663b37377607637203",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-512x512.png": "7a18e114c6c48ed7394736900de49cf365eb4a8e",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-630x630.png": "ce03eaf52c80f68664a3b20df90ca62d55d63f7e",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-72x72.png": "325a90a29acb65d938ced0cba3910181a63ff5ad",
+    "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-96x96.png": "4c9845e51547d419904cc3baff736919412ce586",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/bascket-target.jpg": "2153b41d7eafd9b369e7757588670149fe0ee619",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/double-mandatory.png": "47a4626d6bc2f8076546c48ce37e6baf5d7114f0",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/kiyosato.jpg": "e2fc912b087f45ff153f8ddafc3d0411bad3a0f8",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/kodomonokuni.jpg": "06034a5036035bfe261daa2741ccbee6edd020ad",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/lie.png": "ee8f4e958027185ab02c30e412953d5c3bf9f811",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/lie_stance.jpg": "87ea8955b42d6db88188c3d62f1f1938f2a5a7f7",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/maiko.jpg": "9ac423ac388d920e7f23cf3541a6278fe00acb65",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/mandatory-failed.png": "1f60c689ceec794874dde0273bc6ad10a3f1e8bb",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/mandatory-playline.png": "0ffea3e43fb59432f4b752ec6ffcc41f52d48cab",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/marking.png": "16863962975f4dea28a6df97acd282269594ff83",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/nippon-open.jpg": "20bb49ff3fd8ee04c0eeec049f085b57e1c44a24",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/ob-optional-relief.png": "283a3344fd5addf58efb011e26bb90dd1263f2f1",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/obstacles.png": "269e4310847e2078f4a4081f7c7c37d9d4e39d33",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/open_in_new-24px.svg": "4659a31d0dec34789d2ed76afe728bac5d91db94",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/optional-relief.png": "d132e3a2a848ac8eaf0e4c63f5d771c45ee4a5c8",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/relief-from-casual-area.png": "aa63637971001c3d51dc08f3cde40ccdb3bb5e4d",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/relief-from-ob.png": "70012152dab8b818a7acadc0e82cb1f56c1176c7",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/reliefs.png": "410083b6f1c2d9123dc3dbaa85445c7fd85ab973",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/rulebook.png": "6a1a48e4cd96d930a2296b6fad639ead95df3248",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/scorecard1.png": "07f53d7b98a23b340b133770c2c3f117feb839b6",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/scorecard2.png": "d4fbff2b87cbb8329c404f42323d6c7047e189c2",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/single-mandatory.png": "ffd47c0bc850fca26dff9b71b1fb33714cf71e8f",
+    "https://jpdga-shizuoka.github.io/rules/assets/rules/toc.json": "1d4c88d38e02a7b8ad00a94dab33b63bbf6b993b",
+    "https://jpdga-shizuoka.github.io/rules/favicon.ico": "5905c76502579586d01c087dec8f3ce9c8bc1da3",
+    "https://jpdga-shizuoka.github.io/rules/index.html": "f77b796a56aecdee8fbadcc0d20e6d0e9b75c098",
+    "https://jpdga-shizuoka.github.io/rules/main-es2015.5f06d439e4c3ffc3838f.js": "d7b501778dff5a0aa51c0c08687d6cfb5dd81280",
+    "https://jpdga-shizuoka.github.io/rules/main-es5.5f06d439e4c3ffc3838f.js": "c53200ca4f947fb26dfd9b9747a52704f9c77da7",
+    "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest": "71217d7825d7b5d8fbddba7761f6c5ed1026d48e",
+    "https://jpdga-shizuoka.github.io/rules/open_in_new-24px.5d965d7917e76b6bba38.svg": "4659a31d0dec34789d2ed76afe728bac5d91db94",
+    "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.95bb65e853d2781ac3bd.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "https://jpdga-shizuoka.github.io/rules/polyfills-es5.341d48ffc88eaeae911d.js": "ff14d90e08622190714660721edab5f43578829a",
+    "https://jpdga-shizuoka.github.io/rules/runtime-es2015.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://jpdga-shizuoka.github.io/rules/runtime-es5.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://jpdga-shizuoka.github.io/rules/styles.64ac434abe0e0b081f4b.css": "2d4f485c895adab7869559c5e1eb384f659f2c9f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
