@@ -54,6 +54,8 @@
 電波の状態が悪くてもオフラインでも,
 ルールブックをご使用になれます.
 
+![ホーム画面のショートカット](assets/img/shortcut.jpg)
+
 ## Copyright ©
 
 The original copyright of this online rule book is reserved by [PDGA](https://www.pdga.com).
