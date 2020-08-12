@@ -28,7 +28,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
     if (this.section.id === 'preface') {
       this.title = 'ディスクゴルフ競技規則';
     } else {
-      this.title = title != null ? title[1] : section.title;      
+      this.title = title != null ? title[1] : section.title;
     }
   }
   title: string;
@@ -98,5 +98,5 @@ export class NavigationComponent implements OnInit, OnDestroy {
 }
 
 function url2id(url: string) {
-  return url.slice(1,);
+  return url.slice(1, );
 }
