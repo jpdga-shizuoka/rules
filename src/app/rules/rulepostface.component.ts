@@ -4,4 +4,6 @@ import {RuleComponent} from './rule.component';
   selector: 'app-rulepostface',
   templateUrl: './postface.html',
 })
-export class RulepostfaceComponent extends RuleComponent { }
+export class RulepostfaceComponent extends RuleComponent {
+  get ruleId() {return 'postface'; }
+}

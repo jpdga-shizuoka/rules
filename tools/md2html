@@ -99,7 +99,8 @@ function makeToc(ruleId, content) {
 }
 
 function makeHtml(ruleId, html) {
-  const content =`<div class="app-rule" id="app-${ruleId}">
+  const content =`<app-pull-to-jump *ngIf="isRule"></app-pull-to-jump>
+<div class="app-rule" id="app-${ruleId}">
 ${html}</div>`;
   fs.writeFileSync(dstPath + ruleId + '.html', content);
 }
@@ -111,7 +112,10 @@ import {RuleComponent} from './rule.component';
   selector: 'app-rule${ruleId}',
   templateUrl: './${ruleId}.html',
 })
-export class Rule${ruleId}Component extends RuleComponent { }`;
+export class Rule${ruleId}Component extends RuleComponent {
+  get ruleId() {return '${ruleId}'; }
+}
+`;
   fs.writeFileSync(dstPath + 'rule' + ruleId + '.component.ts', content);
 }
 

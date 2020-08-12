@@ -4,4 +4,6 @@ import {RuleComponent} from './rule.component';
   selector: 'app-rulereliefs',
   templateUrl: './reliefs.html',
 })
-export class RulereliefsComponent extends RuleComponent { }
+export class RulereliefsComponent extends RuleComponent {
+  get ruleId() {return 'reliefs'; }
+}

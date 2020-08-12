@@ -62,6 +62,7 @@ import { RulereliefsComponent } from './rules/rulereliefs.component';
 import { RulepostfaceComponent } from './rules/rulepostface.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
 
 @NgModule({
   declarations: [
@@ -115,6 +116,7 @@ import { environment } from '../environments/environment';
     RuleobstaclesComponent,
     RulereliefsComponent,
     RulepostfaceComponent,
+    PullToJumpComponent,
   ],
   imports: [
     AppRoutingModule,

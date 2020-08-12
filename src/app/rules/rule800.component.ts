@@ -4,4 +4,6 @@ import {RuleComponent} from './rule.component';
   selector: 'app-rule800',
   templateUrl: './800.html',
 })
-export class Rule800Component extends RuleComponent { }
+export class Rule800Component extends RuleComponent {
+  get ruleId() {return '800'; }
+}
