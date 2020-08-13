@@ -49,12 +49,15 @@ span.spacer {
 }
 .app-rule h1 {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 .app-rule h2 {
   font-size: 1rem;
+  font-weight: bold;
 }
 .app-rule h3 {
   margin-left: 1rem;
+  font-weight: bold;
 }
 .app-rule h3 + p {
   padding-left: 1rem;
