@@ -29,8 +29,6 @@ export class RuleComponent implements OnInit, OnDestroy {
 
   private jump2pdga(ruleId: string) {
     const url = `https://www.pdga.com/rules/official-rules-disc-golf/${this.ruleId}`;
-    if (!window.open(url, '_blank', 'noopener')) {
-      window.location.href = url;
-    }
+    window.location.href = url;
   }
 }

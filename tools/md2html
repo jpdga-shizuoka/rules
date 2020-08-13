@@ -99,8 +99,11 @@ function makeToc(ruleId, content) {
 }
 
 function makeHtml(ruleId, html) {
-  const content =`<app-pull-to-jump *ngIf="isRule"></app-pull-to-jump>
-<div class="app-rule" id="app-${ruleId}">
+  let content ='<div class="app-rule" id="app-${ruleId}">';
+  if (isRule(ruleId)) {
+    content +='<app-pull-to-jump></app-pull-to-jump>';
+  }
+  content += `
 ${html}</div>`;
   fs.writeFileSync(dstPath + ruleId + '.html', content);
 }
@@ -181,4 +184,8 @@ function render_footnote_ref(tokens, idx, options, env, slf) {
   }
 
   return '<sup class="footnote-ref"><a routerLink="." fragment="fn' + id + '" id="fnref' + refid + '">' + caption + '</a></sup>';
+}
+
+function isRule(ruleId) {
+  return /[0-9]+/.test(ruleId);
 }

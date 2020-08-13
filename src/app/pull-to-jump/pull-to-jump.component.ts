@@ -1,7 +1,7 @@
 //
 //  see [画面を引っ張ってリロード(pull to refresh)](https://qiita.com/sengoku/items/8a0f7df9f1ed903ffd63)
 //
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { concat, defer, fromEvent, Observable, timer } from 'rxjs';
 import {
   filter,
@@ -27,43 +27,52 @@ const TOP_POSITION = 0; // 画面トップ位置
 })
 export class PullToJumpComponent implements OnInit {
   private readonly pullDistance = window.innerHeight / 3; // 引っ張る距離
-  private readonly touchstart$ = fromEvent<TouchEvent>(document, 'touchstart');
-  private readonly touchend$ = fromEvent<TouchEvent>(document, 'touchend');
-  private readonly touchmove$ = fromEvent<TouchEvent>(document, 'touchmove');
+  private readonly touchstart$: Observable<TouchEvent>;
+  private readonly touchend$: Observable<TouchEvent>;
+  private readonly touchmove$: Observable<TouchEvent>;
+  positionTranslate3d$: Observable<string>;
+  opacity$: Observable<number>;
 
-  private drag$ = this.touchstart$.pipe(
-    switchMap(start => {
-      // touchstartイベントが流れたら、代わりにtouchmoveイベントを購読し、移動量を流す
-      let pos = TOP_POSITION;
+  constructor(
+    private gotoPdga: GotoPdgaService,
+    elementRef: ElementRef,
+  ) {
+    const parent = elementRef.nativeElement.parentElement;
+    this.touchstart$ = fromEvent<TouchEvent>(parent, 'touchstart');
+    this.touchend$ = fromEvent<TouchEvent>(parent, 'touchend');
+    this.touchmove$ = fromEvent<TouchEvent>(parent, 'touchmove');
 
-      return concat(
-        this.touchmove$.pipe(
-          map(move => move.touches[0].pageY - start.touches[0].pageY),
-          tap(p => (pos = p)),
-          filter(p => p < this.pullDistance),
-          takeUntil(this.touchend$)
-        ),
-        // touchendイベントが流れるまで購読し終わったら、
-        // 現在位置から画面トップまでマイナス方向の値を流し、位置を戻す
-        defer(() => this.tweenObservable(pos, TOP_POSITION, 200))
-      );
-    }),
-    repeat()
-  );
+    const drag$ = this.touchstart$.pipe(
+      switchMap(start => {
+        // touchstartイベントが流れたら、代わりにtouchmoveイベントを購読し、移動量を流す
+        let pos = TOP_POSITION;
+        return concat(
+          this.touchmove$.pipe(
+            map(move => move.touches[0].pageY - start.touches[0].pageY),
+            tap(p => (pos = p)),
+            filter(p => p < this.pullDistance),
+            takeUntil(this.touchend$)
+          ),
+          // touchendイベントが流れるまで購読し終わったら、
+          // 現在位置から画面トップまでマイナス方向の値を流し、位置を戻す
+          defer(() => this.tweenObservable(pos, TOP_POSITION, 200))
+        );
+      }),
+      repeat()
+    );
 
-  private position$: Observable<number> = this.drag$.pipe(
-    startWith(TOP_POSITION)
-  );
+    const position$ = drag$.pipe(
+      startWith(TOP_POSITION)
+    );
 
-  positionTranslate3d$: Observable<string> = this.position$.pipe(
-    map(p => `translate3d(0, ${p - 70}px, 0)`)
-  );
+    this.positionTranslate3d$ = position$.pipe(
+      map(p => `translate3d(0, ${p - 70}px, 0)`)
+    );
 
-  opacity$: Observable<number> = this.position$.pipe(
-    map(p => p / this.pullDistance)
-  );
-
-  constructor(private gotoPdga: GotoPdgaService) {}
+    this.opacity$ = position$.pipe(
+      map(p => p / this.pullDistance)
+    );
+  }
 
   ngOnInit(): void {
     // 指を離した時に、規定距離を移動していたらリフレッシュ
