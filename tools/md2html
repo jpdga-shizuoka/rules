@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-const SOURCES = [
+const Path = require('path');
+
+const RULES_LIST = [
   'preface',
   '800',
   '801',
@@ -45,7 +47,34 @@ const SOURCES = [
   '81301',
   '81302',
 ];
-const SOURCES2 = [
+const QAS_LIST = [
+  'index',
+  'app',
+  'thr',
+  'tim',
+  'tee',
+  'lie',
+  'mar',
+  'sta',
+  'obs',
+  'man',
+  'pos',
+  '2m',
+  'los',
+  'put',
+  'ob',
+  'cas',
+  'com',
+  'sco',
+  'aba',
+  'pro',
+  'pra',
+  'int',
+  'mis',
+  'cou',
+  'equ',
+];
+const MISC_LIST = [
   'obstacles',
   'reliefs',
   'postface'
@@ -57,9 +86,11 @@ const TOC3 = [
   {"id": "penalties", "title": "規則違反の分類"},
 ];
 const external = /^http/i;
-const srcPath = './rules/';
-const dstPath = './src/app/rules/'
-const tocFile = './src/assets/rules/toc.json';
+const RULE_SRC = 'rules';
+const QA_SRC = 'qas';
+const MISC_SRC = 'miscs';
+const DST = './src/app/'
+const TOC = './src/assets/toc/';
 const header = /^\#+ ([\d\.]+ \S+)/m;
 const fs = require('fs');
 const md = require('markdown-it')({replaceLink: replaceLink})
@@ -68,51 +99,61 @@ const md = require('markdown-it')({replaceLink: replaceLink})
 let toc = [];
 md.renderer.rules.footnote_ref = render_footnote_ref;
 
-createComponents(SOURCES);
+createComponents(RULES_LIST, RULE_SRC);
 toc = toc.concat(TOC2);
+createComponents(QAS_LIST, QA_SRC);
 toc = toc.concat(TOC3);
-createComponents(SOURCES2);
-fs.writeFileSync(tocFile, JSON.stringify(toc, null, '  '), {flag:'w'});
+createComponents(MISC_LIST, MISC_SRC);
 
 //////////////////////////////////////////////////////////////////////
 // end of program
 //////////////////////////////////////////////////////////////////////
 
-function createComponents(sources) {
-  sources.forEach(ruleId => {
-    const filepath = srcPath + ruleId + '.md';
+function createComponents(sources, srcPath) {
+  sources.forEach(id => {
+    const filepath = Path.join(srcPath, id + '.md');
     const mdContent = fs.readFileSync(filepath, 'utf8');
     const htmlContent = md.render(mdContent);
 
-    makeToc(ruleId, mdContent);
-    makeHtml(ruleId, htmlContent);
-    makeComponent(ruleId);
+    makeToc(srcPath === 'qas' ? 'qa-' + id : id, mdContent);
+    makeHtml(id, htmlContent, srcPath);
+    makeComponent(id, srcPath);
   });
+  fs.writeFileSync(Path.join(TOC, srcPath + '.json'), JSON.stringify(toc, null, '  '), {flag:'w'});
+  toc = [];
 }
 
-function makeToc(ruleId, content) {
-  const title = content.match(header) || content.match(/^\#+ (\S+)$/m);
+function makeToc(id, content) {
+  const title = content.match(header)
+    || content.match(/^\#\# \[(\S+)\]\([0-9]+\)$/m)
+    || content.match(/^\#+ (\S+)$/m);
   toc.push({
-    id: ruleId,
+    id: id,
     title: title[1]
   });
 }
 
-function makeHtml(ruleId, html) {
-  const content =`<div class="app-rule" id="app-${ruleId}">
+function makeHtml(id, html, srcPath) {
+  const name = removeLastS(srcPath);
+  const dstPath = Path.join(DST, srcPath, id + '.html');
+  const content =`<div class="app-${name}" id="app-${id}">
 ${html}</div>`;
-  fs.writeFileSync(dstPath + ruleId + '.html', content);
+  fs.writeFileSync(dstPath, content);
 }
 
-function makeComponent(ruleId) {
+function makeComponent(id, srcPath) {
+  const name = removeLastS(srcPath);
+  const Name = capitalizeFirstLetter(name);
+  const sid = makeId(id);
+  const dstPath = Path.join(DST, srcPath, name + id + '.component.ts');
   const content =`import {Component} from '@angular/core';
-import {RuleComponent} from './rule.component';
+import {${Name}Component} from './${name}.component';
 @Component({
-  selector: 'app-rule${ruleId}',
-  templateUrl: './${ruleId}.html',
+  selector: 'app-${name}-${id}',
+  templateUrl: './${id}.html',
 })
-export class Rule${ruleId}Component extends RuleComponent { }`;
-  fs.writeFileSync(dstPath + 'rule' + ruleId + '.component.ts', content);
+export class ${Name}${sid}Component extends ${Name}Component { }`;
+  fs.writeFileSync(dstPath, content);
 }
 
 //
@@ -168,13 +209,26 @@ function replaceLink(link, env) {
 //  @see https://github.com/markdown-it/markdown-it-footnote/blob/master/index.js
 //
 function render_footnote_ref(tokens, idx, options, env, slf) {
-  var id      = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf);
-  var caption = slf.rules.footnote_caption(tokens, idx, options, env, slf);
-  var refid   = id;
-
+  const id      = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf);
+  const caption = slf.rules.footnote_caption(tokens, idx, options, env, slf);
+  let refid = id;
   if (tokens[idx].meta.subId > 0) {
     refid += ':' + tokens[idx].meta.subId;
   }
 
   return '<sup class="footnote-ref"><a routerLink="." fragment="fn' + id + '" id="fnref' + refid + '">' + caption + '</a></sup>';
+}
+
+function removeLastS(string) {
+  const c = string.charAt(string.length - 1);
+  return c === 's' ? string.slice(0, -1) : string;
+}
+
+function makeId(string) {
+  const id = string.replace(/\-/g, '');
+  return capitalizeFirstLetter(id);
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }

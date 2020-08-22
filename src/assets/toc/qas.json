@@ -1,0 +1,106 @@
+[
+  {
+    "id": "appendixe",
+    "title": "用語定義"
+  },
+  {
+    "id": "qa-index",
+    "title": "規則Q&A"
+  },
+  {
+    "id": "qa-app",
+    "title": "規則の適用"
+  },
+  {
+    "id": "qa-thr",
+    "title": "スロー"
+  },
+  {
+    "id": "qa-tim",
+    "title": "時間超過"
+  },
+  {
+    "id": "qa-tee",
+    "title": "ティーオフ"
+  },
+  {
+    "id": "qa-lie",
+    "title": "ライ"
+  },
+  {
+    "id": "qa-mar",
+    "title": "ライのマーキング"
+  },
+  {
+    "id": "qa-sta",
+    "title": "スタンス"
+  },
+  {
+    "id": "qa-obs",
+    "title": "障害物と救済"
+  },
+  {
+    "id": "qa-man",
+    "title": "経路の規制"
+  },
+  {
+    "id": "qa-pos",
+    "title": "位置の確定"
+  },
+  {
+    "id": "qa-2m",
+    "title": "2mより上空にあるディスク"
+  },
+  {
+    "id": "qa-los",
+    "title": "ディスクの紛失"
+  },
+  {
+    "id": "qa-put",
+    "title": "パッティングエリア"
+  },
+  {
+    "id": "qa-ob",
+    "title": "アウト•オブ•バウンズ"
+  },
+  {
+    "id": "qa-cas",
+    "title": "カジュアルエリア"
+  },
+  {
+    "id": "qa-com",
+    "title": "ホールの終了"
+  },
+  {
+    "id": "qa-sco",
+    "title": "スコアの記録"
+  },
+  {
+    "id": "qa-aba",
+    "title": "スローの放棄"
+  },
+  {
+    "id": "qa-pro",
+    "title": "暫定スロー"
+  },
+  {
+    "id": "qa-pra",
+    "title": "練習スロー"
+  },
+  {
+    "id": "qa-int",
+    "title": "干渉"
+  },
+  {
+    "id": "qa-mis",
+    "title": "ミスプレー"
+  },
+  {
+    "id": "qa-cou",
+    "title": "礼儀"
+  },
+  {
+    "id": "qa-equ",
+    "title": "道具"
+  }
+]
