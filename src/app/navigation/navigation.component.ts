@@ -98,5 +98,5 @@ export class NavigationComponent implements OnInit, OnDestroy {
 }
 
 function url2id(url: string) {
-  return url.slice(1,);
+  return url.slice(1, );
 }
