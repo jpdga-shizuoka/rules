@@ -4,4 +4,6 @@ import {QaComponent} from './qa.component';
   selector: 'app-qa-mis',
   templateUrl: './mis.html',
 })
-export class QaMisComponent extends QaComponent { }
+export class QaMisComponent extends QaComponent {
+  get ruleId() {return 'mis'; }
+}

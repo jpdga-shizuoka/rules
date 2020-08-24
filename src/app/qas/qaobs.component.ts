@@ -4,4 +4,6 @@ import {QaComponent} from './qa.component';
   selector: 'app-qa-obs',
   templateUrl: './obs.html',
 })
-export class QaObsComponent extends QaComponent { }
+export class QaObsComponent extends QaComponent {
+  get ruleId() {return 'obs'; }
+}

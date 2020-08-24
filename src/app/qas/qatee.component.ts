@@ -4,4 +4,6 @@ import {QaComponent} from './qa.component';
   selector: 'app-qa-tee',
   templateUrl: './tee.html',
 })
-export class QaTeeComponent extends QaComponent { }
+export class QaTeeComponent extends QaComponent {
+  get ruleId() {return 'tee'; }
+}

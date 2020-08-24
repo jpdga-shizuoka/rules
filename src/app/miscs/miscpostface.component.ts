@@ -4,4 +4,6 @@ import {MiscComponent} from './misc.component';
   selector: 'app-misc-postface',
   templateUrl: './postface.html',
 })
-export class MiscPostfaceComponent extends MiscComponent { }
+export class MiscPostfaceComponent extends MiscComponent {
+  get ruleId() {return 'postface'; }
+}

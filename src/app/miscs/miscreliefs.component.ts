@@ -4,4 +4,6 @@ import {MiscComponent} from './misc.component';
   selector: 'app-misc-reliefs',
   templateUrl: './reliefs.html',
 })
-export class MiscReliefsComponent extends MiscComponent { }
+export class MiscReliefsComponent extends MiscComponent {
+  get ruleId() {return 'reliefs'; }
+}
