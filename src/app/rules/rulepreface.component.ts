@@ -4,4 +4,6 @@ import {RuleComponent} from './rule.component';
   selector: 'app-rule-preface',
   templateUrl: './preface.html',
 })
-export class RulePrefaceComponent extends RuleComponent { }
+export class RulePrefaceComponent extends RuleComponent {
+  get ruleId() {return 'preface'; }
+}

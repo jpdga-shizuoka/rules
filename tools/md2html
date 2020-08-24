@@ -136,7 +136,11 @@ function makeToc(id, content) {
 function makeHtml(id, html, srcPath) {
   const name = removeLastS(srcPath);
   const dstPath = Path.join(DST, srcPath, id + '.html');
-  const content =`<div class="app-${name}" id="app-${id}">
+  let content =`<div class="app-${name}" id="app-${id}">`;
+  if (isRule(id)) {
+    content +='<app-pull-to-jump></app-pull-to-jump>';
+  }
+  content += `
 ${html}</div>`;
   fs.writeFileSync(dstPath, content);
 }
@@ -152,7 +156,10 @@ import {${Name}Component} from './${name}.component';
   selector: 'app-${name}-${id}',
   templateUrl: './${id}.html',
 })
-export class ${Name}${sid}Component extends ${Name}Component { }`;
+export class ${Name}${sid}Component extends ${Name}Component {
+  get ruleId() {return '${id}'; }
+}
+`;
   fs.writeFileSync(dstPath, content);
 }
 
@@ -231,4 +238,8 @@ function makeId(string) {
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function isRule(ruleId) {
+  return /[0-9]+/.test(ruleId);
 }
