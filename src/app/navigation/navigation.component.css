@@ -8,9 +8,11 @@
 .mat-list-base .mat-list-item {
   font-size: 1rem;
   height: 32px;
+  font-weight: bolder;
 }
 .mat-list-base .mat-list-item.ss {
   font-size: 0.9rem;
+  font-weight: normal;
 }
 .mat-list-item.ss {
   margin-left: 1rem;
