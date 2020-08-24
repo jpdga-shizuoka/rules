@@ -99,7 +99,11 @@ function makeToc(ruleId, content) {
 }
 
 function makeHtml(ruleId, html) {
-  const content =`<div class="app-rule" id="app-${ruleId}">
+  let content ='<div class="app-rule" id="app-${ruleId}">';
+  if (isRule(ruleId)) {
+    content +='<app-pull-to-jump></app-pull-to-jump>';
+  }
+  content += `
 ${html}</div>`;
   fs.writeFileSync(dstPath + ruleId + '.html', content);
 }
@@ -111,7 +115,10 @@ import {RuleComponent} from './rule.component';
   selector: 'app-rule${ruleId}',
   templateUrl: './${ruleId}.html',
 })
-export class Rule${ruleId}Component extends RuleComponent { }`;
+export class Rule${ruleId}Component extends RuleComponent {
+  get ruleId() {return '${ruleId}'; }
+}
+`;
   fs.writeFileSync(dstPath + 'rule' + ruleId + '.component.ts', content);
 }
 
@@ -177,4 +184,8 @@ function render_footnote_ref(tokens, idx, options, env, slf) {
   }
 
   return '<sup class="footnote-ref"><a routerLink="." fragment="fn' + id + '" id="fnref' + refid + '">' + caption + '</a></sup>';
+}
+
+function isRule(ruleId) {
+  return /[0-9]+/.test(ruleId);
 }
