@@ -6,6 +6,7 @@
 
 * [競技規則](800)
 * [用語の定義](appendixe)
+* [Q&A](qa-index)
 * [規則違反の分類](penalties)
 * [障害物の分類](obstacles)
 * [救済の分類](reliefs)
