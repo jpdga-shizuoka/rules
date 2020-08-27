@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 import { RulePrefaceComponent } from './rules/rulepreface.component';
+import { RuleIndexComponent } from './rules/ruleindex.component';
 import { Rule800Component } from './rules/rule800.component';
 import { Rule801Component } from './rules/rule801.component';
 import { Rule80101Component } from './rules/rule80101.component';
@@ -94,6 +95,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     AppComponent,
     NavigationComponent,
     RulePrefaceComponent,
+    RuleIndexComponent,
     Rule800Component,
     Rule801Component,
     Rule80101Component,

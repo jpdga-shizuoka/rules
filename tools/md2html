@@ -4,6 +4,7 @@ const Path = require('path');
 
 const RULES_LIST = [
   'preface',
+  'index',
   '800',
   '801',
   '80101',
