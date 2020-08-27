@@ -42,15 +42,21 @@ span.spacer {
 #reliefs  img {
   width: 100%;
 }
+.app-qa,
+.app-misc,
 .app-rule {
   max-width: 500px;
   margin: 20px auto;
   padding: 20px 20px 50px;
 }
+.app-qa h1,
+.app-misc h1,
 .app-rule h1 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.app-misc h2,
+.app-qa h2,
 .app-rule h2 {
   font-size: 1rem;
   font-weight: bold;
@@ -62,6 +68,13 @@ span.spacer {
 .app-rule h3 + p {
   padding-left: 1rem;
 }
+.app-qa h3 {
+  padding-top: 0.3rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  background-color: #e8e8e8;
+}
 .app-rule > ol {
   list-style-type: upper-alpha;
   padding-left: 1.3rem;
@@ -72,22 +85,41 @@ span.spacer {
 .app-rule li > ol > li > ol {
   list-style-type: lower-alpha;
 }
+.app-qa > *,
+.app-misc > *,
 .app-rule > * {
   line-height: 1.5rem;
 }
+.app-qa a,
+.app-misc a,
 .app-rule a {
   text-decoration: none;
 }
+.app-qa a[href^="http"],
+.app-misc a[href^="http"],
 .app-rule a[href^="http"] {
   display: inline-block;
   background: url("assets/img/open_in_new-24px.svg") no-repeat right center;
   background-size: 1rem 1rem;
   padding-right: 1.1rem;
 }
+.app-qa img,
+.app-misc img,
 .app-rule img {
   width: 100%;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
+.app-qa p:nth-of-type(odd) {
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-style: italic;
+  background-color: #e8e8e8;
+}
+.app-qa p:nth-of-type(even) {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 hr.footnotes-sep {
   margin-top: 40px;
 }

@@ -5,7 +5,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { map, shareReplay } from 'rxjs/operators';
-import { Section, TOC, getSection, getNext, getPrev } from '../toc';
+import { Section, TOC, getSection, getNext, getPrev, isSubsection } from '../toc';
 
 const TITLE_PATTERN = /[\d\.]+ (\S+)/;
 
@@ -60,7 +60,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
   }
 
   isSubsection(id: string) {
-    return /\d{5}/.test(id);
+    return isSubsection(id);
   }
 
   onClickMenu(id: string) {

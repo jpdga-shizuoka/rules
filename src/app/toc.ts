@@ -1,4 +1,8 @@
-import TOC from '../assets/rules/toc.json';
+import TOC_RULES from '../assets/toc/rules.json';
+import TOC_QAS from '../assets/toc/qas.json';
+import TOC_MISC from '../assets/toc/miscs.json';
+
+const TOC = TOC_RULES.concat(TOC_QAS.concat(TOC_MISC));
 export { TOC };
 
 export interface Section {
@@ -26,4 +30,9 @@ export function getPrev(id: string): Section|undefined {
   }
   index -= 1;
   return index < 0 ? undefined : TOC[index];
+}
+
+export function isSubsection(id: string) {
+  return /\d{5}/.test(id)
+  || (id !== 'qa-index') && /^qa-/.test(id);
 }
