@@ -68,6 +68,12 @@ span.spacer {
 .app-rule h3 + p {
   padding-left: 1rem;
 }
+.app-rule h5 {
+  padding: 0.5rem 0 0.5rem 1.3rem;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #e8e8e8;
+}
 .app-qa h3 {
   padding-top: 0.3rem;
   margin-bottom: 0;
