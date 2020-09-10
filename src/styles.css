@@ -81,6 +81,9 @@ span.spacer {
   line-height: 1rem;
   background-color: #e8e8e8;
 }
+.app-qa > ul {
+  padding-left: 1.3rem;
+}
 .app-rule > ol {
   list-style-type: upper-alpha;
   padding-left: 1.3rem;
