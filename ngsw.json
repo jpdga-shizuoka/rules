@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1597306672204,
+  "timestamp": 1599743987277,
   "index": "https://jpdga-shizuoka.github.io/rules/index.html",
   "assetGroups": [
     {
@@ -15,6 +15,7 @@
         "https://jpdga-shizuoka.github.io/rules/assets/img/arrow_forward_ios-24px.svg",
         "https://jpdga-shizuoka.github.io/rules/assets/img/bascket-target.jpg",
         "https://jpdga-shizuoka.github.io/rules/assets/img/double-mandatory.png",
+        "https://jpdga-shizuoka.github.io/rules/assets/img/enforcement.png",
         "https://jpdga-shizuoka.github.io/rules/assets/img/kiyosato.jpg",
         "https://jpdga-shizuoka.github.io/rules/assets/img/kodomonokuni.jpg",
         "https://jpdga-shizuoka.github.io/rules/assets/img/lie.png",
@@ -39,14 +40,14 @@
         "https://jpdga-shizuoka.github.io/rules/assets/img/single-mandatory.png",
         "https://jpdga-shizuoka.github.io/rules/favicon.ico",
         "https://jpdga-shizuoka.github.io/rules/index.html",
-        "https://jpdga-shizuoka.github.io/rules/main-es2015.2ae185d44b13ac04ce0d.js",
-        "https://jpdga-shizuoka.github.io/rules/main-es5.2ae185d44b13ac04ce0d.js",
+        "https://jpdga-shizuoka.github.io/rules/main-es2015.a84ae301680deffc7230.js",
+        "https://jpdga-shizuoka.github.io/rules/main-es5.a84ae301680deffc7230.js",
         "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest",
         "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.95bb65e853d2781ac3bd.js",
         "https://jpdga-shizuoka.github.io/rules/polyfills-es5.341d48ffc88eaeae911d.js",
         "https://jpdga-shizuoka.github.io/rules/runtime-es2015.409e6590615fb48d139f.js",
         "https://jpdga-shizuoka.github.io/rules/runtime-es5.409e6590615fb48d139f.js",
-        "https://jpdga-shizuoka.github.io/rules/styles.d9413c30d1261689495b.css"
+        "https://jpdga-shizuoka.github.io/rules/styles.29d9c82ff1db780f1ef9.css"
       ],
       "patterns": []
     },
@@ -72,6 +73,9 @@
         "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-72x72.png",
         "https://jpdga-shizuoka.github.io/rules/assets/icons/icon-96x96.png",
         "https://jpdga-shizuoka.github.io/rules/assets/rules/toc.json",
+        "https://jpdga-shizuoka.github.io/rules/assets/toc/miscs.json",
+        "https://jpdga-shizuoka.github.io/rules/assets/toc/qas.json",
+        "https://jpdga-shizuoka.github.io/rules/assets/toc/rules.json",
         "https://jpdga-shizuoka.github.io/rules/open_in_new-24px.5d965d7917e76b6bba38.svg"
       ],
       "patterns": []
@@ -96,6 +100,7 @@
     "https://jpdga-shizuoka.github.io/rules/assets/img/arrow_forward_ios-24px.svg": "24f91e0eb1458895ad376dad8558cd913b74a021",
     "https://jpdga-shizuoka.github.io/rules/assets/img/bascket-target.jpg": "2153b41d7eafd9b369e7757588670149fe0ee619",
     "https://jpdga-shizuoka.github.io/rules/assets/img/double-mandatory.png": "47a4626d6bc2f8076546c48ce37e6baf5d7114f0",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/enforcement.png": "b61785a5e54f6541c32d03553257de095dc33527",
     "https://jpdga-shizuoka.github.io/rules/assets/img/kiyosato.jpg": "e2fc912b087f45ff153f8ddafc3d0411bad3a0f8",
     "https://jpdga-shizuoka.github.io/rules/assets/img/kodomonokuni.jpg": "06034a5036035bfe261daa2741ccbee6edd020ad",
     "https://jpdga-shizuoka.github.io/rules/assets/img/lie.png": "ee8f4e958027185ab02c30e412953d5c3bf9f811",
@@ -112,24 +117,27 @@
     "https://jpdga-shizuoka.github.io/rules/assets/img/optional-relief.png": "d132e3a2a848ac8eaf0e4c63f5d771c45ee4a5c8",
     "https://jpdga-shizuoka.github.io/rules/assets/img/relief-from-casual-area.png": "aa63637971001c3d51dc08f3cde40ccdb3bb5e4d",
     "https://jpdga-shizuoka.github.io/rules/assets/img/relief-from-ob.png": "70012152dab8b818a7acadc0e82cb1f56c1176c7",
-    "https://jpdga-shizuoka.github.io/rules/assets/img/reliefs.png": "410083b6f1c2d9123dc3dbaa85445c7fd85ab973",
+    "https://jpdga-shizuoka.github.io/rules/assets/img/reliefs.png": "0293286e6d021a4756a04b0a5b9ff3518738e68f",
     "https://jpdga-shizuoka.github.io/rules/assets/img/rulebook.png": "6a1a48e4cd96d930a2296b6fad639ead95df3248",
     "https://jpdga-shizuoka.github.io/rules/assets/img/scorecard1.png": "07f53d7b98a23b340b133770c2c3f117feb839b6",
     "https://jpdga-shizuoka.github.io/rules/assets/img/scorecard2.png": "d4fbff2b87cbb8329c404f42323d6c7047e189c2",
     "https://jpdga-shizuoka.github.io/rules/assets/img/shortcut.jpg": "13e9c360fa9094e22d433227fc874c7d594c840b",
     "https://jpdga-shizuoka.github.io/rules/assets/img/single-mandatory.png": "ffd47c0bc850fca26dff9b71b1fb33714cf71e8f",
     "https://jpdga-shizuoka.github.io/rules/assets/rules/toc.json": "da89a0cbad6f8427705a5fb56f34d3da26e0896a",
+    "https://jpdga-shizuoka.github.io/rules/assets/toc/miscs.json": "6c8698f7c02c406b39be0003842c01b5cae4c666",
+    "https://jpdga-shizuoka.github.io/rules/assets/toc/qas.json": "096e53346ca8be095e1160a7ef256bee5b081a94",
+    "https://jpdga-shizuoka.github.io/rules/assets/toc/rules.json": "6824bee6264576ceaf98676b447fb989d4cce1f4",
     "https://jpdga-shizuoka.github.io/rules/favicon.ico": "5905c76502579586d01c087dec8f3ce9c8bc1da3",
-    "https://jpdga-shizuoka.github.io/rules/index.html": "2af45901fdca70577ca6e0d876207a19632e523e",
-    "https://jpdga-shizuoka.github.io/rules/main-es2015.2ae185d44b13ac04ce0d.js": "b5d60253ea470683e4313bde744fd72a21eb2830",
-    "https://jpdga-shizuoka.github.io/rules/main-es5.2ae185d44b13ac04ce0d.js": "b6a336293ebe5e94079181a1e05bc6cec0529e88",
+    "https://jpdga-shizuoka.github.io/rules/index.html": "d1ccf7f073cc30198843617ffe491ed91a55ecd0",
+    "https://jpdga-shizuoka.github.io/rules/main-es2015.a84ae301680deffc7230.js": "523b10505d304527b0895605608fbc2bf982bc2f",
+    "https://jpdga-shizuoka.github.io/rules/main-es5.a84ae301680deffc7230.js": "65c23a0ec1fc64c80508a34b1fbb97a92bce5bdb",
     "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest": "71217d7825d7b5d8fbddba7761f6c5ed1026d48e",
     "https://jpdga-shizuoka.github.io/rules/open_in_new-24px.5d965d7917e76b6bba38.svg": "4659a31d0dec34789d2ed76afe728bac5d91db94",
     "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.95bb65e853d2781ac3bd.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "https://jpdga-shizuoka.github.io/rules/polyfills-es5.341d48ffc88eaeae911d.js": "ff14d90e08622190714660721edab5f43578829a",
     "https://jpdga-shizuoka.github.io/rules/runtime-es2015.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://jpdga-shizuoka.github.io/rules/runtime-es5.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://jpdga-shizuoka.github.io/rules/styles.d9413c30d1261689495b.css": "073eaec1ccad98b1a4a1c0c6cba026062ce4c82a"
+    "https://jpdga-shizuoka.github.io/rules/styles.29d9c82ff1db780f1ef9.css": "a7c63937c8431be595cc70092a34420a1e24a6e6"
   },
   "navigationUrls": [
     {
