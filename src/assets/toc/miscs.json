@@ -4,6 +4,10 @@
     "title": "規則違反の分類"
   },
   {
+    "id": "enforcement",
+    "title": "規則違反のながれ"
+  },
+  {
     "id": "obstacles",
     "title": "障害物の分類"
   },

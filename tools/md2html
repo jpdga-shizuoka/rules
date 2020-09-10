@@ -76,6 +76,7 @@ const QAS_LIST = [
   'equ',
 ];
 const MISC_LIST = [
+  'enforcement',
   'obstacles',
   'reliefs',
   'postface'

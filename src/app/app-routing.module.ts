@@ -74,6 +74,7 @@ import { AppendixEComponent } from './rules/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
+import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
@@ -151,6 +152,7 @@ const routes: Routes = [
   { path: 'obstacles', component: MiscObstaclesComponent},
   { path: 'reliefs', component: MiscReliefsComponent},
   { path: 'penalties', component: PenaltiesComponent},
+  { path: 'enforcement', component: MiscEnforcementComponent},
   { path: 'postface', component: MiscPostfaceComponent},
 ];
 

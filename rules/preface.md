@@ -8,6 +8,7 @@
 * [用語の定義](appendixe)
 * [Q&A](qa-index)
 * [規則違反の分類](penalties)
+* [規則違反のながれ](enforcement)
 * [障害物の分類](obstacles)
 * [救済の分類](reliefs)
 * [あとがき](postface)
