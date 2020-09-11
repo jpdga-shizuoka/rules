@@ -140,7 +140,7 @@ function makeHtml(id, html, srcPath) {
   const dstPath = Path.join(DST, srcPath, id + '.html');
   let content =`<div class="app-${name}" id="app-${id}">`;
   if (isRule(id) || isQa(id)) {
-    // content +='<app-pull-to-jump></app-pull-to-jump>';
+    content +='<app-pull-to-jump></app-pull-to-jump>';
   }
   content += `
 ${html}</div>`;
