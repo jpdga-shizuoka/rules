@@ -26,7 +26,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
     this._section = section;
     const title = section.title.match(TITLE_PATTERN);
     if (this.section.id === 'preface') {
-      this.title = 'ディスクゴルフ競技規則';
+      this.title = 'ディスクゴルフ規則';
     } else {
       this.title = title != null ? title[1] : section.title;
     }
