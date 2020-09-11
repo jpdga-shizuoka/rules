@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+html {
+  font-size: 17px;
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 :host {
@@ -180,6 +183,9 @@ ul.app-index span + span {
   }
 }
 @media screen and (max-width: 320px) {
+  html {
+    font-size: 16px;
+  }
   .app-rule {
     padding-left: 10px;
     padding-right: 10px;
