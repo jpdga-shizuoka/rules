@@ -82,6 +82,7 @@ import { QaIntComponent } from './qas/qaint.component';
 import { QaMisComponent } from './qas/qamis.component';
 import { QaCouComponent } from './qas/qacou.component';
 import { QaEquComponent } from './qas/qaequ.component';
+import { QaCmpComponent } from './qas/qacmp.component';
 import { PenaltiesComponent } from './rules/penalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
@@ -165,6 +166,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     QaMisComponent,
     QaCouComponent,
     QaEquComponent,
+    QaCmpComponent,
     PenaltiesComponent,
     MiscObstaclesComponent,
     MiscReliefsComponent,

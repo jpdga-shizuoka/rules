@@ -70,6 +70,7 @@ import { QaIntComponent } from './qas/qaint.component';
 import { QaMisComponent } from './qas/qamis.component';
 import { QaCouComponent } from './qas/qacou.component';
 import { QaEquComponent } from './qas/qaequ.component';
+import { QaCmpComponent } from './qas/qacmp.component';
 import { AppendixEComponent } from './rules/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
@@ -148,6 +149,7 @@ const routes: Routes = [
   { path: 'qa-mis', component: QaMisComponent},
   { path: 'qa-cou', component: QaCouComponent},
   { path: 'qa-equ', component: QaEquComponent},
+  { path: 'qa-cmp', component: QaCmpComponent},
   { path: 'appendixe', component: AppendixEComponent},
   { path: 'obstacles', component: MiscObstaclesComponent},
   { path: 'reliefs', component: MiscReliefsComponent},

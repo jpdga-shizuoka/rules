@@ -74,6 +74,7 @@ const QAS_LIST = [
   'mis',
   'cou',
   'equ',
+  'cmp',
 ];
 const MISC_LIST = [
   'enforcement',
