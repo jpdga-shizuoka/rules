@@ -23,16 +23,22 @@
 マンダトリーのどちら側を通過するか確認します.
 ![シングルマンダトリー失敗](https://www.pdga.com/files/rules/qa/single-missed.png)
 シングルマンダトリー失敗例
+([`www.pdga.com`より引用](https://www.pdga.com/files/rules/qa/single-missed.png))
 ![ダブルマンダトリー失敗](https://www.pdga.com/files/rules/qa/double-missed.png)
 ダブルマンダトリー失敗例
+([`www.pdga.com`より引用](https://www.pdga.com/files/rules/qa/double-missed.png))
 ![シングルマンダトリーOK](https://www.pdga.com/files/rules/qa/single-okay.png)
 シングルマンダトリーOKの例
+([`www.pdga.com`より引用](https://www.pdga.com/files/rules/qa/single-okay.png))
 ![ダブルマンダトリーOK](https://www.pdga.com/files/rules/qa/double-okay.png)
 ダブルマンダトリーOKの例
+([`www.pdga.com`より引用](https://www.pdga.com/files/rules/qa/double-okay.png))
 ![シングルマンダトリー2投OK](https://www.pdga.com/files/rules/qa/single-over-back.png)
 シングルマンダトリー2投: aからbを経てcまで伸びる糸をピンと引っ張ると成功側を通るので成功
+([`www.pdga.com`より引用](https://www.pdga.com/files/rules/qa/single-over-back.png))
 ![ダブルマンダトリー2投OK](https://www.pdga.com/files/rules/qa/double-over-back.png)
 ダブルマンダトリー2投: a(A)からb(B)を経てc(C)まで伸びる糸をピンと引っ張ると成功側を通るので成功
+([`www.pdga.com`より引用](https://www.pdga.com/files/rules/qa/double-over-back.png))
 
 ### QA-MAN-2
 私はマンダトリーを失敗しましたが,
