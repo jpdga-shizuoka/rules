@@ -121,15 +121,16 @@ span.spacer {
   width: 100%;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
-.app-qa p:nth-of-type(odd) {
+.app-qa h3 > p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.app-qa h3 + p {
+  margin-top: 0;
   margin-bottom: 0;
   font-weight: bolder;
   font-style: italic;
   background-color: #e8e8e8;
-}
-.app-qa p:nth-of-type(even) {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 hr.footnotes-sep {
