@@ -5,7 +5,7 @@
   },
   {
     "id": "qa-index",
-    "title": "Q&A"
+    "title": "規則Q&A"
   },
   {
     "id": "qa-app",
@@ -102,5 +102,9 @@
   {
     "id": "qa-equ",
     "title": "道具"
+  },
+  {
+    "id": "qa-cmp",
+    "title": "競技マニュアル"
   }
 ]
