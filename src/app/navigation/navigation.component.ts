@@ -5,7 +5,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { map, shareReplay } from 'rxjs/operators';
-import { Section, TOC, getSection, getNext, getPrev } from '../toc';
+import { Section, TOC, getSection, getNext, getPrev, isSubsection } from '../toc';
 
 const TITLE_PATTERN = /[\d\.]+ (\S+)/;
 
@@ -26,7 +26,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
     this._section = section;
     const title = section.title.match(TITLE_PATTERN);
     if (this.section.id === 'preface') {
-      this.title = 'ディスクゴルフ競技規則';
+      this.title = 'ディスクゴルフ規則';
     } else {
       this.title = title != null ? title[1] : section.title;
     }
@@ -60,7 +60,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
   }
 
   isSubsection(id: string) {
-    return /\d{5}/.test(id);
+    return isSubsection(id);
   }
 
   onClickMenu(id: string) {

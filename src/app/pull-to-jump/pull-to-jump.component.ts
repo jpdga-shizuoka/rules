@@ -35,7 +35,7 @@ export class PullToJumpComponent implements OnInit {
 
   constructor(
     private gotoPdga: GotoPdgaService,
-    elementRef: ElementRef,
+    private elementRef: ElementRef,
   ) {
     const parent = elementRef.nativeElement.parentElement;
     this.touchstart$ = fromEvent<TouchEvent>(parent, 'touchstart');
@@ -85,7 +85,20 @@ export class PullToJumpComponent implements OnInit {
         }),
         filter(p => p >= this.pullDistance)
       )
-      .subscribe(() => this.gotoPdga.notify());
+      .subscribe(() => {
+        if (this.isAvailable) {
+          this.gotoPdga.notify();
+        }
+      });
+  }
+
+  //
+  //  check if goto-pdga is available at this morment
+  //
+  get isAvailable() {
+    const parent = this.elementRef.nativeElement.parentElement;
+    const depth = parent.getBoundingClientRect().top;
+    return depth > 0;
   }
 
   private tweenObservable(start, end, time) {

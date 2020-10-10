@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { RuleprefaceComponent } from './rules/rulepreface.component';
+import { RulePrefaceComponent } from './rules/rulepreface.component';
+import { RuleIndexComponent } from './rules/ruleindex.component';
 import { Rule800Component } from './rules/rule800.component';
 import { Rule801Component } from './rules/rule801.component';
 import { Rule80101Component } from './rules/rule80101.component';
@@ -44,15 +45,43 @@ import { Rule812Component } from './rules/rule812.component';
 import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
+import { QaIndexComponent } from './qas/qaindex.component';
+import { QaAppComponent } from './qas/qaapp.component';
+import { QaThrComponent } from './qas/qathr.component';
+import { QaTimComponent } from './qas/qatim.component';
+import { QaTeeComponent } from './qas/qatee.component';
+import { QaLieComponent } from './qas/qalie.component';
+import { QaMarComponent } from './qas/qamar.component';
+import { QaStaComponent } from './qas/qasta.component';
+import { QaObsComponent } from './qas/qaobs.component';
+import { QaManComponent } from './qas/qaman.component';
+import { QaPosComponent } from './qas/qapos.component';
+import { Qa2mComponent } from './qas/qa2m.component';
+import { QaLosComponent } from './qas/qalos.component';
+import { QaPutComponent } from './qas/qaput.component';
+import { QaObComponent } from './qas/qaob.component';
+import { QaCasComponent } from './qas/qacas.component';
+import { QaComComponent } from './qas/qacom.component';
+import { QaScoComponent } from './qas/qasco.component';
+import { QaAbaComponent } from './qas/qaaba.component';
+import { QaProComponent } from './qas/qapro.component';
+import { QaPraComponent } from './qas/qapra.component';
+import { QaIntComponent } from './qas/qaint.component';
+import { QaMisComponent } from './qas/qamis.component';
+import { QaCouComponent } from './qas/qacou.component';
+import { QaEquComponent } from './qas/qaequ.component';
+import { QaCmpComponent } from './qas/qacmp.component';
 import { AppendixEComponent } from './rules/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
-import { RuleobstaclesComponent } from './rules/ruleobstacles.component';
-import { RulereliefsComponent } from './rules/rulereliefs.component';
-import { RulepostfaceComponent } from './rules/rulepostface.component';
+import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
+import { MiscReliefsComponent } from './miscs/miscreliefs.component';
+import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
+import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'preface'},
-  { path: 'preface', component: RuleprefaceComponent},
+  { path: 'preface', component: RulePrefaceComponent},
+  { path: 'index', component: RuleIndexComponent},
   { path: '800', component: Rule800Component},
   { path: '801', component: Rule801Component},
   { path: '80101', component: Rule80101Component},
@@ -95,11 +124,38 @@ const routes: Routes = [
   { path: '813', component: Rule813Component},
   { path: '81301', component: Rule81301Component},
   { path: '81302', component: Rule81302Component},
+  { path: 'qa-index', component: QaIndexComponent},
+  { path: 'qa-app', component: QaAppComponent},
+  { path: 'qa-thr', component: QaThrComponent},
+  { path: 'qa-tim', component: QaTimComponent},
+  { path: 'qa-tee', component: QaTeeComponent},
+  { path: 'qa-lie', component: QaLieComponent},
+  { path: 'qa-mar', component: QaMarComponent},
+  { path: 'qa-sta', component: QaStaComponent},
+  { path: 'qa-obs', component: QaObsComponent},
+  { path: 'qa-man', component: QaManComponent},
+  { path: 'qa-pos', component: QaPosComponent},
+  { path: 'qa-2m', component: Qa2mComponent},
+  { path: 'qa-los', component: QaLosComponent},
+  { path: 'qa-put', component: QaPutComponent},
+  { path: 'qa-ob', component: QaObComponent},
+  { path: 'qa-cas', component: QaCasComponent},
+  { path: 'qa-com', component: QaComComponent},
+  { path: 'qa-sco', component: QaScoComponent},
+  { path: 'qa-aba', component: QaAbaComponent},
+  { path: 'qa-pro', component: QaProComponent},
+  { path: 'qa-pra', component: QaPraComponent},
+  { path: 'qa-int', component: QaIntComponent},
+  { path: 'qa-mis', component: QaMisComponent},
+  { path: 'qa-cou', component: QaCouComponent},
+  { path: 'qa-equ', component: QaEquComponent},
+  { path: 'qa-cmp', component: QaCmpComponent},
   { path: 'appendixe', component: AppendixEComponent},
-  { path: 'obstacles', component: RuleobstaclesComponent},
-  { path: 'reliefs', component: RulereliefsComponent},
+  { path: 'obstacles', component: MiscObstaclesComponent},
+  { path: 'reliefs', component: MiscReliefsComponent},
   { path: 'penalties', component: PenaltiesComponent},
-  { path: 'postface', component: RulepostfaceComponent},
+  { path: 'enforcement', component: MiscEnforcementComponent},
+  { path: 'postface', component: MiscPostfaceComponent},
 ];
 
 @NgModule({

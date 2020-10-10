@@ -12,7 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
-import { RuleprefaceComponent } from './rules/rulepreface.component';
+import { RulePrefaceComponent } from './rules/rulepreface.component';
+import { RuleIndexComponent } from './rules/ruleindex.component';
 import { Rule800Component } from './rules/rule800.component';
 import { Rule801Component } from './rules/rule801.component';
 import { Rule80101Component } from './rules/rule80101.component';
@@ -56,10 +57,37 @@ import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
 import { AppendixEComponent } from './rules/appendix-e.component';
+import { QaIndexComponent } from './qas/qaindex.component';
+import { QaAppComponent } from './qas/qaapp.component';
+import { QaThrComponent } from './qas/qathr.component';
+import { QaTimComponent } from './qas/qatim.component';
+import { QaTeeComponent } from './qas/qatee.component';
+import { QaLieComponent } from './qas/qalie.component';
+import { QaMarComponent } from './qas/qamar.component';
+import { QaStaComponent } from './qas/qasta.component';
+import { QaObsComponent } from './qas/qaobs.component';
+import { QaManComponent } from './qas/qaman.component';
+import { QaPosComponent } from './qas/qapos.component';
+import { Qa2mComponent } from './qas/qa2m.component';
+import { QaLosComponent } from './qas/qalos.component';
+import { QaPutComponent } from './qas/qaput.component';
+import { QaObComponent } from './qas/qaob.component';
+import { QaCasComponent } from './qas/qacas.component';
+import { QaComComponent } from './qas/qacom.component';
+import { QaScoComponent } from './qas/qasco.component';
+import { QaAbaComponent } from './qas/qaaba.component';
+import { QaProComponent } from './qas/qapro.component';
+import { QaPraComponent } from './qas/qapra.component';
+import { QaIntComponent } from './qas/qaint.component';
+import { QaMisComponent } from './qas/qamis.component';
+import { QaCouComponent } from './qas/qacou.component';
+import { QaEquComponent } from './qas/qaequ.component';
+import { QaCmpComponent } from './qas/qacmp.component';
 import { PenaltiesComponent } from './rules/penalties.component';
-import { RuleobstaclesComponent } from './rules/ruleobstacles.component';
-import { RulereliefsComponent } from './rules/rulereliefs.component';
-import { RulepostfaceComponent } from './rules/rulepostface.component';
+import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
+import { MiscReliefsComponent } from './miscs/miscreliefs.component';
+import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
+import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
@@ -68,7 +96,8 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
   declarations: [
     AppComponent,
     NavigationComponent,
-    RuleprefaceComponent,
+    RulePrefaceComponent,
+    RuleIndexComponent,
     Rule800Component,
     Rule801Component,
     Rule80101Component,
@@ -112,10 +141,37 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     Rule81301Component,
     Rule81302Component,
     AppendixEComponent,
+    QaIndexComponent,
+    QaAppComponent,
+    QaThrComponent,
+    QaTimComponent,
+    QaTeeComponent,
+    QaLieComponent,
+    QaMarComponent,
+    QaStaComponent,
+    QaObsComponent,
+    QaManComponent,
+    QaPosComponent,
+    Qa2mComponent,
+    QaLosComponent,
+    QaPutComponent,
+    QaObComponent,
+    QaCasComponent,
+    QaComComponent,
+    QaScoComponent,
+    QaAbaComponent,
+    QaProComponent,
+    QaPraComponent,
+    QaIntComponent,
+    QaMisComponent,
+    QaCouComponent,
+    QaEquComponent,
+    QaCmpComponent,
     PenaltiesComponent,
-    RuleobstaclesComponent,
-    RulereliefsComponent,
-    RulepostfaceComponent,
+    MiscObstaclesComponent,
+    MiscReliefsComponent,
+    MiscEnforcementComponent,
+    MiscPostfaceComponent,
     PullToJumpComponent,
   ],
   imports: [
