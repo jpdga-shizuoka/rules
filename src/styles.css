@@ -55,14 +55,22 @@ span.spacer {
 .app-qa h1,
 .app-misc h1,
 .app-rule h1 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 .app-misc h2,
 .app-qa h2,
 .app-rule h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
+}
+.app-misc p,
+.app-qa p,
+.app-rule p,
+.app-misc li,
+.app-qa li,
+.app-rule li {
+  line-height: 1.75em;
 }
 .app-rule h3 {
   font-size: 1rem;
@@ -102,7 +110,7 @@ span.spacer {
 .app-qa > *,
 .app-misc > *,
 .app-rule > * {
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 }
 .app-qa a,
 .app-misc a,
