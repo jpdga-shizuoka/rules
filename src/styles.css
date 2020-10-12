@@ -81,7 +81,7 @@ span.spacer {
   padding-left: 1rem;
 }
 .app-rule h5 {
-  padding: 0.5rem 0 0.5rem 1.3rem;
+  padding: 0.5rem 0 0.5rem 1.6rem;
   font-size: 1rem;
   font-weight: bold;
   font-style: italic;
@@ -95,14 +95,14 @@ span.spacer {
   background-color: #e8e8e8;
 }
 .app-qa > ul {
-  padding-left: 1.3rem;
+  padding-left: 1.6rem;
 }
 .app-rule > ol {
   list-style-type: upper-alpha;
-  padding-left: 1.3rem;
+  padding-left: 1.6rem;
 }
 .app-rule li > ol {
-  padding-left: 1.3rem;
+  padding-left: 1.6rem;
 }
 .app-rule li > ol > li > ol {
   list-style-type: lower-alpha;
