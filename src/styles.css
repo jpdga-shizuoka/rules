@@ -94,6 +94,7 @@ span.spacer {
   line-height: 1rem;
   background-color: #e8e8e8;
 }
+.app-qa > ol,
 .app-qa > ul {
   padding-left: 1.6rem;
 }
