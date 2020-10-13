@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
-html {
-  font-size: 17px;
+html, body {
+  height: 100%;
+  font-size: 16px;
 }
-html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -61,10 +61,19 @@ span.spacer {
 .app-misc h2,
 .app-qa h2,
 .app-rule h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
+.app-misc p,
+.app-qa p,
+.app-rule p,
+.app-misc li,
+.app-qa li,
+.app-rule li {
+  line-height: 1.75em;
+}
 .app-rule h3 {
+  font-size: 1rem;
   margin-left: 1rem;
   font-weight: bold;
 }
@@ -72,7 +81,8 @@ span.spacer {
   padding-left: 1rem;
 }
 .app-rule h5 {
-  padding: 0.5rem 0 0.5rem 1.3rem;
+  padding: 0.5rem 0 0.5rem 1.6rem;
+  font-size: 1rem;
   font-weight: bold;
   font-style: italic;
   background-color: #e8e8e8;
@@ -84,15 +94,16 @@ span.spacer {
   line-height: 1rem;
   background-color: #e8e8e8;
 }
+.app-qa > ol,
 .app-qa > ul {
-  padding-left: 1.3rem;
+  padding-left: 1.6rem;
 }
 .app-rule > ol {
   list-style-type: upper-alpha;
-  padding-left: 1.3rem;
+  padding-left: 1.6rem;
 }
 .app-rule li > ol {
-  padding-left: 1.3rem;
+  padding-left: 1.6rem;
 }
 .app-rule li > ol > li > ol {
   list-style-type: lower-alpha;
@@ -100,7 +111,7 @@ span.spacer {
 .app-qa > *,
 .app-misc > *,
 .app-rule > * {
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 }
 .app-qa a,
 .app-misc a,
@@ -121,8 +132,8 @@ span.spacer {
   width: 100%;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
-.app-qa h3 > p {
-  margin-top: 0.5rem;
+.app-qa p {
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
 .app-qa h3 + p {
@@ -166,6 +177,9 @@ ul.app-index span + span {
   background: #fafafa;
 }
 @media screen and (max-width: 414px) {
+  html, body {
+    font-size: 16px;
+  }
   .app-rule {
     padding-left: 15px;
     padding-right: 15px;
@@ -175,6 +189,9 @@ ul.app-index span + span {
   }
 }
 @media screen and (max-width: 375px) {
+  html, body {
+    font-size: 15px;
+  }
   .app-rule {
     padding-left: 15px;
     padding-right: 15px;
@@ -184,8 +201,8 @@ ul.app-index span + span {
   }
 }
 @media screen and (max-width: 320px) {
-  html {
-    font-size: 16px;
+  html, body {
+    font-size: 14px;
   }
   .app-rule {
     padding-left: 10px;
