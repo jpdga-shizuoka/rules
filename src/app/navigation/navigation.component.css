@@ -36,6 +36,11 @@
   z-index: 1;
   bottom: 15px;
 }
+a.nostyle {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: auto;
+}
 #prev {
   left: 15px;
 }

@@ -36,3 +36,22 @@ export function isSubsection(id: string) {
   return /\d{5}/.test(id)
   || (id !== 'qa-index') && /^qa-/.test(id);
 }
+
+export function getUperLink(id: string): string | null {
+  if (id === 'preface') {
+    return null;  // no upper link
+  }
+  if (/^[0-9]{3}$/.test(id)) {
+    return 'index';
+  }
+  if (/^[0-9]{5}$/.test(id)) {
+    return id.substring(0, 3);
+  }
+  if (id === 'qa-index') {
+    return 'preface';
+  }
+  if (/^qa\-.+$/.test(id)) {
+    return 'qa-index';
+  }
+  return 'preface';
+}
