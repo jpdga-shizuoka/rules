@@ -3,6 +3,7 @@
 html, body {
   height: 100%;
   font-size: 16px;
+  overscroll-behavior-y: contain;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 :host {
