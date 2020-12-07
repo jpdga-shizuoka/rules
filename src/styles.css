@@ -3,6 +3,7 @@
 html, body {
   height: 100%;
   font-size: 16px;
+  overscroll-behavior-y: contain;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 :host {
@@ -148,7 +149,7 @@ hr.footnotes-sep {
   margin-top: 40px;
 }
 .footnote-item {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 ul.app-index {
   max-width: 40rem;

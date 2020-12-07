@@ -23,10 +23,17 @@
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">
-          <img src="assets/img/menu-24px.svg" alt="menu">
+          <img src="assets/img/{{menuIcon}}-24px.svg" alt="menu">
         </mat-icon>
       </button>
-      <span>{{title}}</span>
+      <span>
+        <div *ngIf="upperLink; else elseBlock">
+          <a routerLink="{{upperLink}}" class="nostyle">{{title}}</a>
+        </div>
+        <ng-template #elseBlock>
+          {{title}}
+        </ng-template>
+      </span>
       <span class="spacer"></span>
       <span>
         <a href="https://github.com/jpdga-shizuoka/rules" title="GitHub" aria-label="Rule book on github">

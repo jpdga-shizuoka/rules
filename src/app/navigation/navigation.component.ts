@@ -5,7 +5,9 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { map, shareReplay } from 'rxjs/operators';
-import { Section, TOC, getSection, getNext, getPrev, isSubsection } from '../toc';
+import {
+  Section, TOC, getSection, getNext, getPrev, isSubsection, getUperLink
+} from '../toc';
 
 const TITLE_PATTERN = /[\d\.]+ (\S+)/;
 
@@ -17,20 +19,23 @@ const TITLE_PATTERN = /[\d\.]+ (\S+)/;
 export class NavigationComponent implements OnInit, OnDestroy {
   @ViewChild('drawer') drawer: MatSidenav;
   readonly toc = TOC;
-  private _section: Section;
-  get section() {return this._section; }
+  private sec: Section;
+  get section() {return this.sec; }
   set section(section: Section) {
     if (!section) {
       return;
     }
-    this._section = section;
+    this.sec = section;
     const title = section.title.match(TITLE_PATTERN);
     if (this.section.id === 'preface') {
       this.title = 'ディスクゴルフ規則';
     } else {
       this.title = title != null ? title[1] : section.title;
     }
+    this.upperLink = getUperLink(section.id);
   }
+  get menuIcon() {return this.upperLink ? 'menu_open' : 'menu'; }
+  upperLink: string | null = null;
   title: string;
   isHandset: boolean;
   ssHandset: Subscription;

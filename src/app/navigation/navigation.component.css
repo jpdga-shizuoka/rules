@@ -31,10 +31,18 @@
   top: 0;
   z-index: 1;
 }
+mat-toolbar span:nth-child(4) {
+  height: 24px;
+}
 .app-nav-button {
   position: absolute;
   z-index: 1;
   bottom: 15px;
+}
+a.nostyle {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: auto;
 }
 #prev {
   left: 15px;
