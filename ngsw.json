@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1607486004048,
+  "timestamp": 1611482142408,
   "index": "https://jpdga-shizuoka.github.io/rules/index.html",
   "assetGroups": [
     {
@@ -42,14 +42,14 @@
         "https://jpdga-shizuoka.github.io/rules/assets/img/single-mandatory.png",
         "https://jpdga-shizuoka.github.io/rules/favicon.ico",
         "https://jpdga-shizuoka.github.io/rules/index.html",
-        "https://jpdga-shizuoka.github.io/rules/main-es2015.08b88d5f323b15c4ff79.js",
-        "https://jpdga-shizuoka.github.io/rules/main-es5.08b88d5f323b15c4ff79.js",
+        "https://jpdga-shizuoka.github.io/rules/main-es2015.300c4309daf5556b6ab2.js",
+        "https://jpdga-shizuoka.github.io/rules/main-es5.300c4309daf5556b6ab2.js",
         "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest",
-        "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.6022d6f28e0500e60d30.js",
-        "https://jpdga-shizuoka.github.io/rules/polyfills-es5.6e1055b712d0b250b19e.js",
-        "https://jpdga-shizuoka.github.io/rules/runtime-es2015.66c79b9d36e7169e27b0.js",
-        "https://jpdga-shizuoka.github.io/rules/runtime-es5.66c79b9d36e7169e27b0.js",
-        "https://jpdga-shizuoka.github.io/rules/styles.ce116c288445c275df6b.css"
+        "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.c131ee7c37c2ac42bd19.js",
+        "https://jpdga-shizuoka.github.io/rules/polyfills-es5.5895610738345f8f991d.js",
+        "https://jpdga-shizuoka.github.io/rules/runtime-es2015.a4dadbc03350107420a4.js",
+        "https://jpdga-shizuoka.github.io/rules/runtime-es5.a4dadbc03350107420a4.js",
+        "https://jpdga-shizuoka.github.io/rules/styles.53ff65d0dede133f7c6c.css"
       ],
       "patterns": []
     },
@@ -132,16 +132,16 @@
     "https://jpdga-shizuoka.github.io/rules/assets/toc/qas.json": "e63388ea3d8a35fcc895db6cc32cf53680509e22",
     "https://jpdga-shizuoka.github.io/rules/assets/toc/rules.json": "6824bee6264576ceaf98676b447fb989d4cce1f4",
     "https://jpdga-shizuoka.github.io/rules/favicon.ico": "5905c76502579586d01c087dec8f3ce9c8bc1da3",
-    "https://jpdga-shizuoka.github.io/rules/index.html": "7edc8c06e662994508a7eea08a370ce2cdee8a30",
-    "https://jpdga-shizuoka.github.io/rules/main-es2015.08b88d5f323b15c4ff79.js": "ad9b58f9e673291f982c3330bafb4e2e77be3832",
-    "https://jpdga-shizuoka.github.io/rules/main-es5.08b88d5f323b15c4ff79.js": "797341317958e45eb0255aef9170999d494e0a34",
+    "https://jpdga-shizuoka.github.io/rules/index.html": "f60aea312a3291c5caf8963a3dc69d3f665e83fc",
+    "https://jpdga-shizuoka.github.io/rules/main-es2015.300c4309daf5556b6ab2.js": "df3d40260d2f572452a784c36d4dc4e09500303e",
+    "https://jpdga-shizuoka.github.io/rules/main-es5.300c4309daf5556b6ab2.js": "6d56c34ca767af6e21d0a79766a31bfaa4820679",
     "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest": "71217d7825d7b5d8fbddba7761f6c5ed1026d48e",
     "https://jpdga-shizuoka.github.io/rules/open_in_new-24px.5d965d7917e76b6bba38.svg": "4659a31d0dec34789d2ed76afe728bac5d91db94",
-    "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.6022d6f28e0500e60d30.js": "cad3129c71535baaab25ac06d8429734959b0b3f",
-    "https://jpdga-shizuoka.github.io/rules/polyfills-es5.6e1055b712d0b250b19e.js": "ddab36708d3bfe0102402cd9e170eb47c267b9f8",
-    "https://jpdga-shizuoka.github.io/rules/runtime-es2015.66c79b9d36e7169e27b0.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://jpdga-shizuoka.github.io/rules/runtime-es5.66c79b9d36e7169e27b0.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://jpdga-shizuoka.github.io/rules/styles.ce116c288445c275df6b.css": "772b759cb2600de0aabba7ef0b1b535871aab36f"
+    "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.c131ee7c37c2ac42bd19.js": "65c537467564ee0ba776b629f71ed3413413a7cb",
+    "https://jpdga-shizuoka.github.io/rules/polyfills-es5.5895610738345f8f991d.js": "582964284adadbda014f3a6643607bd3f13f2e6c",
+    "https://jpdga-shizuoka.github.io/rules/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://jpdga-shizuoka.github.io/rules/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://jpdga-shizuoka.github.io/rules/styles.53ff65d0dede133f7c6c.css": "763a8ed0be6c2eeedebfb8bc92616d13e7e98ce4"
   },
   "navigationUrls": [
     {
@@ -160,5 +160,6 @@
       "positive": false,
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
-  ]
+  ],
+  "navigationRequestStrategy": "performance"
 }
