@@ -79,8 +79,8 @@ import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'preface'},
-  { path: 'preface', component: RulePrefaceComponent},
+  { path: '', component: RulePrefaceComponent},
+  { path: 'preface', pathMatch: 'full', redirectTo: ''},
   { path: 'index', component: RuleIndexComponent},
   { path: '800', component: Rule800Component},
   { path: '801', component: Rule801Component},
