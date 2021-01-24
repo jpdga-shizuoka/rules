@@ -144,7 +144,14 @@ span.spacer {
   font-style: italic;
   background-color: #e8e8e8;
 }
-
+s {
+  text-decoration-thickness: 0.2rem;
+  color: #555;
+}
+ins {
+  background-color: #d4fcbc;
+  text-decoration: none;
+}
 hr.footnotes-sep {
   margin-top: 40px;
 }
