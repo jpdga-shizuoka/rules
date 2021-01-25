@@ -16,6 +16,10 @@
     "title": "救済の分類"
   },
   {
+    "id": "obhazardinbounds",
+    "title": "OB,ハザード,インバウンズ判定"
+  },
+  {
     "id": "postface",
     "title": "あとがき"
   }
