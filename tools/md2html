@@ -80,6 +80,7 @@ const MISC_LIST = [
   'enforcement',
   'obstacles',
   'reliefs',
+  'obhazardinbounds',
   'postface'
 ];
 const TOC2 = [
