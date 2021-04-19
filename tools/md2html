@@ -80,6 +80,7 @@ const MISC_LIST = [
   'enforcement',
   'obstacles',
   'reliefs',
+  'obhazardinbounds',
   'postface'
 ];
 const TOC2 = [
@@ -98,6 +99,8 @@ const header = /^\#+ ([\d\.]+ \S+)/m;
 const fs = require('fs');
 const md = require('markdown-it')({replaceLink: replaceLink})
 .use(require('markdown-it-footnote'))
+.use(require('markdown-it-ins'))
+.use(require('markdown-it-strikethrough-alt'))
 .use(replaceLinkPlugIn);
 let toc = [];
 md.renderer.rules.footnote_ref = render_footnote_ref;

@@ -1,9 +1,10 @@
 # あとがき
 
 本ルールブックは,
-PDGAウェブサイトに公開された2019年1月17日版[Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)を元にしています.
-またQ&Aは,
-2019年5月28日版[Rules Questions and Answers](https://www.pdga.com/rules/official-rules-disc-golf/questions-and-answers)を参照しています.
+以下の公式規則を参照しています;
+- 2019年1月17日版[PDGA公式規則](https://www.pdga.com/rules/official-rules-disc-golf),
+- 2021年1月5日版[PDGA Q&A](https://www.pdga.com/rules/official-rules-disc-golf/questions-and-answers),
+- [2021年版公式規則の変更](https://www.pdga.com/news/updates-coming-pdga-official-rules-disc-golf-competition-manual-2021).
 
 なお本ルールブック作成にあたっては,
 2013年版JPDGA公式ルールブック及び
@@ -21,13 +22,28 @@ PDGAウェブサイトに公開された2019年1月17日版[Official Rules of Di
 
 ### 履歴
 
-|   月日   | 更新詳細 |
+|   月日   | 詳細
 |:-------:|:---------
-|  2020/6 | ウェブサイト公開 |
-| 2020/10 | Q&A追加 |
-|         | 用語変更 |
-|         | 一時的障害物 -> 非恒久的障害物 |
-|         | 選択的救済 -> オプションの救済 |
+|  2020/6 | ウェブサイト公開
+| 2020/10 | Q&A追加
+|         | 用語変更
+|         | 一時的障害物 -> 非恒久的障害物
+|         | 選択的救済 -> オプションの救済
+| 2021/1  | [PDGA公式規則変更](https://www.pdga.com/news/updates-coming-pdga-official-rules-disc-golf-competition-manual-2021)に伴い更新
+|         | [806.05 ハザード](80605), ++追記++, --削除--
+|         | [811 ミスプレー](811), ++追記++, --削除--
+|         | [QA-APP-5 規則の適用](qa-app), ++追記++, --削除--
+|         | [QA-MAR-2 ライをマークする](qa-mar), --全削除--
+|         | [QA-OBS-1 障害物と救済](qa-obs), --削除--
+|         | [QA-MAN-3 経路の規制](qa-man), --全削除--
+|         | [QA-ABA-3 スローの放棄](qa-aba), ++新規追加++
+|         | [QA-CAS-3 カジュアルエリア](qa-cas), --全削除--
+|         | [QA-COM-4 ホールの終了](qa-com), --削除--
+|         | [QA-COM-5 ホールの終了](qa-com), --削除--
+|         | [QA-COM-7 ホールの終了](qa-com), --削除--
+|         | [QA-INT-1 干渉](qa-int), ++追記++, --削除--
+|         | [QA-COU-1 礼儀](qa-cou), --削除--
+|         | [OB,ハザード,インバウンズ判定](obhazardinbounds) 追加
 
 ---
 

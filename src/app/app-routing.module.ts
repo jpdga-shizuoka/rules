@@ -76,11 +76,12 @@ import { PenaltiesComponent } from './rules/penalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
+import { MiscObhazardinboundsComponent } from './miscs/miscobhazardinbounds.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'preface'},
-  { path: 'preface', component: RulePrefaceComponent},
+  { path: '', component: RulePrefaceComponent},
+  { path: 'preface', pathMatch: 'full', redirectTo: ''},
   { path: 'index', component: RuleIndexComponent},
   { path: '800', component: Rule800Component},
   { path: '801', component: Rule801Component},
@@ -155,11 +156,12 @@ const routes: Routes = [
   { path: 'reliefs', component: MiscReliefsComponent},
   { path: 'penalties', component: PenaltiesComponent},
   { path: 'enforcement', component: MiscEnforcementComponent},
+  { path: 'obhazardinbounds', component: MiscObhazardinboundsComponent},
   { path: 'postface', component: MiscPostfaceComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
