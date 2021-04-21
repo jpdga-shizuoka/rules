@@ -34,7 +34,7 @@ export class PullToJumpComponent implements OnInit {
 
   constructor(
     private gotoPdga: GotoPdgaService,
-    private elementRef: ElementRef<Element>,
+    private elementRef: ElementRef<Element>
   ) {
     const parent = elementRef.nativeElement.parentElement;
     this.touchstart$ = fromEvent<TouchEvent>(parent, 'touchstart');

@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {QaComponent} from './qa.component';
+import { Component } from '@angular/core';
+import { QaComponent } from './qa.component';
 @Component({
   selector: 'app-qa-obs',
-  templateUrl: './obs.html',
+  templateUrl: './obs.html'
 })
 export class QaObsComponent extends QaComponent {
-  get ruleId(): string {return 'obs'; }
+  get ruleId(): string { return 'obs'; }
 }

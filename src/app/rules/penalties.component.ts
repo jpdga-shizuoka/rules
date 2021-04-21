@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {RuleComponent} from './rule.component';
+import { Component } from '@angular/core';
+import { RuleComponent } from './rule.component';
 @Component({
   selector: 'app-penalties',
-  templateUrl: './penalties.html',
+  templateUrl: './penalties.html'
 })
 export class PenaltiesComponent extends RuleComponent { }

@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {QaComponent} from './qa.component';
+import { Component } from '@angular/core';
+import { QaComponent } from './qa.component';
 @Component({
   selector: 'app-qa-index',
-  templateUrl: './index.html',
+  templateUrl: './index.html'
 })
 export class QaIndexComponent extends QaComponent {
-  get ruleId(): string {return 'index'; }
+  get ruleId(): string { return 'index'; }
 }

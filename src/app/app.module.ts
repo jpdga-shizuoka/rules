@@ -174,7 +174,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     MiscEnforcementComponent,
     MiscObhazardinboundsComponent,
     MiscPostfaceComponent,
-    PullToJumpComponent,
+    PullToJumpComponent
   ],
   imports: [
     AppRoutingModule,
@@ -186,7 +186,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

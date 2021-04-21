@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {RuleComponent} from './rule.component';
+import { Component } from '@angular/core';
+import { RuleComponent } from './rule.component';
 @Component({
   selector: 'app-rule-preface',
-  templateUrl: './preface.html',
+  templateUrl: './preface.html'
 })
 export class RulePrefaceComponent extends RuleComponent {
-  get ruleId(): string {return 'preface'; }
+  get ruleId(): string { return 'preface'; }
 }

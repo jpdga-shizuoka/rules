@@ -4,15 +4,15 @@ import { GotoPdgaService } from '../goto-pdga.service';
 
 @Component({
   selector: 'app-rule',
-  template: '',
+  template: ''
 })
 export class RuleComponent implements OnInit, OnDestroy {
   private readonly subscription = new Subscription();
 
   constructor(private gotoPdgaService: GotoPdgaService) { }
 
-  get ruleId(): string {return ''; }
-  get isRule(): boolean {return /[0-9]+/.test(this.ruleId); }
+  get ruleId(): string { return ''; }
+  get isRule(): boolean { return /[0-9]+/.test(this.ruleId); }
 
   ngOnInit(): void {
     if (!this.isRule) {

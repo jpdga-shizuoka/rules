@@ -4,7 +4,7 @@ import { GotoPdgaService } from '../goto-pdga.service';
 
 @Component({
   selector: 'app-qa',
-  template: '',
+  template: ''
 })
 export abstract class QaComponent implements OnInit, OnDestroy {
   private readonly subscription = new Subscription();

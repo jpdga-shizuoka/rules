@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {RuleComponent} from './rule.component';
+import { Component } from '@angular/core';
+import { RuleComponent } from './rule.component';
 @Component({
   selector: 'app-rule-80402',
-  templateUrl: './80402.html',
+  templateUrl: './80402.html'
 })
 export class Rule80402Component extends RuleComponent {
-  get ruleId(): string {return '80402'; }
+  get ruleId(): string { return '80402'; }
 }

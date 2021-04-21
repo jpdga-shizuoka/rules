@@ -19,7 +19,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
   @ViewChild('drawer') drawer: MatSidenav;
   readonly toc = TOC;
   private sec: Section;
-  get section(): Section {return this.sec; }
+  get section(): Section { return this.sec; }
   set section(section: Section) {
     if (!section) {
       return;
@@ -33,7 +33,8 @@ export class NavigationComponent implements OnInit, OnDestroy {
     }
     this.upperLink = getUperLink(section.id);
   }
-  get menuIcon(): 'menu_open' | 'menu' {return this.upperLink ? 'menu_open' : 'menu'; }
+
+  get menuIcon(): 'menu_open' | 'menu' { return this.upperLink ? 'menu_open' : 'menu'; }
   upperLink: string | null = null;
   title: string;
   isHandset: boolean;
@@ -47,10 +48,10 @@ export class NavigationComponent implements OnInit, OnDestroy {
 
   constructor(
     private breakpointObserver: BreakpointObserver,
-    private router: Router,
+    private router: Router
   ) {
     router.events.pipe(
-      filter(event => event instanceof NavigationEnd),
+      filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       this.section = getSection(url2id(event.urlAfterRedirects));
     });
