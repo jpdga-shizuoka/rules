@@ -5,5 +5,5 @@ import {RuleComponent} from './rule.component';
   templateUrl: './80102.html',
 })
 export class Rule80102Component extends RuleComponent {
-  get ruleId() {return '80102'; }
+  get ruleId(): string {return '80102'; }
 }

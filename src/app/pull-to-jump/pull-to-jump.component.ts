@@ -7,7 +7,6 @@ import {
   filter,
   map,
   repeat,
-  skipUntil,
   startWith,
   switchMap,
   take,
@@ -35,7 +34,7 @@ export class PullToJumpComponent implements OnInit {
 
   constructor(
     private gotoPdga: GotoPdgaService,
-    private elementRef: ElementRef,
+    private elementRef: ElementRef<Element>,
   ) {
     const parent = elementRef.nativeElement.parentElement;
     this.touchstart$ = fromEvent<TouchEvent>(parent, 'touchstart');
@@ -95,7 +94,7 @@ export class PullToJumpComponent implements OnInit {
   //
   //  check if goto-pdga is available at this morment
   //
-  get isAvailable() {
+  get isAvailable(): boolean {
     const parent = this.elementRef.nativeElement.parentElement;
     const depth = parent.getBoundingClientRect().top;
     return depth > 0;

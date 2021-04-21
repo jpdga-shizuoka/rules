@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription, Subject, BehaviorSubject } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { GotoPdgaService } from '../goto-pdga.service';
 
 @Component({

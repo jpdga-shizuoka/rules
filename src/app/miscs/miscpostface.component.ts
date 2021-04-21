@@ -5,5 +5,5 @@ import {MiscComponent} from './misc.component';
   templateUrl: './postface.html',
 })
 export class MiscPostfaceComponent extends MiscComponent {
-  get ruleId() {return 'postface'; }
+  get ruleId():string {return 'postface'; }
 }

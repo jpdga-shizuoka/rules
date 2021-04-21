@@ -9,7 +9,7 @@ import {
   Section, TOC, getSection, getNext, getPrev, isSubsection, getUperLink
 } from '../toc';
 
-const TITLE_PATTERN = /[\d\.]+ (\S+)/;
+const TITLE_PATTERN = /[\d.]+ (\S+)/;
 
 @Component({
   selector: 'app-navigation',
@@ -20,13 +20,13 @@ export class NavigationComponent implements OnInit, OnDestroy {
   @ViewChild('drawer') drawer: MatSidenav;
   readonly toc = TOC;
   private sec: Section;
-  get section() {return this.sec; }
+  get section(): Section {return this.sec; }
   set section(section: Section) {
     if (!section) {
       return;
     }
     this.sec = section;
-    const title = section.title.match(TITLE_PATTERN);
+    const title = TITLE_PATTERN.exec(section.title);
     if (this.section.id === 'preface') {
       this.title = 'ディスクゴルフ規則';
     } else {
@@ -34,7 +34,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
     }
     this.upperLink = getUperLink(section.id);
   }
-  get menuIcon() {return this.upperLink ? 'menu_open' : 'menu'; }
+  get menuIcon(): "menu_open" | "menu" {return this.upperLink ? 'menu_open' : 'menu'; }
   upperLink: string | null = null;
   title: string;
   isHandset: boolean;
@@ -56,48 +56,48 @@ export class NavigationComponent implements OnInit, OnDestroy {
       this.section = getSection(url2id(event.urlAfterRedirects)));
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.ssHandset = this.isHandset$.subscribe(status => this.isHandset = status);
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.ssHandset?.unsubscribe();
   }
 
-  isSubsection(id: string) {
+  isSubsection(id: string): boolean {
     return isSubsection(id);
   }
 
-  onClickMenu(id: string) {
+  async onClickMenu(id: string): Promise<void> {
     this.section = getSection(id);
     if (this.isHandset && this.drawer?.opened) {
-      this.drawer.close();
+      await this.drawer.close();
     }
   }
 
-  onClickPrev() {
+  async onClickPrev(): Promise<void> {
     const prev = getPrev(this.section.id);
     if (!prev) {
       return;
     }
     this.section = prev;
-    this.router.navigate([prev.id]);
+    await this.router.navigate([prev.id]);
   }
 
-  onClickNext() {
+  async onClickNext(): Promise<void> {
     const next = getNext(this.section.id);
     if (!next) {
       return;
     }
     this.section = next;
-    this.router.navigate([next.id]);
+    await this.router.navigate([next.id]);
   }
 
-  get isNext() {
+  get isNext(): boolean {
     return this.isHandset && !this.drawer?.opened && !!getNext(this.section?.id);
   }
 
-  get isPrev() {
+  get isPrev(): boolean {
     return this.isHandset && !this.drawer?.opened && !!getPrev(this.section?.id);
   }
 }

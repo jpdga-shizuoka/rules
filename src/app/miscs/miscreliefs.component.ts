@@ -5,5 +5,5 @@ import {MiscComponent} from './misc.component';
   templateUrl: './reliefs.html',
 })
 export class MiscReliefsComponent extends MiscComponent {
-  get ruleId() {return 'reliefs'; }
+  get ruleId(): string {return 'reliefs'; }
 }

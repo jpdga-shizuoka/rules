@@ -32,7 +32,7 @@ export function getPrev(id: string): Section|undefined {
   return index < 0 ? undefined : TOC[index];
 }
 
-export function isSubsection(id: string) {
+export function isSubsection(id: string): boolean {
   return /\d{5}/.test(id)
   || (id !== 'qa-index') && /^qa-/.test(id);
 }
@@ -50,7 +50,7 @@ export function getUperLink(id: string): string | null {
   if (id === 'qa-index') {
     return 'preface';
   }
-  if (/^qa\-.+$/.test(id)) {
+  if (/^qa-.+$/.test(id)) {
     return 'qa-index';
   }
   return 'preface';

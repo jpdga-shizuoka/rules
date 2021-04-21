@@ -5,5 +5,5 @@ import {QaComponent} from './qa.component';
   templateUrl: './index.html',
 })
 export class QaIndexComponent extends QaComponent {
-  get ruleId() {return 'index'; }
+  get ruleId(): string {return 'index'; }
 }

@@ -5,5 +5,5 @@ import {MiscComponent} from './misc.component';
   templateUrl: './obhazardinbounds.html',
 })
 export class MiscObhazardinboundsComponent extends MiscComponent {
-  get ruleId() {return 'obhazardinbounds'; }
+  get ruleId():string {return 'obhazardinbounds'; }
 }

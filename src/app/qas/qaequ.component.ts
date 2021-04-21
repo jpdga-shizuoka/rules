@@ -5,5 +5,5 @@ import {QaComponent} from './qa.component';
   templateUrl: './equ.html',
 })
 export class QaEquComponent extends QaComponent {
-  get ruleId() {return 'equ'; }
+  get ruleId(): string {return 'equ'; }
 }
