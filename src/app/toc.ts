@@ -34,12 +34,12 @@ export function getPrev(id: string): Section|undefined {
 
 export function isSubsection(id: string): boolean {
   return /\d{5}/.test(id)
-  || (id !== 'qa-index') && /^qa-/.test(id);
+  || ((id !== 'qa-index') && /^qa-/.test(id));
 }
 
 export function getUperLink(id: string): string | null {
   if (id === 'preface') {
-    return null;  // no upper link
+    return null; // no upper link
   }
   if (/^[0-9]{3}$/.test(id)) {
     return 'index';

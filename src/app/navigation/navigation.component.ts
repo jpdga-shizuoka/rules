@@ -3,8 +3,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, Subscription } from 'rxjs';
-import { filter } from 'rxjs/operators';
-import { map, shareReplay } from 'rxjs/operators';
+import { filter, map, shareReplay } from 'rxjs/operators';
 import {
   Section, TOC, getSection, getNext, getPrev, isSubsection, getUperLink
 } from '../toc';
@@ -34,17 +33,17 @@ export class NavigationComponent implements OnInit, OnDestroy {
     }
     this.upperLink = getUperLink(section.id);
   }
-  get menuIcon(): "menu_open" | "menu" {return this.upperLink ? 'menu_open' : 'menu'; }
+  get menuIcon(): 'menu_open' | 'menu' {return this.upperLink ? 'menu_open' : 'menu'; }
   upperLink: string | null = null;
   title: string;
   isHandset: boolean;
   ssHandset: Subscription;
   readonly isHandset$: Observable<boolean>
     = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
+      .pipe(
+        map(result => result.matches),
+        shareReplay()
+      );
 
   constructor(
     private breakpointObserver: BreakpointObserver,
@@ -52,12 +51,15 @@ export class NavigationComponent implements OnInit, OnDestroy {
   ) {
     router.events.pipe(
       filter(event => event instanceof NavigationEnd),
-    ).subscribe((event: NavigationEnd) =>
-      this.section = getSection(url2id(event.urlAfterRedirects)));
+    ).subscribe((event: NavigationEnd) => {
+      this.section = getSection(url2id(event.urlAfterRedirects));
+    });
   }
 
   ngOnInit(): void {
-    this.ssHandset = this.isHandset$.subscribe(status => this.isHandset = status);
+    this.ssHandset = this.isHandset$.subscribe(status => {
+      this.isHandset = status;
+    });
   }
 
   ngOnDestroy(): void {
@@ -103,5 +105,5 @@ export class NavigationComponent implements OnInit, OnDestroy {
 }
 
 function url2id(url: string) {
-  return url === '/' ? 'preface' : url.slice(1, );
+  return url === '/' ? 'preface' : url.slice(1);
 }
