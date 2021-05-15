@@ -144,6 +144,11 @@ span.spacer {
   font-style: italic;
   background-color: #e8e8e8;
 }
+.app-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 s {
   text-decoration-thickness: 0.2rem;
   color: #555;
