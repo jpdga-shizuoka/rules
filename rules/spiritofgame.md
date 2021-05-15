@@ -21,4 +21,4 @@
 
 **それがディスクゴルフの試合の精神だ**.
 
-![ディスクゴルファーのおきて](/assets/img/discgolferscode.png)
+![ディスクゴルファーのおきて](https://jpdga-shizuoka.github.io/rules/assets/img/discgolferscode.png)
