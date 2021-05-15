@@ -4,6 +4,7 @@
 
 ## 大目次
 
+* [試合の精神](spiritofgame)
 * [ディスクゴルフ規則](index)
 * [用語の定義](appendixe)
 * [規則Q&A](qa-index)

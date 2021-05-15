@@ -4,6 +4,7 @@ const Path = require('path');
 
 const RULES_LIST = [
   'preface',
+  'spiritofgame',
   'index',
   '800',
   '801',
@@ -157,14 +158,14 @@ function makeComponent(id, srcPath) {
   const Name = capitalizeFirstLetter(name);
   const sid = makeId(id);
   const dstPath = Path.join(DST, srcPath, name + id + '.component.ts');
-  const content =`import {Component} from '@angular/core';
-import {${Name}Component} from './${name}.component';
+  const content =`import { Component } from '@angular/core';
+import { ${Name}Component } from './${name}.component';
 @Component({
   selector: 'app-${name}-${id}',
-  templateUrl: './${id}.html',
+  templateUrl: './${id}.html'
 })
 export class ${Name}${sid}Component extends ${Name}Component {
-  get ruleId() {return '${id}'; }
+  get ruleId(): string { return '${id}'; }
 }
 `;
   fs.writeFileSync(dstPath, content);
