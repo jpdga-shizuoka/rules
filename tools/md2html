@@ -3,7 +3,6 @@
 const Path = require('path');
 
 const RULES_LIST = [
-  'preface',
   'spiritofgame',
   'index',
   '800',
@@ -104,7 +103,10 @@ const md = require('markdown-it')({replaceLink: replaceLink})
 .use(require('markdown-it-strikethrough-alt'))
 .use(require('markdown-it-container'), 'app-table')
 .use(replaceLinkPlugIn);
-let toc = [];
+let toc = [{
+  "id": "preface",
+  "title": "はじめに"
+}];
 md.renderer.rules.footnote_ref = render_footnote_ref;
 
 createComponents(RULES_LIST, RULE_SRC);
