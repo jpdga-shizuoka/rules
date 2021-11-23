@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1631084473729,
+  "timestamp": 1637685750497,
   "index": "https://jpdga-shizuoka.github.io/rules/index.html",
   "assetGroups": [
     {
@@ -46,8 +46,8 @@
         "https://jpdga-shizuoka.github.io/rules/assets/img/thespiritofthegame.png",
         "https://jpdga-shizuoka.github.io/rules/favicon.ico",
         "https://jpdga-shizuoka.github.io/rules/index.html",
-        "https://jpdga-shizuoka.github.io/rules/main-es2015.692b67d0bea396bd7dde.js",
-        "https://jpdga-shizuoka.github.io/rules/main-es5.692b67d0bea396bd7dde.js",
+        "https://jpdga-shizuoka.github.io/rules/main-es2015.55f629fedd80199b087e.js",
+        "https://jpdga-shizuoka.github.io/rules/main-es5.55f629fedd80199b087e.js",
         "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest",
         "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.09feeec414f6aa117439.js",
         "https://jpdga-shizuoka.github.io/rules/polyfills-es5.6f3314f87e82d89c713d.js",
@@ -142,9 +142,9 @@
     "https://jpdga-shizuoka.github.io/rules/assets/toc/rules.json": "952e48f88d7e9e532f220ce656d0dbca4a2c7fcf",
     "https://jpdga-shizuoka.github.io/rules/background.ad2eb550ac8ae41fb6be.png": "945b6b6d4ae860f5f981f6345a68c41f88e15c76",
     "https://jpdga-shizuoka.github.io/rules/favicon.ico": "5905c76502579586d01c087dec8f3ce9c8bc1da3",
-    "https://jpdga-shizuoka.github.io/rules/index.html": "164f6f0860946267ec5fb9e609475a03a360bbb5",
-    "https://jpdga-shizuoka.github.io/rules/main-es2015.692b67d0bea396bd7dde.js": "804c24b13fdc9e906af2913dcc0b79bc728771ff",
-    "https://jpdga-shizuoka.github.io/rules/main-es5.692b67d0bea396bd7dde.js": "744f693b701f304a699786cc4a16967a687a9fa1",
+    "https://jpdga-shizuoka.github.io/rules/index.html": "b8c2cf79ceb7344974411bd9f5c2b7e0944e2f93",
+    "https://jpdga-shizuoka.github.io/rules/main-es2015.55f629fedd80199b087e.js": "343bec1875ebab377bf27803f3014a5542dfdbd4",
+    "https://jpdga-shizuoka.github.io/rules/main-es5.55f629fedd80199b087e.js": "d90ef28c436dd27cd82043aeab33c91e4346bcc1",
     "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest": "71217d7825d7b5d8fbddba7761f6c5ed1026d48e",
     "https://jpdga-shizuoka.github.io/rules/open_in_new-24px.5d965d7917e76b6bba38.svg": "4659a31d0dec34789d2ed76afe728bac5d91db94",
     "https://jpdga-shizuoka.github.io/rules/polyfills-es2015.09feeec414f6aa117439.js": "01a207044e042a8473559cf3182827d137d371f4",
