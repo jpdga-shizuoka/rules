@@ -3,7 +3,7 @@
 const Path = require('path');
 
 const RULES_LIST = [
-  'preface',
+  'spiritofgame',
   'index',
   '800',
   '801',
@@ -101,8 +101,12 @@ const md = require('markdown-it')({replaceLink: replaceLink})
 .use(require('markdown-it-footnote'))
 .use(require('markdown-it-ins'))
 .use(require('markdown-it-strikethrough-alt'))
+.use(require('markdown-it-container'), 'app-table')
 .use(replaceLinkPlugIn);
-let toc = [];
+let toc = [{
+  "id": "preface",
+  "title": "はじめに"
+}];
 md.renderer.rules.footnote_ref = render_footnote_ref;
 
 createComponents(RULES_LIST, RULE_SRC);
@@ -156,14 +160,14 @@ function makeComponent(id, srcPath) {
   const Name = capitalizeFirstLetter(name);
   const sid = makeId(id);
   const dstPath = Path.join(DST, srcPath, name + id + '.component.ts');
-  const content =`import {Component} from '@angular/core';
-import {${Name}Component} from './${name}.component';
+  const content =`import { Component } from '@angular/core';
+import { ${Name}Component } from './${name}.component';
 @Component({
   selector: 'app-${name}-${id}',
-  templateUrl: './${id}.html',
+  templateUrl: './${id}.html'
 })
 export class ${Name}${sid}Component extends ${Name}Component {
-  get ruleId() {return '${id}'; }
+  get ruleId(): string { return '${id}'; }
 }
 `;
   fs.writeFileSync(dstPath, content);

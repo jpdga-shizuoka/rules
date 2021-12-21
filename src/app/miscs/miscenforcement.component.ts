@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {MiscComponent} from './misc.component';
+import { Component } from '@angular/core';
+import { MiscComponent } from './misc.component';
 @Component({
   selector: 'app-misc-enforcement',
-  templateUrl: './enforcement.html',
+  templateUrl: './enforcement.html'
 })
 export class MiscEnforcementComponent extends MiscComponent {
-  get ruleId() {return 'enforcement'; }
+  get ruleId(): string { return 'enforcement'; }
 }

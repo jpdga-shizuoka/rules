@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {QaComponent} from './qa.component';
+import { Component } from '@angular/core';
+import { QaComponent } from './qa.component';
 @Component({
   selector: 'app-qa-put',
-  templateUrl: './put.html',
+  templateUrl: './put.html'
 })
 export class QaPutComponent extends QaComponent {
-  get ruleId() {return 'put'; }
+  get ruleId(): string { return 'put'; }
 }

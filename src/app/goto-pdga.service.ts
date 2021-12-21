@@ -5,9 +5,9 @@ import { Subject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GotoPdgaService {
-  private readonly subject = new Subject<any>();
+  private readonly subject = new Subject<void>();
 
-  public get requestJump$(): Observable<any> {
+  public get requestJump$(): Observable<void> {
     return this.subject.asObservable();
   }
 

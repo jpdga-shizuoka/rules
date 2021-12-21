@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {QaComponent} from './qa.component';
+import { Component } from '@angular/core';
+import { QaComponent } from './qa.component';
 @Component({
   selector: 'app-qa-cou',
-  templateUrl: './cou.html',
+  templateUrl: './cou.html'
 })
 export class QaCouComponent extends QaComponent {
-  get ruleId() {return 'cou'; }
+  get ruleId(): string { return 'cou'; }
 }

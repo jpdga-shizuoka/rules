@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {MiscComponent} from './misc.component';
+import { Component } from '@angular/core';
+import { MiscComponent } from './misc.component';
 @Component({
   selector: 'app-misc-postface',
-  templateUrl: './postface.html',
+  templateUrl: './postface.html'
 })
 export class MiscPostfaceComponent extends MiscComponent {
-  get ruleId() {return 'postface'; }
+  get ruleId(): string { return 'postface'; }
 }

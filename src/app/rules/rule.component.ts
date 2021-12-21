@@ -1,18 +1,18 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription, Subject, BehaviorSubject } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { GotoPdgaService } from '../goto-pdga.service';
 
 @Component({
   selector: 'app-rule',
-  template: '',
+  template: ''
 })
 export class RuleComponent implements OnInit, OnDestroy {
   private readonly subscription = new Subscription();
 
   constructor(private gotoPdgaService: GotoPdgaService) { }
 
-  get ruleId() {return ''; }
-  get isRule() {return /[0-9]+/.test(this.ruleId); }
+  get ruleId(): string { return ''; }
+  get isRule(): boolean { return /[0-9]+/.test(this.ruleId); }
 
   ngOnInit(): void {
     if (!this.isRule) {
@@ -28,7 +28,7 @@ export class RuleComponent implements OnInit, OnDestroy {
   }
 
   private jump2pdga(ruleId: string) {
-    const url = `https://www.pdga.com/rules/official-rules-disc-golf/${this.ruleId}`;
+    const url = `https://www.pdga.com/rules/official-rules-disc-golf/${ruleId}`;
     window.location.href = url;
   }
 }

@@ -21,16 +21,16 @@ span.spacer {
   color: white;
 }
 #app-postface > p,
-#app-preface > p {
+.app-preface > p {
   margin-left: 1rem;
 }
 #app-postface > hr,
-#app-preface > hr {
+.app-preface > hr {
   margin-top: 1rem;
   margin-bottom: 0;
 }
 #app-postface > hr + p,
-#app-preface > hr + p {
+.app-content > hr + p {
   text-align: right;
 }
 #penalties h2 {
@@ -46,28 +46,41 @@ span.spacer {
 #reliefs  img {
   width: 100%;
 }
+.app-preface {
+  max-width: 500px;
+  margin: 0 auto 20px;
+  background-color: white;
+}
+.app-content {
+  padding: 0 20px 50px;
+}
 .app-qa,
 .app-misc,
 .app-rule {
   max-width: 500px;
-  margin: 20px auto;
+  margin: 0 auto 20px;
   padding: 20px 20px 50px;
+  background-color: white;
 }
+.app-preface h1,
 .app-qa h1,
 .app-misc h1,
 .app-rule h1 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.app-preface h2,
 .app-misc h2,
 .app-qa h2,
 .app-rule h2 {
   font-size: 1.1rem;
   font-weight: bold;
 }
+.app-preface p,
 .app-misc p,
 .app-qa p,
 .app-rule p,
+.app-preface li,
 .app-misc li,
 .app-qa li,
 .app-rule li {
@@ -109,16 +122,13 @@ span.spacer {
 .app-rule li > ol > li > ol {
   list-style-type: lower-alpha;
 }
-.app-qa > *,
-.app-misc > *,
-.app-rule > * {
-  /* line-height: 1.5rem; */
-}
+.app-preface a,
 .app-qa a,
 .app-misc a,
 .app-rule a {
   text-decoration: none;
 }
+.app-preface a[href^="http"],
 .app-qa a[href^="http"],
 .app-misc a[href^="http"],
 .app-rule a[href^="http"] {
@@ -127,6 +137,7 @@ span.spacer {
   background-size: 1rem 1rem;
   padding-right: 1.1rem;
 }
+.app-preface img,
 .app-qa img,
 .app-misc img,
 .app-rule img {
@@ -143,6 +154,11 @@ span.spacer {
   font-weight: bolder;
   font-style: italic;
   background-color: #e8e8e8;
+}
+.app-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 s {
   text-decoration-thickness: 0.2rem;
@@ -184,6 +200,15 @@ ul.app-index span + span {
   padding-left: 0.33rem;
   background: #fafafa;
 }
+@media screen {
+  body {
+    background: repeat url("./assets/img/background.png");
+    background-size: 36px 30px;
+  }
+  .mat-drawer-container {
+    background-color: transparent;
+  }
+}
 @media screen and (max-width: 414px) {
   html, body {
     font-size: 16px;
@@ -220,7 +245,7 @@ ul.app-index span + span {
     font-size: 0.7rem;
   }
   #app-postface > p,
-  #app-preface > p {
+  .app-preface > p {
     margin-left: 0;
   }
 }
