@@ -59,7 +59,8 @@ span.spacer {
 .app-rule {
   max-width: 500px;
   margin: 0 auto 20px;
-  padding: 20px 20px 50px;
+  padding: 20px 20px 5px;
+  margin-bottom: 45px;
   background-color: white;
 }
 .app-preface h1,
