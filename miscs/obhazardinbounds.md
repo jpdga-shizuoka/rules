@@ -1,8 +1,11 @@
-# OB,ハザード,インバウンズ判定
+# OB,ハザード,インバウンズ
 
-![OB,ハザード,インバウンズ判定](assets/img/ob-hazard-inbounds.png)
+* **アウト•オブ•バウンズ**でないコースのどんな区域も**インバウンズ**です([`806.02.A`](80602)).
+* **ハザード**は, ペナルティースローが課される区域であると, ディレクターが指定した区域です([`806.05.A`](80605)).
 
-[OB,ハザード,インバウンズ判定](https://jpdga-shizuoka.github.io/rules/assets/img/ob-hazard-inbounds.png)を開く.
+![OB,ハザード,インバウンズ](assets/img/ob-hazard-inbounds.png)
+
+[OB,ハザード,インバウンズ](https://jpdga-shizuoka.github.io/rules/assets/img/ob-hazard-inbounds.png)を開く.
 
 * [`806.02` アウト•オブ•バウンズ](80602)
 * [`806.05` ハザード](80605)
