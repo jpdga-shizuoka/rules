@@ -20,6 +20,10 @@
     "title": "OB,ハザード,インバウンズ"
   },
   {
+    "id": "mandatory",
+    "title": "マンダトリーによる経路規制"
+  },
+  {
     "id": "postface",
     "title": "あとがき"
   }
