@@ -80,6 +80,7 @@ const MISC_LIST = [
   'reliefs',
   'obhazardinbounds',
   'mandatory',
+  'relief-from-ob',
   'postface'
 ];
 const TOC2 = [

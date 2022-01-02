@@ -90,6 +90,7 @@ import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
 import { MiscObhazardinboundsComponent } from './miscs/miscobhazardinbounds.component';
 import { MiscMandatoryComponent } from './miscs/miscmandatory.component';
+import { MiscRelieffromobComponent } from './miscs/miscrelief-from-ob.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -176,6 +177,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     MiscEnforcementComponent,
     MiscObhazardinboundsComponent,
     MiscMandatoryComponent,
+    MiscRelieffromobComponent,
     MiscPostfaceComponent,
     PullToJumpComponent
   ],
