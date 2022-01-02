@@ -78,6 +78,7 @@ import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
 import { MiscObhazardinboundsComponent } from './miscs/miscobhazardinbounds.component';
+import { MiscMandatoryComponent } from './miscs/miscmandatory.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
@@ -159,6 +160,7 @@ const routes: Routes = [
   { path: 'penalties', component: PenaltiesComponent },
   { path: 'enforcement', component: MiscEnforcementComponent },
   { path: 'obhazardinbounds', component: MiscObhazardinboundsComponent },
+  { path: 'mandatory', component: MiscMandatoryComponent },
   { path: 'postface', component: MiscPostfaceComponent }
 ];
 
