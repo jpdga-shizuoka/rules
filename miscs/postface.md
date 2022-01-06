@@ -29,22 +29,11 @@ PDGAが公開する以下の資料の邦訳版です:
 |   日付   | 詳細
 |:-------:|:---------
 | 2022/1  | [2022年版ディスクゴルフ公式規則](https://www.pdga.com/files/pdga-2022-ordg-cm_0.pdf)の施行に伴い更新.
-|         | 更新内容は, [更新内容の要約](https://docs.google.com/presentation/d/e/2PACX-1vRvDwv6ThGpV3tHZipAZ0m_BtGrZu2tNZfGRW7YJUIgbGo4MQuu0MWdwRfGlxehqsO8McxybQdY2RCf/pub) を参照.
+|         | 詳細は[更新内容の要約](https://docs.google.com/presentation/d/e/2PACX-1vRvDwv6ThGpV3tHZipAZ0m_BtGrZu2tNZfGRW7YJUIgbGo4MQuu0MWdwRfGlxehqsO8McxybQdY2RCf/pub)参照.
+|         | [超まとめ:マンダトリーによる規制](mandatory)追加
+|         | [超まとめ:OB区域からの救済](relief-from-ob)追加
 | 2021/1  | [2021年版公式規則の変更](https://www.pdga.com/news/updates-coming-pdga-official-rules-disc-golf-competition-manual-2021)に伴い更新
-|         | [806.05 ハザード](80605), ++追記++, --削除--
-|         | [811 ミスプレー](811), ++追記++, --削除--
-|         | [QA-APP-5 規則の適用](qa-app), ++追記++, --削除--
-|         | [QA-MAR-2 ライをマークする](qa-mar), --全削除--
-|         | [QA-OBS-1 障害物と救済](qa-obs), --削除--
-|         | [QA-MAN-3 経路の規制](qa-man), --全削除--
-|         | [QA-ABA-3 スローの放棄](qa-aba), ++新規追加++
-|         | [QA-CAS-3 カジュアルエリア](qa-cas), --全削除--
-|         | [QA-COM-4 ホールの終了](qa-com), --削除--
-|         | [QA-COM-5 ホールの終了](qa-com), --削除--
-|         | [QA-COM-7 ホールの終了](qa-com), --削除--
-|         | [QA-INT-1 干渉](qa-int), ++追記++, --削除--
-|         | [QA-COU-1 礼儀](qa-cou), --削除--
-|         | [OB,ハザード,インバウンズ判定](obhazardinbounds) 追加
+|         | [超まとめ: OB,ハザード,インバウンズ](obhazardinbounds) 追加
 | 2020/10 | Q&A追加
 |         | 用語変更
 |         | 一時的障害物 -> 非恒久的障害物

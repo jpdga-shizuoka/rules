@@ -206,6 +206,9 @@ ul.app-index span + span {
   padding-left: 0.33rem;
   background: #fafafa;
 }
+#app-postface td {
+  vertical-align: sub;
+}
 @media screen {
   body {
     background: repeat url("./assets/img/background.png");
