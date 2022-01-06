@@ -1,10 +1,10 @@
 # あとがき
 
-本ディスクゴルフ公式規則は,
-以下の規則を参照しています;
+本アプリの[ディスクゴルフ公式規則](index)は,
+PDGAが公開する以下の資料の邦訳版です:
 - [2022年1月1日版ディスクゴルフ公式規則](https://www.pdga.com/files/pdga-2022-ordg-cm_0.pdf).
 
-なお本ルールブック作成にあたっては,
+なお同[ディスクゴルフ公式規則](index)を作成するにあたっては,
 2013年版JPDGA公式ルールブック及び
 2018年版[JPDGA公式ルールブック](http://www.jpdga.jp/data/2018discgolf_rule.pdf)を大いに参考にしました.
 この場を借りて御礼申し上げます.
@@ -28,7 +28,7 @@
 
 |   日付   | 詳細
 |:-------:|:---------
-| 2022/1  | [2022年版ディスクゴルフ公式規則](https://www.pdga.com/files/pdga-2022-ordg-cm_0.pdf)の変更に伴い更新.
+| 2022/1  | [2022年版ディスクゴルフ公式規則](https://www.pdga.com/files/pdga-2022-ordg-cm_0.pdf)の施行に伴い更新.
 |         | 更新内容は, [更新内容の要約](https://docs.google.com/presentation/d/e/2PACX-1vRvDwv6ThGpV3tHZipAZ0m_BtGrZu2tNZfGRW7YJUIgbGo4MQuu0MWdwRfGlxehqsO8McxybQdY2RCf/pub) を参照.
 | 2021/1  | [2021年版公式規則の変更](https://www.pdga.com/news/updates-coming-pdga-official-rules-disc-golf-competition-manual-2021)に伴い更新
 |         | [806.05 ハザード](80605), ++追記++, --削除--
