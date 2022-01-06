@@ -5,7 +5,7 @@
   },
   {
     "id": "enforcement",
-    "title": "規則違反のながれ"
+    "title": "規則違反の執行"
   },
   {
     "id": "obstacles",
@@ -21,7 +21,7 @@
   },
   {
     "id": "mandatory",
-    "title": "マンダトリーによる経路規制"
+    "title": "マンダトリーによる規制"
   },
   {
     "id": "relief-from-ob",
