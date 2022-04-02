@@ -34,7 +34,6 @@ import { Rule80302Component } from './rules/rule80302.component';
 import { Rule80303Component } from './rules/rule80303.component';
 import { Rule804Component } from './rules/rule804.component';
 import { Rule80401Component } from './rules/rule80401.component';
-import { Rule80402Component } from './rules/rule80402.component';
 import { Rule805Component } from './rules/rule805.component';
 import { Rule80501Component } from './rules/rule80501.component';
 import { Rule80502Component } from './rules/rule80502.component';
@@ -121,7 +120,6 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     Rule80303Component,
     Rule804Component,
     Rule80401Component,
-    Rule80402Component,
     Rule805Component,
     Rule80501Component,
     Rule80502Component,
