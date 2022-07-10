@@ -48,7 +48,6 @@ import { Rule81302Component } from './rules/rule81302.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
 import { QaThrComponent } from './qas/qathr.component';
-import { QaTimComponent } from './qas/qatim.component';
 import { QaTeeComponent } from './qas/qatee.component';
 import { QaLieComponent } from './qas/qalie.component';
 import { QaMarComponent } from './qas/qamar.component';
@@ -130,7 +129,6 @@ const routes: Routes = [
   { path: 'qa-index', component: QaIndexComponent },
   { path: 'qa-app', component: QaAppComponent },
   { path: 'qa-thr', component: QaThrComponent },
-  { path: 'qa-tim', component: QaTimComponent },
   { path: 'qa-tee', component: QaTeeComponent },
   { path: 'qa-lie', component: QaLieComponent },
   { path: 'qa-mar', component: QaMarComponent },

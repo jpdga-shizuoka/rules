@@ -60,7 +60,6 @@ import { AppendixEComponent } from './rules/appendix-e.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
 import { QaThrComponent } from './qas/qathr.component';
-import { QaTimComponent } from './qas/qatim.component';
 import { QaTeeComponent } from './qas/qatee.component';
 import { QaLieComponent } from './qas/qalie.component';
 import { QaMarComponent } from './qas/qamar.component';
@@ -146,7 +145,6 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     QaIndexComponent,
     QaAppComponent,
     QaThrComponent,
-    QaTimComponent,
     QaTeeComponent,
     QaLieComponent,
     QaMarComponent,
