@@ -29,6 +29,7 @@ PDGAが公開する以下の資料の邦訳版です:
 
 |   日付   | 詳細
 |:-------:|:---------
+| 2022/7  | [QA-EQU-6新規, QA-OB-4追記](https://docs.google.com/presentation/d/e/2PACX-1vTthFMtBpyAmGyR3ULy5AvBBP1a3TISowM7VX-mLhuEuiNR9jweezvG9yboayfsQi7aDIq5v0HY9OMC/pub?start=false&loop=false&delayms=3000)
 | 2022/3  | [804.01 マンダトリーの経路を更新](https://docs.google.com/presentation/d/e/2PACX-1vSiGej3PzUmYvI-gD5ylHzCo_ixT3W7UpntrLrqsZIOx-D4vW0lrYNmKDUuzqFqYXMyM4t_2wPDdwjV/pub?start=false&loop=false&delayms=3000)
 | 2022/1  | [2022年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRvDwv6ThGpV3tHZipAZ0m_BtGrZu2tNZfGRW7YJUIgbGo4MQuu0MWdwRfGlxehqsO8McxybQdY2RCf/pub)
 |         | [超まとめ:マンダトリーによる規制](mandatory)追加
