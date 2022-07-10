@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1648969120675,
+  "timestamp": 1657458074803,
   "index": "https://jpdga-shizuoka.github.io/rules/index.html",
   "assetGroups": [
     {
@@ -45,7 +45,7 @@
         "https://jpdga-shizuoka.github.io/rules/assets/img/thespiritofthegame.png",
         "https://jpdga-shizuoka.github.io/rules/favicon.ico",
         "https://jpdga-shizuoka.github.io/rules/index.html",
-        "https://jpdga-shizuoka.github.io/rules/main.3a33141584bb6709.js",
+        "https://jpdga-shizuoka.github.io/rules/main.044402e261e75fdb.js",
         "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest",
         "https://jpdga-shizuoka.github.io/rules/polyfills.8a6b641e4278164f.js",
         "https://jpdga-shizuoka.github.io/rules/runtime.231788786aded95c.js",
@@ -137,8 +137,8 @@
     "https://jpdga-shizuoka.github.io/rules/assets/toc/rules.json": "2772fba62345d56af4c74d589953d641c2f1c162",
     "https://jpdga-shizuoka.github.io/rules/background.5f940c88f89fbb8c.png": "945b6b6d4ae860f5f981f6345a68c41f88e15c76",
     "https://jpdga-shizuoka.github.io/rules/favicon.ico": "5905c76502579586d01c087dec8f3ce9c8bc1da3",
-    "https://jpdga-shizuoka.github.io/rules/index.html": "ccdc5214f363989223b2498ca430d52b6376fddd",
-    "https://jpdga-shizuoka.github.io/rules/main.3a33141584bb6709.js": "5241aa2d266063a2a353b3f6673c102ecf35a9bb",
+    "https://jpdga-shizuoka.github.io/rules/index.html": "013abd3b6069ab6b261a3156da908d48f98f459f",
+    "https://jpdga-shizuoka.github.io/rules/main.044402e261e75fdb.js": "3277900d20bbc623fdce35fdeef4c9bb9a7d52d2",
     "https://jpdga-shizuoka.github.io/rules/manifest.webmanifest": "71217d7825d7b5d8fbddba7761f6c5ed1026d48e",
     "https://jpdga-shizuoka.github.io/rules/open_in_new-24px.b0e76dea768c6863.svg": "4659a31d0dec34789d2ed76afe728bac5d91db94",
     "https://jpdga-shizuoka.github.io/rules/polyfills.8a6b641e4278164f.js": "875da024ad669e9dd0a9739f01f881fc341ded58",
