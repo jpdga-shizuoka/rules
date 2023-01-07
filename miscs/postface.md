@@ -1,13 +1,14 @@
 # あとがき
 
-本アプリの[ディスクゴルフ公式規則](index)は,
-PDGAが公開する以下の資料の邦訳版です:
-- [PDGA Officail Rules of Disc Golf, Jan. 1, 2022](https://www.pdga.com/files/pdga-2022-ordg-cm_0.pdf)
-- [PDGA Announces Changes to 804.01 Mandatory Routes,  Mar. 2, 2022](https://www.pdga.com/announcements/pdga-announces-changes-80401-mandatory-routes)
+本[ディスクゴルフ公式規則](index)は,
+PDGAが公開する[Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)を,
+日本語版として作成したものです.
 
-なお同[ディスクゴルフ公式規則](index)を作成するにあたっては,
+本[ディスクゴルフ公式規則](index)を作成するにあたっては,
 2013年版JPDGA公式ルールブック及び
-2018年版[JPDGA公式ルールブック](http://www.jpdga.jp/data/2018discgolf_rule.pdf)を大いに参考にしました.
+2018年版[JPDGA公式ルールブック](http://www.jpdga.jp/data/2018discgolf_rule.pdf)
+2022年版[JPDGA公式ルールブック](http://www.jpdga.jp/data/2022discgolf_rule.pdf)
+を大いに参考にしました.
 この場を借りて御礼申し上げます.
 
 ### 用語•訳語の統一
@@ -29,6 +30,7 @@ PDGAが公開する以下の資料の邦訳版です:
 
 |   日付   | 詳細
 |:-------:|:---------
+| 2023/1  | [2023年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRQKajZr0Ye-F5OrV6IqhB38CLAZqR4_dsFH_J4EXrgopZ83imYkrmh1MvLdnoB-Hw9EiXG8ktZnCPp/pub)
 | 2022/7  | [QA-EQU-6新規, QA-OB-4追記](https://docs.google.com/presentation/d/e/2PACX-1vTthFMtBpyAmGyR3ULy5AvBBP1a3TISowM7VX-mLhuEuiNR9jweezvG9yboayfsQi7aDIq5v0HY9OMC/pub?start=false&loop=false&delayms=3000)
 | 2022/3  | [804.01 マンダトリーの経路を更新](https://docs.google.com/presentation/d/e/2PACX-1vSiGej3PzUmYvI-gD5ylHzCo_ixT3W7UpntrLrqsZIOx-D4vW0lrYNmKDUuzqFqYXMyM4t_2wPDdwjV/pub?start=false&loop=false&delayms=3000)
 | 2022/1  | [2022年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRvDwv6ThGpV3tHZipAZ0m_BtGrZu2tNZfGRW7YJUIgbGo4MQuu0MWdwRfGlxehqsO8McxybQdY2RCf/pub)
