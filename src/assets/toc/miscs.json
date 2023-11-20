@@ -5,7 +5,7 @@
   },
   {
     "id": "enforcement",
-    "title": "規則違反のながれ"
+    "title": "規則違反の執行"
   },
   {
     "id": "obstacles",
@@ -17,7 +17,15 @@
   },
   {
     "id": "obhazardinbounds",
-    "title": "OB,ハザード,インバウンズ判定"
+    "title": "OB,ハザード,インバウンズ"
+  },
+  {
+    "id": "mandatory",
+    "title": "マンダトリーによる規制"
+  },
+  {
+    "id": "relief-from-ob",
+    "title": "OB区域からの救済"
   },
   {
     "id": "postface",

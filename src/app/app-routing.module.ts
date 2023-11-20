@@ -23,7 +23,6 @@ import { Rule80302Component } from './rules/rule80302.component';
 import { Rule80303Component } from './rules/rule80303.component';
 import { Rule804Component } from './rules/rule804.component';
 import { Rule80401Component } from './rules/rule80401.component';
-import { Rule80402Component } from './rules/rule80402.component';
 import { Rule805Component } from './rules/rule805.component';
 import { Rule80501Component } from './rules/rule80501.component';
 import { Rule80502Component } from './rules/rule80502.component';
@@ -49,7 +48,6 @@ import { Rule81302Component } from './rules/rule81302.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
 import { QaThrComponent } from './qas/qathr.component';
-import { QaTimComponent } from './qas/qatim.component';
 import { QaTeeComponent } from './qas/qatee.component';
 import { QaLieComponent } from './qas/qalie.component';
 import { QaMarComponent } from './qas/qamar.component';
@@ -78,6 +76,8 @@ import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
 import { MiscObhazardinboundsComponent } from './miscs/miscobhazardinbounds.component';
+import { MiscMandatoryComponent } from './miscs/miscmandatory.component';
+import { MiscRelieffromobComponent } from './miscs/miscrelief-from-ob.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
@@ -104,7 +104,6 @@ const routes: Routes = [
   { path: '80303', component: Rule80303Component },
   { path: '804', component: Rule804Component },
   { path: '80401', component: Rule80401Component },
-  { path: '80402', component: Rule80402Component },
   { path: '805', component: Rule805Component },
   { path: '80501', component: Rule80501Component },
   { path: '80502', component: Rule80502Component },
@@ -130,7 +129,6 @@ const routes: Routes = [
   { path: 'qa-index', component: QaIndexComponent },
   { path: 'qa-app', component: QaAppComponent },
   { path: 'qa-thr', component: QaThrComponent },
-  { path: 'qa-tim', component: QaTimComponent },
   { path: 'qa-tee', component: QaTeeComponent },
   { path: 'qa-lie', component: QaLieComponent },
   { path: 'qa-mar', component: QaMarComponent },
@@ -159,6 +157,8 @@ const routes: Routes = [
   { path: 'penalties', component: PenaltiesComponent },
   { path: 'enforcement', component: MiscEnforcementComponent },
   { path: 'obhazardinbounds', component: MiscObhazardinboundsComponent },
+  { path: 'mandatory', component: MiscMandatoryComponent },
+  { path: 'relief-from-ob', component: MiscRelieffromobComponent },  
   { path: 'postface', component: MiscPostfaceComponent }
 ];
 

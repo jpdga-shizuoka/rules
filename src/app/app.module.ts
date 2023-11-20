@@ -34,7 +34,6 @@ import { Rule80302Component } from './rules/rule80302.component';
 import { Rule80303Component } from './rules/rule80303.component';
 import { Rule804Component } from './rules/rule804.component';
 import { Rule80401Component } from './rules/rule80401.component';
-import { Rule80402Component } from './rules/rule80402.component';
 import { Rule805Component } from './rules/rule805.component';
 import { Rule80501Component } from './rules/rule80501.component';
 import { Rule80502Component } from './rules/rule80502.component';
@@ -61,7 +60,6 @@ import { AppendixEComponent } from './rules/appendix-e.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
 import { QaThrComponent } from './qas/qathr.component';
-import { QaTimComponent } from './qas/qatim.component';
 import { QaTeeComponent } from './qas/qatee.component';
 import { QaLieComponent } from './qas/qalie.component';
 import { QaMarComponent } from './qas/qamar.component';
@@ -89,6 +87,8 @@ import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
 import { MiscObhazardinboundsComponent } from './miscs/miscobhazardinbounds.component';
+import { MiscMandatoryComponent } from './miscs/miscmandatory.component';
+import { MiscRelieffromobComponent } from './miscs/miscrelief-from-ob.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -119,7 +119,6 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     Rule80303Component,
     Rule804Component,
     Rule80401Component,
-    Rule80402Component,
     Rule805Component,
     Rule80501Component,
     Rule80502Component,
@@ -146,7 +145,6 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     QaIndexComponent,
     QaAppComponent,
     QaThrComponent,
-    QaTimComponent,
     QaTeeComponent,
     QaLieComponent,
     QaMarComponent,
@@ -174,6 +172,8 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     MiscReliefsComponent,
     MiscEnforcementComponent,
     MiscObhazardinboundsComponent,
+    MiscMandatoryComponent,
+    MiscRelieffromobComponent,
     MiscPostfaceComponent,
     PullToJumpComponent
   ],
