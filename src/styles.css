@@ -54,6 +54,7 @@ span.spacer {
 .app-content {
   padding: 0 20px 50px;
 }
+.app-appendix,
 .app-qa,
 .app-misc,
 .app-rule {
@@ -63,6 +64,7 @@ span.spacer {
   margin-bottom: 45px;
   background-color: white;
 }
+.app-appendix h1,
 .app-preface h1,
 .app-qa h1,
 .app-misc h1,
@@ -70,6 +72,7 @@ span.spacer {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.app-appendix h2,
 .app-preface h2,
 .app-misc h2,
 .app-qa h2,
@@ -77,10 +80,12 @@ span.spacer {
   font-size: 1.1rem;
   font-weight: bold;
 }
+.app-appendix p,
 .app-preface p,
 .app-misc p,
 .app-qa p,
 .app-rule p,
+.app-appendix li,
 .app-preface li,
 .app-misc li,
 .app-qa li,
@@ -118,22 +123,27 @@ span.spacer {
 .app-qa > ul {
   padding-left: 1.6rem;
 }
+.app-appendix > ol,
 .app-rule > ol {
   list-style-type: upper-alpha;
   padding-left: 1.6rem;
 }
+.app-appendix li > ol,
 .app-rule li > ol {
   padding-left: 1.6rem;
 }
+.app-appendix li > ol > li > ol,
 .app-rule li > ol > li > ol {
   list-style-type: lower-alpha;
 }
+.app-appendix a,
 .app-preface a,
 .app-qa a,
 .app-misc a,
 .app-rule a {
   text-decoration: none;
 }
+.app-appendix a[href^="http"],
 .app-preface a[href^="http"],
 .app-qa a[href^="http"],
 .app-misc a[href^="http"],
@@ -143,6 +153,7 @@ span.spacer {
   background-size: 1rem 1rem;
   padding-right: 1.1rem;
 }
+.app-appendix img,
 .app-preface img,
 .app-qa img,
 .app-misc img,
@@ -222,6 +233,7 @@ ul.app-index span + span {
   html, body {
     font-size: 16px;
   }
+  .app-appendix,
   .app-rule {
     padding-left: 15px;
     padding-right: 15px;
@@ -234,6 +246,7 @@ ul.app-index span + span {
   html, body {
     font-size: 15px;
   }
+  .app-appendix,
   .app-rule {
     padding-left: 15px;
     padding-right: 15px;
@@ -246,6 +259,7 @@ ul.app-index span + span {
   html, body {
     font-size: 14px;
   }
+  .app-appendix,
   .app-rule {
     padding-left: 10px;
     padding-right: 10px;

@@ -47,6 +47,9 @@ const RULES_LIST = [
   '81301',
   '81302',
 ];
+const APPENDIX_LIST = [
+  'appendixf',
+];
 const QAS_LIST = [
   'index',
   'app',
@@ -84,13 +87,14 @@ const MISC_LIST = [
   'postface'
 ];
 const TOC2 = [
-  {"id": "appendixe", "title": "用語定義"},
+  {"id": "appendixe", "title": "附則E 定義"},
 ];
 const TOC3 = [
   {"id": "penalties", "title": "規則違反の分類"},
 ];
 const external = /^http/i;
 const RULE_SRC = 'rules';
+const APPENDIX_SRC = 'appendix';
 const QA_SRC = 'qas';
 const MISC_SRC = 'miscs';
 const DST = './src/app/'
@@ -111,6 +115,7 @@ md.renderer.rules.footnote_ref = render_footnote_ref;
 
 createComponents(RULES_LIST, RULE_SRC);
 toc = toc.concat(TOC2);
+createComponents(APPENDIX_LIST, APPENDIX_SRC);
 createComponents(QAS_LIST, QA_SRC);
 toc = toc.concat(TOC3);
 createComponents(MISC_LIST, MISC_SRC);
@@ -136,7 +141,8 @@ function createComponents(sources, srcPath) {
 function makeToc(id, content) {
   const title = content.match(header)
     || content.match(/^\#\# \[(\S+)\]\([0-9]+\)$/m)
-    || content.match(/^\#+ (\S+)$/m);
+    || content.match(/^\#+ (\S+)$/m)
+    || content.match(/^\#+ (\S+\s+\S+)$/m);
   toc.push({
     id: id,
     title: title[1]

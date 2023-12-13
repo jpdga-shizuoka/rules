@@ -56,7 +56,8 @@ import { Rule812Component } from './rules/rule812.component';
 import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
-import { AppendixEComponent } from './rules/appendix-e.component';
+import { AppendixEComponent } from './appendix/appendix-e.component';
+import { AppendixAppendixfComponent } from './appendix/appendixappendixf.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
 import { QaThrComponent } from './qas/qathr.component';
@@ -142,6 +143,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     Rule81301Component,
     Rule81302Component,
     AppendixEComponent,
+    AppendixAppendixfComponent,
     QaIndexComponent,
     QaAppComponent,
     QaThrComponent,
