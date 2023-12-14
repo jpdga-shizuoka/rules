@@ -57,7 +57,7 @@ import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
 import { AppendixEComponent } from './appendix/appendix-e.component';
-import { AppendixAppendixfComponent } from './appendix/appendixappendixf.component';
+import { AppendixAppendixfComponent } from './appendix/appendixappendix-f.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
 import { QaThrComponent } from './qas/qathr.component';

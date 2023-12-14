@@ -30,9 +30,10 @@ PDGAが公開する[Official Rules of Disc Golf](https://www.pdga.com/rules/offi
 
 |   日付   | 詳細
 |:-------:|:---------
+| 2023/12 | [附則F 新規追加](https://docs.google.com/presentation/d/1bcT323XNDgEInL4S3dk9DclFaDILGfmCAW68jW7Oc4g/edit)
 | 2023/1  | [2023年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRQKajZr0Ye-F5OrV6IqhB38CLAZqR4_dsFH_J4EXrgopZ83imYkrmh1MvLdnoB-Hw9EiXG8ktZnCPp/pub)
 | 2022/7  | [QA-EQU-6新規, QA-OB-4追記](https://docs.google.com/presentation/d/e/2PACX-1vTthFMtBpyAmGyR3ULy5AvBBP1a3TISowM7VX-mLhuEuiNR9jweezvG9yboayfsQi7aDIq5v0HY9OMC/pub?start=false&loop=false&delayms=3000)
-| 2022/3  | [804.01 マンダトリーの経路を更新](https://docs.google.com/presentation/d/e/2PACX-1vSiGej3PzUmYvI-gD5ylHzCo_ixT3W7UpntrLrqsZIOx-D4vW0lrYNmKDUuzqFqYXMyM4t_2wPDdwjV/pub?start=false&loop=false&delayms=3000)
+| 2022/3  | [804.01 マンダトリーの経路更新](https://docs.google.com/presentation/d/e/2PACX-1vSiGej3PzUmYvI-gD5ylHzCo_ixT3W7UpntrLrqsZIOx-D4vW0lrYNmKDUuzqFqYXMyM4t_2wPDdwjV/pub?start=false&loop=false&delayms=3000)
 | 2022/1  | [2022年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRvDwv6ThGpV3tHZipAZ0m_BtGrZu2tNZfGRW7YJUIgbGo4MQuu0MWdwRfGlxehqsO8McxybQdY2RCf/pub)
 |         | [超まとめ:マンダトリーによる規制](mandatory)追加
 |         | [超まとめ:OB区域からの救済](relief-from-ob)追加
