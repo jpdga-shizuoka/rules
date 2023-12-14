@@ -28,7 +28,7 @@ export class AppendixComponent implements OnInit, OnDestroy {
   }
 
   private jump2pdga(id: string) {
-    const url = `https://www.pdga.com/rules/official-rules-disc-golf/appendix-${id}`;
+    const url = `https://www.pdga.com/rules/official-rules-disc-golf/${id}`;
     window.location.href = url;
   }
 }
