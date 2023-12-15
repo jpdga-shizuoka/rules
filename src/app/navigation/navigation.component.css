@@ -50,3 +50,6 @@ a.nostyle {
 #next {
   right: 15px;
 }
+.menu-button {
+  box-shadow: none;
+}
