@@ -30,7 +30,7 @@ PDGAが公開する[Official Rules of Disc Golf](https://www.pdga.com/rules/offi
 
 |   日付   | 詳細
 |:-------:|:---------
-| 2023/12 | [附則F 新規追加](https://docs.google.com/presentation/d/1bcT323XNDgEInL4S3dk9DclFaDILGfmCAW68jW7Oc4g/edit)
+| 2023/12 | [附則F 新規追加](https://drive.google.com/file/d/1pqpwrATw00Vn5M8o2lb5KQckR_As1M9E/view)
 | 2023/1  | [2023年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRQKajZr0Ye-F5OrV6IqhB38CLAZqR4_dsFH_J4EXrgopZ83imYkrmh1MvLdnoB-Hw9EiXG8ktZnCPp/pub)
 | 2022/7  | [QA-EQU-6新規, QA-OB-4追記](https://docs.google.com/presentation/d/e/2PACX-1vTthFMtBpyAmGyR3ULy5AvBBP1a3TISowM7VX-mLhuEuiNR9jweezvG9yboayfsQi7aDIq5v0HY9OMC/pub?start=false&loop=false&delayms=3000)
 | 2022/3  | [804.01 マンダトリーの経路更新](https://docs.google.com/presentation/d/e/2PACX-1vSiGej3PzUmYvI-gD5ylHzCo_ixT3W7UpntrLrqsZIOx-D4vW0lrYNmKDUuzqFqYXMyM4t_2wPDdwjV/pub?start=false&loop=false&delayms=3000)
