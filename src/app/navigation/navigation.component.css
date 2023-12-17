@@ -5,16 +5,14 @@
   width: 280px;
   font-size: 1rem;
 }
-.mat-list-base .mat-list-item {
+.mat-mdc-list-base .mat-mdc-list-item {
   font-size: 1rem;
   height: 32px;
   font-weight: bolder;
 }
-.mat-list-base .mat-list-item.ss {
+.mat-mdc-list-base .mat-mdc-list-item.ss {
   font-size: 0.9rem;
   font-weight: normal;
-}
-.mat-list-item.ss {
   margin-left: 1rem;
 }
 .mat-toolbar > span {
@@ -49,4 +47,7 @@ a.nostyle {
 }
 #next {
   right: 15px;
+}
+.menu-button {
+  box-shadow: none;
 }

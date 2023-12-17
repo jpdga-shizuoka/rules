@@ -45,6 +45,7 @@ import { Rule812Component } from './rules/rule812.component';
 import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
+import { AppendixAppendixfComponent } from './appendix/appendixappendix-f.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
 import { QaThrComponent } from './qas/qathr.component';
@@ -70,7 +71,7 @@ import { QaMisComponent } from './qas/qamis.component';
 import { QaCouComponent } from './qas/qacou.component';
 import { QaEquComponent } from './qas/qaequ.component';
 import { QaCmpComponent } from './qas/qacmp.component';
-import { AppendixEComponent } from './rules/appendix-e.component';
+import { AppendixEComponent } from './appendix/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
@@ -151,7 +152,8 @@ const routes: Routes = [
   { path: 'qa-cou', component: QaCouComponent },
   { path: 'qa-equ', component: QaEquComponent },
   { path: 'qa-cmp', component: QaCmpComponent },
-  { path: 'appendixe', component: AppendixEComponent },
+  { path: 'appendix-e', component: AppendixEComponent },
+  { path: 'appendix-f', component: AppendixAppendixfComponent},
   { path: 'obstacles', component: MiscObstaclesComponent },
   { path: 'reliefs', component: MiscReliefsComponent },
   { path: 'penalties', component: PenaltiesComponent },
@@ -163,7 +165,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, {})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

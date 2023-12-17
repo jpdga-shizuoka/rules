@@ -1,8 +1,9 @@
 import TOC_RULES from '../assets/toc/rules.json';
+import APPENDIX from '../assets/toc/appendix.json';
 import TOC_QAS from '../assets/toc/qas.json';
 import TOC_MISC from '../assets/toc/miscs.json';
 
-const TOC = TOC_RULES.concat(TOC_QAS.concat(TOC_MISC));
+const TOC = TOC_RULES.concat(APPENDIX).concat(TOC_QAS).concat(TOC_MISC);
 export { TOC };
 
 export interface Section {
@@ -42,6 +43,12 @@ export function getUperLink(id: string): string | null {
     return null; // no upper link
   }
   if (/^[0-9]{3}$/.test(id)) {
+    return 'index';
+  }
+  if (/^appendix/.test(id)) {
+    return 'index';
+  }
+  if (/^qa-index/.test(id)) {
     return 'index';
   }
   if (/^[0-9]{5}$/.test(id)) {
