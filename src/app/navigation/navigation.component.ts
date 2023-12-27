@@ -9,6 +9,8 @@ import {
 } from '../toc';
 
 const TITLE_PATTERN = /[\d.]+ (\S+)/;
+const SIDE_NAV_WIDTH = 280; // px
+const OFFSET_BUTTON = 15; // px
 
 @Component({
   selector: 'app-navigation',
@@ -97,11 +99,29 @@ export class NavigationComponent implements OnInit, OnDestroy {
   }
 
   get isNext(): boolean {
-    return this.isHandset && !this.drawer?.opened && !!getNext(this.section?.id);
+    return !!getNext(this.section?.id);
   }
 
   get isPrev(): boolean {
-    return this.isHandset && !this.drawer?.opened && !!getPrev(this.section?.id);
+    return !!getPrev(this.section?.id);
+  }
+
+  get offsetBottom(): string {
+    return OFFSET_BUTTON + 'px';
+  }
+
+  get prevStyles(): { [key: string]: string } {
+    return {
+      'left': `${this.isHandset ? OFFSET_BUTTON : SIDE_NAV_WIDTH + OFFSET_BUTTON}px`,
+      'bottom': this.offsetBottom
+    };
+  }
+
+  get nextStyles(): { [key: string]: string } {
+    return {
+      'right': OFFSET_BUTTON + 'px',
+      'bottom': this.offsetBottom
+    };
   }
 }
 

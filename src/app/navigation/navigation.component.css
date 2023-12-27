@@ -35,18 +35,11 @@ mat-toolbar span:nth-child(4) {
 .app-nav-button {
   position: absolute;
   z-index: 1;
-  bottom: 15px;
 }
 a.nostyle {
   color: inherit;
   text-decoration: inherit;
   cursor: auto;
-}
-#prev {
-  left: 15px;
-}
-#next {
-  right: 15px;
 }
 .menu-button {
   box-shadow: none;

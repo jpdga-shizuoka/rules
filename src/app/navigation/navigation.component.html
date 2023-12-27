@@ -47,13 +47,13 @@
   </mat-sidenav-content>
 </mat-sidenav-container>
 
-<button class="app-nav-button" id="prev" (click)="onClickPrev()"
+<button class="app-nav-button" (click)="onClickPrev()" [ngStyle]="prevStyles"
   mat-fab color="primary" aria-label="previous rule" *ngIf="isPrev">
   <mat-icon>
     <img src="assets/img/arrow_back_ios-24px.svg" alt="back">
   </mat-icon>
 </button>
-<button class="app-nav-button" id="next" (click)="onClickNext()"
+<button class="app-nav-button"(click)="onClickNext()" [ngStyle]="nextStyles"
   mat-fab color="primary" aria-label="next rule" *ngIf="isNext">
   <mat-icon>
     <img src="assets/img/arrow_forward_ios-24px.svg" alt="forward">
