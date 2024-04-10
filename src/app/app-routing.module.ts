@@ -46,6 +46,7 @@ import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
 import { AppendixAppendixbComponent } from './appendix/appendixappendix-b.component';
+import { AppendixAppendixdComponent } from './appendix/appendixappendix-d.component';
 import { AppendixAppendixfComponent } from './appendix/appendixappendix-f.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
@@ -155,6 +156,7 @@ const routes: Routes = [
   { path: 'qa-cmp', component: QaCmpComponent },
   { path: 'appendix-b', component: AppendixAppendixbComponent},
   { path: 'appendix-e', component: AppendixEComponent },
+  { path: 'appendix-d', component: AppendixAppendixdComponent},
   { path: 'appendix-f', component: AppendixAppendixfComponent},
   { path: 'obstacles', component: MiscObstaclesComponent },
   { path: 'reliefs', component: MiscReliefsComponent },
