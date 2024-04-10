@@ -15,6 +15,7 @@
 * [812 礼儀](812)
 * [813 装備](813)
 * [附則B ダブルスとチームプレー](appendix-b)
+* [附則D 単位の換算](appendix-d)
 * [附則E 索引](appendix-e)
 * [附則F ディスクゴルフの適応規則](appendix-f)
 * [規則Q&A](qa-index)
