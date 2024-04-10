@@ -49,6 +49,7 @@ const RULES_LIST = [
 ];
 const APPENDIX_LIST = [
   'appendix-b',
+  'appendix-c',
   'appendix-d',
   'appendix-f',
 ];
