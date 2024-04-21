@@ -48,6 +48,7 @@ const RULES_LIST = [
   '81302',
 ];
 const APPENDIX_LIST = [
+  'appendix-a',
   'appendix-b',
   'appendix-c',
   'appendix-d',
@@ -78,6 +79,7 @@ const QAS_LIST = [
   'mis',
   'cou',
   'equ',
+  'mat',
   'cmp',
 ];
 const MISC_LIST = [
@@ -144,6 +146,7 @@ function createComponents(sources, srcPath) {
 function makeToc(id, content) {
   const title = content.match(header)
     || content.match(/^\#\# \[(\S+)\]\([0-9]+\)$/m)
+    || content.match(/^\#\# \[(\S+)\]\(appendix-[a-z]+\)$/m)
     || content.match(/^\#+ (\S+)$/m)
     || content.match(/^\#+ (\S+\s+\S+)$/m);
   toc.push({
