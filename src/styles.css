@@ -110,6 +110,7 @@ span.spacer {
   font-style: italic;
   background-color: #e8e8e8;
 }
+.app-appendix h5,
 .app-rule ol + h5 {
   padding-top: 0.5rem;
 }
