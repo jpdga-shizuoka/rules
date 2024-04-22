@@ -80,6 +80,7 @@ const QAS_LIST = [
   'cou',
   'equ',
   'mat',
+  'dou',
   'cmp',
 ];
 const MISC_LIST = [
