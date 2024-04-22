@@ -147,6 +147,7 @@ function createComponents(sources, srcPath) {
 function makeToc(id, content) {
   const title = content.match(header)
     || content.match(/^\#\# \[(\S+)\]\([0-9]+\)$/m)
+    || content.match(/^\#\# \[(\S+)\]\(appendix-[a-z]\)$/m)
     || content.match(/^\# (附則[A-Z] \S+)$/m)
     || content.match(/^\#+ (\S+)$/m)
     || content.match(/^\#+ (\S+\s+\S+)$/m);
