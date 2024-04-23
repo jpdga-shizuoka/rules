@@ -1,7 +1,7 @@
 # 附則E 索引
 
 * :適応ディスクゴルフ, Adaptive Disc Golf: :[附則F.01.B](appendix-f):
-* :オールスクウェア, All Square: :[附則A.04.A](appendix-A):
+* :オールスクウェア, All Square: :[附則A.04.A](appendix-a):
 * :アウェープレーヤー, Away Player: :[802.02.C](/80202):
 * :バスケット型ターゲット, Basket Target: :[807.A](807):
 * :カジュアルエリア, Casual Area: :[806.03.A](/80603):
