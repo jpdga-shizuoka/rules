@@ -49,6 +49,7 @@ import { AppendixAppendixaComponent } from './appendix/appendixappendix-a.compon
 import { AppendixAppendixbComponent } from './appendix/appendixappendix-b.component';
 import { AppendixAppendixcComponent } from './appendix/appendixappendix-c.component';
 import { AppendixAppendixdComponent } from './appendix/appendixappendix-d.component';
+import { AppendixAppendixeComponent } from './appendix/appendixappendix-e.component';
 import { AppendixAppendixfComponent } from './appendix/appendixappendix-f.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
@@ -77,7 +78,6 @@ import { QaEquComponent } from './qas/qaequ.component';
 import { QaMatComponent } from './qas/qamat.component';
 import { QaDouComponent } from './qas/qadou.component';
 import { QaCmpComponent } from './qas/qacmp.component';
-import { AppendixEComponent } from './appendix/appendix-e.component';
 import { PenaltiesComponent } from './rules/penalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
@@ -163,7 +163,7 @@ const routes: Routes = [
   { path: 'appendix-a', component: AppendixAppendixaComponent},
   { path: 'appendix-b', component: AppendixAppendixbComponent},
   { path: 'appendix-c', component: AppendixAppendixcComponent},
-  { path: 'appendix-e', component: AppendixEComponent },
+  { path: 'appendix-e', component: AppendixAppendixeComponent},
   { path: 'appendix-d', component: AppendixAppendixdComponent},
   { path: 'appendix-f', component: AppendixAppendixfComponent},
   { path: 'obstacles', component: MiscObstaclesComponent },
