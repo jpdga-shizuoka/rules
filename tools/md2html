@@ -52,6 +52,7 @@ const APPENDIX_LIST = [
   'appendix-b',
   'appendix-c',
   'appendix-d',
+  'appendix-e',
   'appendix-f',
 ];
 const QAS_LIST = [
@@ -92,9 +93,7 @@ const MISC_LIST = [
   'relief-from-ob',
   'postface'
 ];
-const TOC2 = [
-  {"id": "appendix-e", "title": "附則E 索引"},
-];
+const TOC2 = [];
 const TOC3 = [
   {"id": "penalties", "title": "規則違反の分類"},
 ];
@@ -112,6 +111,7 @@ const md = require('markdown-it')({replaceLink: replaceLink})
 .use(require('markdown-it-ins'))
 .use(require('markdown-it-strikethrough-alt'))
 .use(require('markdown-it-container'), 'app-table')
+.use(require('markdown-it-span'))
 .use(replaceLinkPlugIn);
 let toc = [{
   "id": "preface",
