@@ -193,14 +193,14 @@ hr.footnotes-sep {
 .footnote-item {
   font-size: 0.9rem;
 }
-ul.app-index {
+#app-appendix-e ul {
   max-width: 40rem;
   padding: 0;
   overflow-x: hidden;
   list-style: none;
   font-size: 0.9rem;
 }
-ul.app-index li:before {
+#app-appendix-e ul li:before {
   float: left;
   width: 0;
   white-space: nowrap;
@@ -210,11 +210,11 @@ ul.app-index li:before {
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
 }
-ul.app-index span:first-child {
+#app-appendix-e ul span:first-child {
   padding-right: 0.33rem;
   background: #fafafa;
 }
-ul.app-index span + span {
+#app-appendix-e ul span + span {
   float: right;
   padding-left: 0.33rem;
   background: #fafafa;
@@ -240,7 +240,7 @@ ul.app-index span + span {
     padding-left: 15px;
     padding-right: 15px;
   }
-  ul.app-index {
+  #app-appendix-e ul {
     font-size: 0.85rem;
   }
 }
@@ -253,7 +253,7 @@ ul.app-index span + span {
     padding-left: 15px;
     padding-right: 15px;
   }
-  ul.app-index {
+  #app-appendix-e ul {
     font-size: 0.8rem;
   }
 }
@@ -266,7 +266,7 @@ ul.app-index span + span {
     padding-left: 10px;
     padding-right: 10px;
   }
-  ul.app-index {
+  #app-appendix-e ul {
     font-size: 0.7rem;
   }
   #app-postface > p,
