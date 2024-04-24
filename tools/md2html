@@ -2,6 +2,9 @@
 
 const Path = require('path');
 
+const PREFACES_LIST = [
+  'preface',
+];
 const RULES_LIST = [
   'spiritofgame',
   'index',
@@ -98,6 +101,7 @@ const TOC3 = [
   {"id": "penalties", "title": "規則違反の分類"},
 ];
 const external = /^http/i;
+const PREFACE_SRC = 'prefaces';
 const RULE_SRC = 'rules';
 const APPENDIX_SRC = 'appendix';
 const QA_SRC = 'qas';
@@ -106,21 +110,21 @@ const DST = './src/app/'
 const TOC = './src/assets/toc/';
 const header = /^\#+ ([\d\.]+ \S+)/m;
 const fs = require('fs');
-const md = require('markdown-it')({replaceLink: replaceLink})
+const md = require('markdown-it')({
+  html:         true,
+  replaceLink: replaceLink,
+})
 .use(require('markdown-it-footnote'))
 .use(require('markdown-it-ins'))
 .use(require('markdown-it-strikethrough-alt'))
 .use(require('markdown-it-container'), 'app-table')
 .use(require('markdown-it-span'))
 .use(replaceLinkPlugIn);
-let toc = [{
-  "id": "preface",
-  "title": "はじめに"
-}];
+let toc = [];
 md.renderer.rules.footnote_ref = render_footnote_ref;
 
+createComponents(PREFACES_LIST, PREFACE_SRC);
 createComponents(RULES_LIST, RULE_SRC);
-toc = toc.concat(TOC2);
 createComponents(APPENDIX_LIST, APPENDIX_SRC);
 createComponents(QAS_LIST, QA_SRC);
 toc = toc.concat(TOC3);
@@ -151,6 +155,10 @@ function makeToc(id, content) {
     || content.match(/^\# (附則[A-Z] \S+)$/m)
     || content.match(/^\#+ (\S+)$/m)
     || content.match(/^\#+ (\S+\s+\S+)$/m);
+  if (title == null) {
+    console.log('title not found: ' + id);
+    return;
+  }
   toc.push({
     id: id,
     title: title[1]

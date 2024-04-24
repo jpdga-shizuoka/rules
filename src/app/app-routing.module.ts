@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { RulePrefaceComponent } from './rules/rulepreface.component';
+import { PrefacePrefaceComponent } from './prefaces/prefacepreface.component';
 import { RuleSpiritofgameComponent } from './rules/rulespiritofgame.component';
 import { RuleIndexComponent } from './rules/ruleindex.component';
 import { Rule800Component } from './rules/rule800.component';
@@ -88,7 +88,7 @@ import { MiscRelieffromobComponent } from './miscs/miscrelief-from-ob.component'
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
-  { path: '', component: RulePrefaceComponent },
+  { path: '', component: PrefacePrefaceComponent },
   { path: 'preface', pathMatch: 'full', redirectTo: '' },
   { path: 'spiritofgame', component: RuleSpiritofgameComponent },
   { path: 'index', component: RuleIndexComponent },
