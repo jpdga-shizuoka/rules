@@ -78,7 +78,7 @@ import { QaEquComponent } from './qas/qaequ.component';
 import { QaMatComponent } from './qas/qamat.component';
 import { QaDouComponent } from './qas/qadou.component';
 import { QaCmpComponent } from './qas/qacmp.component';
-import { PenaltiesComponent } from './rules/penalties.component';
+import { MiscPenaltiesComponent } from './miscs/miscpenalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
@@ -168,7 +168,7 @@ const routes: Routes = [
   { path: 'appendix-f', component: AppendixAppendixfComponent},
   { path: 'obstacles', component: MiscObstaclesComponent },
   { path: 'reliefs', component: MiscReliefsComponent },
-  { path: 'penalties', component: PenaltiesComponent },
+  { path: 'penalties', component: MiscPenaltiesComponent },
   { path: 'enforcement', component: MiscEnforcementComponent },
   { path: 'obhazardinbounds', component: MiscObhazardinboundsComponent },
   { path: 'mandatory', component: MiscMandatoryComponent },
