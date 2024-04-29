@@ -40,7 +40,7 @@ PWAに対応しています.
 
 ### オープンソース•ソフトウェア•プロジェクト
 
-本ウェブサイトのコード一式および邦訳文の全てを[Github](https://github.com/jpdga-shizuoka/ssa-round-ratings)に公開しています.
+本ウェブサイトのコード一式および邦訳文の全てを[Github](https://github.com/jpdga-shizuoka/rules)に公開しています.
 
 ### ご意見の窓口
 
