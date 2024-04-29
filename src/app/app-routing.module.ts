@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { RulePrefaceComponent } from './rules/rulepreface.component';
-import { RuleSpiritofgameComponent } from './rules/rulespiritofgame.component';
+import { PrefacePrefaceComponent } from './prefaces/prefacepreface.component';
 import { RuleIndexComponent } from './rules/ruleindex.component';
 import { Rule800Component } from './rules/rule800.component';
 import { Rule801Component } from './rules/rule801.component';
@@ -45,6 +44,11 @@ import { Rule812Component } from './rules/rule812.component';
 import { Rule813Component } from './rules/rule813.component';
 import { Rule81301Component } from './rules/rule81301.component';
 import { Rule81302Component } from './rules/rule81302.component';
+import { AppendixAppendixaComponent } from './appendix/appendixappendix-a.component';
+import { AppendixAppendixbComponent } from './appendix/appendixappendix-b.component';
+import { AppendixAppendixcComponent } from './appendix/appendixappendix-c.component';
+import { AppendixAppendixdComponent } from './appendix/appendixappendix-d.component';
+import { AppendixAppendixeComponent } from './appendix/appendixappendix-e.component';
 import { AppendixAppendixfComponent } from './appendix/appendixappendix-f.component';
 import { QaIndexComponent } from './qas/qaindex.component';
 import { QaAppComponent } from './qas/qaapp.component';
@@ -70,9 +74,10 @@ import { QaIntComponent } from './qas/qaint.component';
 import { QaMisComponent } from './qas/qamis.component';
 import { QaCouComponent } from './qas/qacou.component';
 import { QaEquComponent } from './qas/qaequ.component';
+import { QaMatComponent } from './qas/qamat.component';
+import { QaDouComponent } from './qas/qadou.component';
 import { QaCmpComponent } from './qas/qacmp.component';
-import { AppendixEComponent } from './appendix/appendix-e.component';
-import { PenaltiesComponent } from './rules/penalties.component';
+import { MiscPenaltiesComponent } from './miscs/miscpenalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
@@ -82,9 +87,8 @@ import { MiscRelieffromobComponent } from './miscs/miscrelief-from-ob.component'
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 
 const routes: Routes = [
-  { path: '', component: RulePrefaceComponent },
+  { path: '', component: PrefacePrefaceComponent },
   { path: 'preface', pathMatch: 'full', redirectTo: '' },
-  { path: 'spiritofgame', component: RuleSpiritofgameComponent },
   { path: 'index', component: RuleIndexComponent },
   { path: '800', component: Rule800Component },
   { path: '801', component: Rule801Component },
@@ -151,12 +155,18 @@ const routes: Routes = [
   { path: 'qa-mis', component: QaMisComponent },
   { path: 'qa-cou', component: QaCouComponent },
   { path: 'qa-equ', component: QaEquComponent },
+  { path: 'qa-mat', component: QaMatComponent },
+  { path: 'qa-dou', component: QaDouComponent },
   { path: 'qa-cmp', component: QaCmpComponent },
-  { path: 'appendix-e', component: AppendixEComponent },
+  { path: 'appendix-a', component: AppendixAppendixaComponent},
+  { path: 'appendix-b', component: AppendixAppendixbComponent},
+  { path: 'appendix-c', component: AppendixAppendixcComponent},
+  { path: 'appendix-e', component: AppendixAppendixeComponent},
+  { path: 'appendix-d', component: AppendixAppendixdComponent},
   { path: 'appendix-f', component: AppendixAppendixfComponent},
   { path: 'obstacles', component: MiscObstaclesComponent },
   { path: 'reliefs', component: MiscReliefsComponent },
-  { path: 'penalties', component: PenaltiesComponent },
+  { path: 'penalties', component: MiscPenaltiesComponent },
   { path: 'enforcement', component: MiscEnforcementComponent },
   { path: 'obhazardinbounds', component: MiscObhazardinboundsComponent },
   { path: 'mandatory', component: MiscMandatoryComponent },

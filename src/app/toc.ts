@@ -1,9 +1,14 @@
+import TOC_PREFACES from '../assets/toc/prefaces.json';
 import TOC_RULES from '../assets/toc/rules.json';
 import APPENDIX from '../assets/toc/appendix.json';
 import TOC_QAS from '../assets/toc/qas.json';
 import TOC_MISC from '../assets/toc/miscs.json';
 
-const TOC = TOC_RULES.concat(APPENDIX).concat(TOC_QAS).concat(TOC_MISC);
+const TOC = TOC_PREFACES
+  .concat(TOC_RULES)
+  .concat(APPENDIX)
+  .concat(TOC_QAS)
+  .concat(TOC_MISC);
 export { TOC };
 
 export interface Section {

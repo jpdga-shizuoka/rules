@@ -29,6 +29,7 @@ span.spacer {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+#app-preface > hr + p,
 #app-postface > hr + p,
 .app-content > hr + p {
   text-align: right;
@@ -54,6 +55,7 @@ span.spacer {
 .app-content {
   padding: 0 20px 50px;
 }
+.app-preface,
 .app-appendix,
 .app-qa,
 .app-misc,
@@ -100,6 +102,7 @@ span.spacer {
 .app-rule h3 + p {
   padding-left: 1rem;
 }
+.app-appendix h5,
 .app-rule h5 {
   padding: 0 0 0.5rem 1.6rem;
   margin-top: 0;
@@ -109,6 +112,7 @@ span.spacer {
   font-style: italic;
   background-color: #e8e8e8;
 }
+.app-appendix h5,
 .app-rule ol + h5 {
   padding-top: 0.5rem;
 }
@@ -191,14 +195,16 @@ hr.footnotes-sep {
 .footnote-item {
   font-size: 0.9rem;
 }
-ul.app-index {
+#app-penalties ul,
+#app-appendix-e ul {
   max-width: 40rem;
   padding: 0;
   overflow-x: hidden;
   list-style: none;
   font-size: 0.9rem;
 }
-ul.app-index li:before {
+#app-penalties ul li::before,
+#app-appendix-e ul li:before {
   float: left;
   width: 0;
   white-space: nowrap;
@@ -208,11 +214,13 @@ ul.app-index li:before {
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
 }
-ul.app-index span:first-child {
+#app-penalties ul span:first-child,
+#app-appendix-e ul span:first-child {
   padding-right: 0.33rem;
   background: #fafafa;
 }
-ul.app-index span + span {
+#app-penalties ul span + span,
+#app-appendix-e ul span + span {
   float: right;
   padding-left: 0.33rem;
   background: #fafafa;
@@ -238,7 +246,8 @@ ul.app-index span + span {
     padding-left: 15px;
     padding-right: 15px;
   }
-  ul.app-index {
+  #app-penalities ul,
+  #app-appendix-e ul {
     font-size: 0.85rem;
   }
 }
@@ -251,7 +260,8 @@ ul.app-index span + span {
     padding-left: 15px;
     padding-right: 15px;
   }
-  ul.app-index {
+  #app-penalities ul,
+  #app-appendix-e ul {
     font-size: 0.8rem;
   }
 }
@@ -264,7 +274,8 @@ ul.app-index span + span {
     padding-left: 10px;
     padding-right: 10px;
   }
-  ul.app-index {
+  #app-penalities ul,
+  #app-appendix-e ul {
     font-size: 0.7rem;
   }
   #app-postface > p,
