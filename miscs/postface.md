@@ -9,9 +9,6 @@
 疑問に思った時やちょっとした確認に,
 さっと調べられる本ウェブサイトをご活用ください.
 
-なお本[ディスクゴルフ公式規則](index)は,
-[PDGA Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)の邦訳版です.
-
 ### 用語•訳語の統一
 
 邦訳にあたって使用する用語•訳語に揺れや誤用が発生しないよう,
