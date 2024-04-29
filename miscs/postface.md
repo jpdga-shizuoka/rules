@@ -50,7 +50,7 @@ PWAに対応しています.
 
 |   日付   | 詳細
 |:-------:|:---------
-| 2024/4 | 附則A, 附則B追加, 他
+| 2024/4 | 附則A, 附則B追加, 全体構成の変更
 | 2023/12  | [2024年版へ更新](https://drive.google.com/file/d/1boR4HMhim6qYjtv6jsai1r2QLZv4tUoS/view)
 | 2023/12 | [附則F 新規追加](https://drive.google.com/file/d/1pqpwrATw00Vn5M8o2lb5KQckR_As1M9E/view)
 | 2023/1  | [2023年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRQKajZr0Ye-F5OrV6IqhB38CLAZqR4_dsFH_J4EXrgopZ83imYkrmh1MvLdnoB-Hw9EiXG8ktZnCPp/pub)
