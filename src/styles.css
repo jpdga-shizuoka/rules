@@ -29,6 +29,7 @@ span.spacer {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+#app-preface > hr + p,
 #app-postface > hr + p,
 .app-content > hr + p {
   text-align: right;
@@ -54,6 +55,7 @@ span.spacer {
 .app-content {
   padding: 0 20px 50px;
 }
+.app-preface,
 .app-appendix,
 .app-qa,
 .app-misc,
@@ -193,6 +195,7 @@ hr.footnotes-sep {
 .footnote-item {
   font-size: 0.9rem;
 }
+#app-penalties ul,
 #app-appendix-e ul {
   max-width: 40rem;
   padding: 0;
@@ -200,6 +203,7 @@ hr.footnotes-sep {
   list-style: none;
   font-size: 0.9rem;
 }
+#app-penalties ul li::before,
 #app-appendix-e ul li:before {
   float: left;
   width: 0;
@@ -210,10 +214,12 @@ hr.footnotes-sep {
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
 }
+#app-penalties ul span:first-child,
 #app-appendix-e ul span:first-child {
   padding-right: 0.33rem;
   background: #fafafa;
 }
+#app-penalties ul span + span,
 #app-appendix-e ul span + span {
   float: right;
   padding-left: 0.33rem;
@@ -240,6 +246,7 @@ hr.footnotes-sep {
     padding-left: 15px;
     padding-right: 15px;
   }
+  #app-penalities ul,
   #app-appendix-e ul {
     font-size: 0.85rem;
   }
@@ -253,6 +260,7 @@ hr.footnotes-sep {
     padding-left: 15px;
     padding-right: 15px;
   }
+  #app-penalities ul,
   #app-appendix-e ul {
     font-size: 0.8rem;
   }
@@ -266,6 +274,7 @@ hr.footnotes-sep {
     padding-left: 10px;
     padding-right: 10px;
   }
+  #app-penalities ul,
   #app-appendix-e ul {
     font-size: 0.7rem;
   }

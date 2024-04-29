@@ -1,15 +1,13 @@
 # あとがき
 
-本[ディスクゴルフ公式規則](index)は,
-PDGAが公開する[Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)を,
-日本語版として作成したものです.
-
-本[ディスクゴルフ公式規則](index)を作成するにあたっては,
-2013年版JPDGA公式ルールブック及び
-2018年版[JPDGA公式ルールブック](http://www.jpdga.jp/data/2018discgolf_rule.pdf)
-2022年版[JPDGA公式ルールブック](http://www.jpdga.jp/data/2022discgolf_rule.pdf)
-を大いに参考にしました.
-この場を借りて御礼申し上げます.
+ディスクゴルフの規則に限らず,
+競技規則を注意深く読み込むことは退屈な作業ですよね.
+だから, プレーしながら一つ一つ覚えていくことは,
+効果的な方法でしょう.
+とは言え,
+その都度ルールブックを引っ張り出してというのも億劫ですね.
+疑問に思った時やちょっとした確認に,
+さっと調べられる本ウェブサイトをご活用ください.
 
 ### 用語•訳語の統一
 
@@ -26,11 +24,33 @@ PDGAが公開する[Official Rules of Disc Golf](https://www.pdga.com/rules/offi
 また外来語をカタカナ表記する際には,
 [外来語表記ガイドライン](https://www.jtca.org/standardization/katakana_guide_3_20171222.pdf)に従いました.
 
+### PWA対応 ([PWAとは?](https://www.google.com/search?q=PWA%E3%81%A8%E3%81%AF))
+
+本ウェブサイトは,
+PWAに対応しています. 
+電波の届かない山奥でも通信に頼ることなく,
+ネイティブ•アプリのようにご利用いただけます.
+[インストール方法はこちら](https://support.google.com/chrome/answer/9658361?hl=ja)を参考にして下さい.
+
+![ホーム画面のショートカット](assets/img/shortcut.jpg)
+
+### 運用
+
+本ウェブサイトはGitHubが提供する[GitHub Pages](https://pages.github.com)を利用して公開されています.
+
+### オープンソース•ソフトウェア•プロジェクト
+
+本ウェブサイトのコード一式および邦訳文の全てを[Github](https://github.com/jpdga-shizuoka/ssa-round-ratings)に公開しています.
+
+### ご意見の窓口
+
+本ウェブサイトに関するご意見は `jpdga.shizuoka@gmail.com` 宛までメール頂ければ幸いです.
+
 ### 履歴
 
 |   日付   | 詳細
 |:-------:|:---------
-| 2024/4 | 附則A, 附則B追加, 他
+| 2024/4 | 附則A, 附則B追加, 全体構成の変更
 | 2023/12  | [2024年版へ更新](https://drive.google.com/file/d/1boR4HMhim6qYjtv6jsai1r2QLZv4tUoS/view)
 | 2023/12 | [附則F 新規追加](https://drive.google.com/file/d/1pqpwrATw00Vn5M8o2lb5KQckR_As1M9E/view)
 | 2023/1  | [2023年版へ更新](https://docs.google.com/presentation/d/e/2PACX-1vRQKajZr0Ye-F5OrV6IqhB38CLAZqR4_dsFH_J4EXrgopZ83imYkrmh1MvLdnoB-Hw9EiXG8ktZnCPp/pub)

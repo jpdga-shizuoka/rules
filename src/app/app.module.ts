@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
-import { RulePrefaceComponent } from './rules/rulepreface.component';
+import { PrefacePrefaceComponent } from './prefaces/prefacepreface.component';
 import { RuleIndexComponent } from './rules/ruleindex.component';
 import { Rule800Component } from './rules/rule800.component';
 import { Rule801Component } from './rules/rule801.component';
@@ -89,7 +89,7 @@ import { QaEquComponent } from './qas/qaequ.component';
 import { QaMatComponent } from './qas/qamat.component';
 import { QaDouComponent } from './qas/qadou.component';
 import { QaCmpComponent } from './qas/qacmp.component';
-import { PenaltiesComponent } from './rules/penalties.component';
+import { MiscPenaltiesComponent } from './miscs/miscpenalties.component';
 import { MiscObstaclesComponent } from './miscs/miscobstacles.component';
 import { MiscReliefsComponent } from './miscs/miscreliefs.component';
 import { MiscEnforcementComponent } from './miscs/miscenforcement.component';
@@ -105,7 +105,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
   declarations: [
     AppComponent,
     NavigationComponent,
-    RulePrefaceComponent,
+    PrefacePrefaceComponent,
     RuleIndexComponent,
     Rule800Component,
     Rule801Component,
@@ -181,7 +181,7 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     QaMatComponent,
     QaDouComponent,
     QaCmpComponent,
-    PenaltiesComponent,
+    MiscPenaltiesComponent,
     MiscObstaclesComponent,
     MiscReliefsComponent,
     MiscEnforcementComponent,
