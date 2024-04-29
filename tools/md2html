@@ -6,7 +6,6 @@ const PREFACES_LIST = [
   'preface',
 ];
 const RULES_LIST = [
-  'spiritofgame',
   'index',
   '800',
   '801',
