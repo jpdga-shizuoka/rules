@@ -29,6 +29,7 @@ span.spacer {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+#app-preface > hr + p,
 #app-postface > hr + p,
 .app-content > hr + p {
   text-align: right;
@@ -54,6 +55,7 @@ span.spacer {
 .app-content {
   padding: 0 20px 50px;
 }
+.app-preface,
 .app-appendix,
 .app-qa,
 .app-misc,
