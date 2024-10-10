@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -98,7 +99,6 @@ import { MiscMandatoryComponent } from './miscs/miscmandatory.component';
 import { MiscRelieffromobComponent } from './miscs/miscrelief-from-ob.component';
 import { MiscPostfaceComponent } from './miscs/miscpostface.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
 
 @NgModule({
@@ -201,8 +201,14 @@ import { PullToJumpComponent } from './pull-to-jump/pull-to-jump.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatSnackBarModule,
     MatExpansionModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
