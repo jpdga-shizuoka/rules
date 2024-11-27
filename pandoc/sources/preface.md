@@ -1,8 +1,7 @@
 # 監修者より
 
 本 **ディスクゴルフ大会のための競技マニュアル - 2025年版** は、
-PDGAが公開する[Competition Manual for Disc Golf Events](https://www.pdga.com/rules/competition-manual-disc-golf-events)の直訳版です
-(したがって本書は国内事情を考慮していないので、国内大会においてはJPDGA版を参照して下さい)。
+PDGAが公開する[Competition Manual for Disc Golf Events](https://www.pdga.com/rules/competition-manual-disc-golf-events)の直訳版です。
 なお、本書の編集時点(2024年11月)では、2025年版の全文が未だPDGAから公表されていないため、
 既存の2024年版にPDGAの
 [*Updated for 2025*](https://www.pdga.com/news/official-rules-disc-golf-and-competition-manual-disc-golf-events-updated-2025)
@@ -12,23 +11,6 @@ PDGAが公開する[Competition Manual for Disc Golf Events](https://www.pdga.co
 ## 2025年版について
 
 次章に上記 *Updated for 2025* から本競技マニュアルに関わる部分を抜粋しましたので、詳細はそちらを参照して下さい。
-さて、これまでPDGA公認大会は、
-
-* [PDGAディスクゴルフ公式規則](ordg/index)
-* 本競技マニュアル
-* [PDGAツアー基準(北米版と北米を除く国際版の2版)](dgj/ts)
-
-の3本柱で運営されてきましたが、
-*Updated for 2025* にも言及されている通り、
-PDGAツアー基準が[セクション5](#セクション5-pdgaツアー基準)および[セクション6](#セクション6-国際大会における変更点と例外)として、
-本競技マニュアルに取り込まれました。
-ただ、まだ取って付けたような対応で至る所に
-「[国際プログラムガイド](dgj/programguid)を参照」との文言が散らばっていますが、
-これは国際版のツアー基準がそのプログラムガイドの一部となっているからです。
-よって、上記文言が現れた際は、
-[セクション6](#セクション6-国際大会における変更点と例外)に読み替えて、そちらを参照して下さい。
-もっともそれも承知済みで2026年には大幅に見直されるとのことなので、
-それを待ちましょう。
 
 ## 改訂版の表記について
 
@@ -43,9 +25,9 @@ PDGAツアー基準が[セクション5](#セクション5-pdgaツアー基準)�
 参照リンクを積極的に利用しています。
 また、本文書の内部への参照か、本書外への参照か、判断できるように以下の通り表記しています:
 
-* 本書内部への参照リンクの例です: [セクション1:トーナメントの手順](#セクション1-トーナメントの手順)、
+* 本書内部への参照リンクの例です: [800 ゲームの説明](#ゲームの説明)、
 * 本書から外部への参照リンクの例です: [PDGAディスクゴルフ公式規則](ordg/index)。
 
 ## GitHub公開に関して
 
-本書作成の成果を、[`GitHub`](https://github.com/jpdga-shizuoka/cm)に公開しました。
+本書作成の成果を、[`GitHub`](https://github.com/jpdga-shizuoka/rurles)に公開しました。

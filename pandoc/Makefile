@@ -101,7 +101,12 @@ QAS = $(MARKDOWNDIR)/qas.md \
 	$(QASDIR)/cmp.md
 
 SOURCE = $(MARKDOWNDIR)/imagepath.md
-SOURCE += $(NEWPAGE) \
+SOURCE += \
+	$(NEWPAGE) \
+	$(MARKDOWNDIR)/preface.md \
+	$(NEWPAGE) \
+	$(MARKDOWNDIR)/update.md \
+	$(NEWPAGE) \
 	$(RURLES) \
 	$(NEWPAGE) \
 	$(APPENDIXES) \
