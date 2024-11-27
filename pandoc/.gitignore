@@ -3,5 +3,7 @@
 /*.tex
 /*.lot
 /*.toc
+.appendix/
+.appendix-updated
 .qas/
 .qas-updated

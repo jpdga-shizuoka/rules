@@ -64,13 +64,25 @@ RURLES = \
 	$(RULESDIR)/81301.md \
 	$(RULESDIR)/81302.md
 
-APPENDIXES = \
-	$(APPENDIXESDIR)/appendix-a.md \
-	$(APPENDIXESDIR)/appendix-b.md \
-	$(APPENDIXESDIR)/appendix-c.md \
-	$(APPENDIXESDIR)/appendix-d.md \
-	$(APPENDIXESDIR)/appendix-e.md \
-	$(APPENDIXESDIR)/appendix-f.md
+#
+# Appendix
+#
+APPENDIX_SOUECES = \
+	appendix-a.md \
+	appendix-b.md \
+	appendix-c.md \
+	appendix-d.md \
+	appendix-e.md \
+	appendix-f.md
+APPENDIX_FROM = ../appendix
+APPENDIX_TO = ./.appendix
+APPENDIX_ORIGINALS = $(addprefix $(APPENDIX_FROM)/, $(APPENDIX_SOUECES))
+APPENDIX_WORKS = $(addprefix $(APPENDIX_TO)/, $(APPENDIX_SOUECES))
+APPENDIX_LIST = $(APPENDIX_WORKS)
+APPENDIX_UPDATED = .appendix-updated
+$(APPENDIX_UPDATED): $(APPENDIX_ORIGINALS)
+	filters/delete-subsections $(APPENDIX_FROM) $(APPENDIX_TO) && \
+	touch $(APPENDIX_UPDATED)
 
 #
 # Q&A
@@ -105,15 +117,15 @@ QAS_SOUECES = \
 QAS_FROM = ../qas
 QAS_TO = ./.qas
 QAS_ORIGINALS = $(addprefix $(QAS_FROM)/, $(QAS_SOUECES))
-QAS_WORKSS = $(addprefix $(QAS_TO)/, $(QAS_SOUECES))
-QAS_LIST = $(MARKDOWNDIR)/qas.md $(QAS_WORKSS)
+QAS_WORKS = $(addprefix $(QAS_TO)/, $(QAS_SOUECES))
+QAS_LIST = $(MARKDOWNDIR)/qas.md $(QAS_WORKS)
 QAS_UPDATED = .qas-updated
 $(QAS_UPDATED): $(QAS_ORIGINALS)
 	filters/remove-link $(QAS_FROM) $(QAS_TO) && \
 	touch $(QAS_UPDATED)
 
 #
-#
+# PDF
 #
 SOURCE = \
 	$(MARKDOWNDIR)/imagepath.md \
@@ -124,11 +136,11 @@ SOURCE = \
 	$(NEWPAGE) \
 	$(RURLES) \
 	$(NEWPAGE) \
-	$(APPENDIXES) \
+	$(APPENDIX_LIST) \
 	$(NEWPAGE) \
 	$(QAS_LIST)
 
-$(TARGET).pdf: $(QAS_UPDATED) $(SOURCE)
+$(TARGET).pdf: $(APPENDIX_UPDATED) $(QAS_UPDATED) $(SOURCE)
 	$(PANDOC) \
 		-d $(CONFIGDIR)/body.yaml \
 		-o $(TARGET).pdf \
@@ -138,6 +150,8 @@ $(TARGET).pdf: $(QAS_UPDATED) $(SOURCE)
 #
 #
 clean:
-	rm -f $(TARGET).pdf $(QAS_UPDATED) $(QAS_TO)/*
+	rm -f $(TARGET).pdf \
+	$(APPENDIX_UPDATED) $(APPENDIX_TO)/* \
+	$(QAS_UPDATED) $(QAS_TO)/*
 
 all: clean $(TARGET).pdf
