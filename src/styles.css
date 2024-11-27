@@ -233,9 +233,6 @@ hr.footnotes-sep {
     background: repeat url("./assets/img/background.png");
     background-size: 36px 30px;
   }
-  .mat-drawer-container {
-    background-color: transparent;
-  }
 }
 @media screen and (max-width: 414px) {
   html, body {

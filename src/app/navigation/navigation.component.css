@@ -44,3 +44,6 @@ a.nostyle {
 .menu-button {
   box-shadow: none;
 }
+.mat-drawer-container {
+  background-color: transparent;
+}
