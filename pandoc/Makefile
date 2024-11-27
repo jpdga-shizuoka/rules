@@ -21,48 +21,57 @@ COVER_TEMPLATE = $(TEMPLATEDIR)/cover-template.tex
 BACKCOVER_TEMPLATE = $(TEMPLATEDIR)/backcover-template.tex
 NEWPAGE = $(MARKDOWNDIR)/newpage.md
 
-RURLES = \
-	$(RULESDIR)/800.md \
-	$(MARKDOWNDIR)/801.md \
-	$(RULESDIR)/80101.md \
-	$(RULESDIR)/80102.md \
-	$(RULESDIR)/80103.md \
-	$(MARKDOWNDIR)/802.md \
-	$(RULESDIR)/80201.md \
-	$(RULESDIR)/80202.md \
-	$(RULESDIR)/80203.md \
-	$(RULESDIR)/80204.md \
-	$(RULESDIR)/80205.md \
-	$(RULESDIR)/80206.md \
-	$(RULESDIR)/80207.md \
-	$(MARKDOWNDIR)/803.md \
-	$(RULESDIR)/80301.md \
-	$(RULESDIR)/80302.md \
-	$(RULESDIR)/80303.md \
-	$(MARKDOWNDIR)/804.md \
-	$(RULESDIR)/80401.md \
-	$(MARKDOWNDIR)/805.md \
-	$(RULESDIR)/80501.md \
-	$(RULESDIR)/80502.md \
-	$(RULESDIR)/80503.md \
-	$(MARKDOWNDIR)/806.md \
-	$(RULESDIR)/80601.md \
-	$(RULESDIR)/80602.md \
-	$(RULESDIR)/80603.md \
-	$(RULESDIR)/80604.md \
-	$(RULESDIR)/80605.md \
-	$(RULESDIR)/807.md \
-	$(RULESDIR)/808.md \
-	$(MARKDOWNDIR)/809.md \
-	$(RULESDIR)/80901.md \
-	$(RULESDIR)/80902.md \
-	$(RULESDIR)/80903.md \
-	$(RULESDIR)/810.md \
-	$(RULESDIR)/811.md \
-	$(RULESDIR)/812.md \
-	$(MARKDOWNDIR)/813.md \
-	$(RULESDIR)/81301.md \
-	$(RULESDIR)/81302.md
+RULES_SOUECES = \
+	800.md \
+	801.md \
+	80101.md \
+	80102.md \
+	80103.md \
+	802.md \
+	80201.md \
+	80202.md \
+	80203.md \
+	80204.md \
+	80205.md \
+	80206.md \
+	80207.md \
+	803.md \
+	80301.md \
+	80302.md \
+	80303.md \
+	804.md \
+	80401.md \
+	805.md \
+	80501.md \
+	80502.md \
+	80503.md \
+	806.md \
+	80601.md \
+	80602.md \
+	80603.md \
+	80604.md \
+	80605.md \
+	807.md \
+	808.md \
+	809.md \
+	80901.md \
+	80902.md \
+	80903.md \
+	810.md \
+	811.md \
+	812.md \
+	813.md \
+	81301.md \
+	81302.md
+RULES_FROM = ../rules
+RULES_TO = ./.rules
+RULES_ORIGINALS = $(addprefix $(RULES_FROM)/, $(RULES_SOUECES))
+RULES_WORKS = $(addprefix $(RULES_TO)/, $(RULES_SOUECES))
+RULES_LIST = $(RULES_WORKS)
+RULES_UPDATED = .rules-updated
+$(RULES_UPDATED): $(RULES_ORIGINALS)
+	filters/delete-subsections $(RULES_FROM) $(RULES_TO) && \
+	touch $(RULES_UPDATED)
 
 #
 # Appendix
@@ -134,13 +143,13 @@ SOURCE = \
 	$(NEWPAGE) \
 	$(MARKDOWNDIR)/update.md \
 	$(NEWPAGE) \
-	$(RURLES) \
+	$(RULES_LIST) \
 	$(NEWPAGE) \
 	$(APPENDIX_LIST) \
 	$(NEWPAGE) \
 	$(QAS_LIST)
 
-$(TARGET).pdf: $(APPENDIX_UPDATED) $(QAS_UPDATED) $(SOURCE)
+$(TARGET).pdf: $(RULES_UPDATED) $(APPENDIX_UPDATED) $(QAS_UPDATED) $(SOURCE)
 	$(PANDOC) \
 		-d $(CONFIGDIR)/body.yaml \
 		-o $(TARGET).pdf \
@@ -151,6 +160,7 @@ $(TARGET).pdf: $(APPENDIX_UPDATED) $(QAS_UPDATED) $(SOURCE)
 #
 clean:
 	rm -f $(TARGET).pdf \
+	$(RULES_UPDATED) $(RULES_TO)/* \
 	$(APPENDIX_UPDATED) $(APPENDIX_TO)/* \
 	$(QAS_UPDATED) $(QAS_TO)/*
 

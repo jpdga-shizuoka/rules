@@ -3,6 +3,8 @@
 /*.tex
 /*.lot
 /*.toc
+.rules/
+.rules-updated
 .appendix/
 .appendix-updated
 .qas/
