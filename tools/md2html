@@ -133,7 +133,10 @@ function createComponents(sources, srcPath) {
   sources.forEach(id => {
     const filepath = Path.join(srcPath, id + '.md');
     const mdContent = fs.readFileSync(filepath, 'utf8');
-    const htmlContent = md.render(mdContent);
+    const emailRegex = /([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+    const htmlContent = md.render(mdContent)
+        .replace(emailRegex,  // メールアドレス中の'@'を'&#64;'に置き換え
+            (match, localPart, domainPart) => `${localPart}&#64;${domainPart}`);
 
     makeToc(srcPath === 'qas' ? 'qa-' + id : id, mdContent);
     makeHtml(id, htmlContent, srcPath);
