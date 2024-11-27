@@ -1,13 +1,21 @@
 #!/bin/sh
-
-INPUT_DIR="../qas"
-OUTPUT_DIR="./qas"
-
-if [ ! -d "$OUTPUT_DIR" ]; then
-  mkdir -p "$OUTPUT_DIR"
+#
+# 小見出しにリンクが貼られている時は、そのリンクを外す
+#   e.g. `## [title](link)` to `## title`
+#
+if [ "$#" -ne 2 ]; then
+  echo "Usage: $0 <FROM_DIRECTORY> <TO_DIRECTORY>"
+  exit 1
 fi
 
-for file in "$INPUT_DIR"/*; do
+FROM=$1
+TO=$2
+
+if [ ! -d "$TO" ]; then
+  mkdir -p "$TO"
+fi
+
+for file in "$FROM"/*; do
   filename=$(basename "$file")
-  sed -E 's/^##\s+\[([^]]+)\]\(\S+\)/## \1/' "$file" > "$OUTPUT_DIR/$filename"
+  sed -E 's/^##\s+\[([^]]+)\]\(\S+\)/## \1/' "$file" > "$TO/$filename"
 done

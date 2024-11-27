@@ -10,7 +10,7 @@ MARKDOWNDIR = sources
 
 RULESDIR = ../rules
 APPENDIXESDIR = ../appendix
-QASDIR = ../qas
+QASDIR = ./qas
 
 LOCAL_SOURCEDIR = sources
 
@@ -72,36 +72,51 @@ APPENDIXES = \
 	$(APPENDIXESDIR)/appendix-e.md \
 	$(APPENDIXESDIR)/appendix-f.md
 
-QAS = $(MARKDOWNDIR)/qas.md \
-	$(QASDIR)/app.md \
-	$(QASDIR)/thr.md \
-	$(QASDIR)/tee.md \
-	$(QASDIR)/lie.md \
-	$(QASDIR)/mar.md \
-	$(QASDIR)/sta.md \
-	$(QASDIR)/obs.md \
-	$(QASDIR)/man.md \
-	$(QASDIR)/pos.md \
-	$(QASDIR)/2m.md \
-	$(QASDIR)/los.md \
-	$(QASDIR)/put.md \
-	$(QASDIR)/ob.md \
-	$(QASDIR)/cas.md \
-	$(QASDIR)/com.md \
-	$(QASDIR)/sco.md \
-	$(QASDIR)/aba.md \
-	$(QASDIR)/pro.md \
-	$(QASDIR)/pra.md \
-	$(QASDIR)/int.md \
-	$(QASDIR)/mis.md \
-	$(QASDIR)/cou.md \
-	$(QASDIR)/equ.md \
-	$(QASDIR)/mat.md \
-	$(QASDIR)/dou.md \
-	$(QASDIR)/cmp.md
+#
+# Q&A
+#
+QAS_SOUECES = \
+	app.md \
+	thr.md \
+	tee.md \
+	lie.md \
+	mar.md \
+	sta.md \
+	obs.md \
+	man.md \
+	pos.md \
+	2m.md \
+	los.md \
+	put.md \
+	ob.md \
+	cas.md \
+	com.md \
+	sco.md \
+	aba.md \
+	pro.md \
+	pra.md \
+	int.md \
+	mis.md \
+	cou.md \
+	equ.md \
+	mat.md \
+	dou.md \
+	cmp.md
+QAS_FROM = ../qas
+QAS_TO = ./.qas
+QAS_ORIGINALS = $(addprefix $(QAS_FROM)/, $(QAS_SOUECES))
+QAS_WORKSS = $(addprefix $(QAS_TO)/, $(QAS_SOUECES))
+QAS_LIST = $(MARKDOWNDIR)/qas.md $(QAS_WORKSS)
+QAS_UPDATED = .qas-updated
+$(QAS_UPDATED): $(QAS_ORIGINALS)
+	filters/remove-link $(QAS_FROM) $(QAS_TO) && \
+	touch $(QAS_UPDATED)
 
-SOURCE = $(MARKDOWNDIR)/imagepath.md
-SOURCE += \
+#
+#
+#
+SOURCE = \
+	$(MARKDOWNDIR)/imagepath.md \
 	$(NEWPAGE) \
 	$(MARKDOWNDIR)/preface.md \
 	$(NEWPAGE) \
@@ -111,15 +126,18 @@ SOURCE += \
 	$(NEWPAGE) \
 	$(APPENDIXES) \
 	$(NEWPAGE) \
-	$(QAS)
+	$(QAS_LIST)
 
-$(TARGET).pdf: $(SOURCE)
+$(TARGET).pdf: $(QAS_UPDATED) $(SOURCE)
 	$(PANDOC) \
 		-d $(CONFIGDIR)/body.yaml \
 		-o $(TARGET).pdf \
 		$(SOURCE)
 
-all: clean $(TARGET).pdf
-
+#
+#
+#
 clean:
-	rm -f $(TARGET).html $(TARGET).pdf $(COVER_DATA) $(BACKCOVER_DATA)
+	rm -f $(TARGET).pdf $(QAS_UPDATED) $(QAS_TO)/*
+
+all: clean $(TARGET).pdf
