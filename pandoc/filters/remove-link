@@ -1,0 +1,13 @@
+#!/bin/sh
+
+INPUT_DIR="../qas"
+OUTPUT_DIR="./qas"
+
+if [ ! -d "$OUTPUT_DIR" ]; then
+  mkdir -p "$OUTPUT_DIR"
+fi
+
+for file in "$INPUT_DIR"/*; do
+  filename=$(basename "$file")
+  sed -E 's/^##\s+\[([^]]+)\]\(\S+\)/## \1/' "$file" > "$OUTPUT_DIR/$filename"
+done
