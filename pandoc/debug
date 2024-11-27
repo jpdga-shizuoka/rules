@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# これはホストOS用です
+#
+docker run --rm --entrypoint="bash" \
+    -v $(pwd):/data \
+    -v $(pwd)/../rules:/rules \
+    -v $(pwd)/../qas:/qas \
+    -v $(pwd)/../appendix:/appendix \
+    -v $(pwd)/../src:/images \
+    -it pandoc "$@"
