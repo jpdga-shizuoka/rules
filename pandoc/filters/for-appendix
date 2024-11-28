@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# 印刷版に不要なサブセクション見出しを削除する
+#
+if [ "$#" -ne 2 ]; then
+  echo "Usage: $0 <FROM_DIRECTORY> <TO_DIRECTORY>"
+  exit 1
+fi
+
+FROM=$1
+TO=$2
+
+if [ ! -d "$TO" ]; then
+  mkdir -p "$TO"
+fi
+
+for file in "$FROM"/*; do
+  filename=$(basename "$file")
+  sed -E 's/^\s*#####\s+.*$//' "$file" | \
+  sed -E '/::.+:: ::.+::/{
+    s/.*::(.+?)::.*::(.+?)::.*/\\dotline{\1}{\2}/
+  }' > "$TO/$filename"
+done
