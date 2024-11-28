@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 #
-# `ordg/`は、`https://jpdga-shizuoka.github.io/rules/`に
-# 置き換えるフィルター
-# 
+# 1. `dgj/`は、`https://jpdga-shizuoka.github.io/ssa-round-ratings/libraries/`に置き換える
+# 2. 内部リンクは、内部リンク識別子から実識別子へと置き換える
+#
+#
 import panflute as pf
 #
-# フラグメント識別子をHTML形式からPANDOC形式に変換
+# フラグメント識別子をHTML形式からPANDOC形式に変換する
 #
 LINK_MAP = {
     '800': 'ゲームの説明',
@@ -33,7 +34,7 @@ LINK_MAP = {
     '80503': 'ディスクの紛失',
     '806': '区域の規制',
     '80601': 'パッティングエリア',
-    '80602': 'アウト・オブ・バウンズ',
+    '80602': 'アウトオブバウンズ',
     '80603': 'カジュアルエリア',
     '80604': '救済区域',
     '80605': 'ハザード',
@@ -55,6 +56,8 @@ LINK_MAP = {
     'appendix-d': '附則d-単位の換算',
     'appendix-e': '附則e-索引',
     'appendix-f': '附則f-ディスクゴルフの適応規則',
+    'qa-index': 'qa',
+    'qa-obs': '障害物と救済',
 }
 #
 #
@@ -62,11 +65,17 @@ LINK_MAP = {
 def replace_urls(elem, doc):
     if isinstance(elem, pf.Link):
         url = elem.url
-        if not url.startswith("http"):
-            fragment = LINK_MAP[url]
-            pf.debug(f'{fragment =}')
+        if url.startswith("ordg/"):
+            elem.url = url.replace("ordg/", "https://jpdga-shizuoka.github.io/rules/")
+        elif url.startswith("dgj/"):
+            elem.url = url.replace("dgj/", "https://jpdga-shizuoka.github.io/ssa-round-ratings/libraries/")
+        elif not url.startswith("http") and not url.startswith("#"):
+            fragment = LINK_MAP.get(url)
+            # pf.debug(f'{fragment =}')
             if fragment:
                 elem.url = f'#{fragment}'
+            else:
+                pf.debug(f'Unknown internal link: {url}')
     return elem
 
 def main(doc=None):

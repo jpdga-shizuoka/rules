@@ -6,15 +6,9 @@ PANDOC = pandoc
 CONFIGDIR = config
 FILTERSDIR = filters
 MARKDOWNDIR = sources
-
-LOCAL_SOURCEDIR = sources
-
-COVER_DATA = cover.tex
-BACKCOVER_DATA = backcover.tex
-COVER_TEMPLATE = $(TEMPLATEDIR)/cover-template.tex
-BACKCOVER_TEMPLATE = $(TEMPLATEDIR)/backcover-template.tex
-NEWPAGE = $(MARKDOWNDIR)/newpage.md
-
+#
+#
+#
 RULES_SOUECES = \
 	800.md \
 	801.md \
@@ -83,6 +77,7 @@ APPENDIX_ORIGINALS = $(addprefix $(APPENDIX_FROM)/, $(APPENDIX_SOUECES))
 APPENDIX_WORKS = $(addprefix $(APPENDIX_TO)/, $(APPENDIX_SOUECES))
 APPENDIX_LIST = $(APPENDIX_WORKS)
 APPENDIX_UPDATED = .appendix-updated
+
 $(APPENDIX_UPDATED): $(APPENDIX_ORIGINALS)
 	filters/delete-subsections $(APPENDIX_FROM) $(APPENDIX_TO) && \
 	touch $(APPENDIX_UPDATED)
@@ -123,6 +118,7 @@ QAS_ORIGINALS = $(addprefix $(QAS_FROM)/, $(QAS_SOUECES))
 QAS_WORKS = $(addprefix $(QAS_TO)/, $(QAS_SOUECES))
 QAS_LIST = $(MARKDOWNDIR)/qas.md $(QAS_WORKS)
 QAS_UPDATED = .qas-updated
+
 $(QAS_UPDATED): $(QAS_ORIGINALS)
 	filters/remove-link $(QAS_FROM) $(QAS_TO) && \
 	touch $(QAS_UPDATED)
@@ -130,6 +126,7 @@ $(QAS_UPDATED): $(QAS_ORIGINALS)
 #
 # PDF
 #
+NEWPAGE = $(MARKDOWNDIR)/newpage.md
 TEMPLATEDIR = templates
 TEMPLATE = $(TEMPLATEDIR)/default.tex
 SOURCE = \
@@ -147,6 +144,7 @@ SOURCE = \
 
 $(TARGET).pdf: $(RULES_UPDATED) $(APPENDIX_UPDATED) $(QAS_UPDATED) $(SOURCE)
 	$(PANDOC) \
+		-d $(CONFIGDIR)/filters.yaml \
 		-d $(CONFIGDIR)/body.yaml \
 		-o $(TARGET).pdf \
 		$(SOURCE)
