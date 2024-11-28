@@ -29,8 +29,8 @@ def find_def_labelenumi(elem, doc):
     global header_level
     if isinstance(elem, pf.OrderedList):
         list_level = get_indent_level(elem)
-        if header_level != 2:
-            return  # 書き換えの対象は、`##`節下だけ
+        if header_level < 1 or header_level > 2:
+            return  # 書き換えの対象は、#と##節下だけ
         # 対応するstyleを設定
         if list_level in STYLE_MAP:
             elem.style = STYLE_MAP[list_level]
