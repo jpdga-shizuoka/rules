@@ -56,7 +56,7 @@ LINK_MAP = {
     'appendix-d': '附則d-単位の換算',
     'appendix-e': '附則e-索引',
     'appendix-f': '附則f-ディスクゴルフの適応規則',
-    'qa-index': 'qa',
+    'qa-index': '規則qa',
     'qa-obs': '障害物と救済',
 }
 #
