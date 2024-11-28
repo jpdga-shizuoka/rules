@@ -49,6 +49,31 @@ $endif$
 \author{$for(author)$$author$$sep$ \and $endfor$}
 \date{$date$}
 
+% 
+% フッターの設定
+% 
+$if(title)$
+\newcommand{\customtitle}{$title$}
+$else$
+\newcommand{\customtitle}{}
+$endif$
+$if(version)$
+\newcommand{\customversion}{$version$}
+$else$
+\newcommand{\customversion}{}
+$endif$
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % 既存のヘッダー・フッターをクリア
+\fancyfoot[RO]{\small Page \thepage} % 右下（Right Odd）
+\fancyfoot[CO]{\small \customtitle} % 中央（Center Odd）
+\fancyfoot[LO]{\small \customversion} % 左下（Left Odd）
+\fancyfoot[RE]{} % 右下（Right Even）
+\fancyfoot[CE]{\small Official Rules of Disc Golf} % 中央（Center Even）
+\fancyfoot[LE]{\small Page \thepage} % 左下（Left Even）
+\renewcommand{\headrulewidth}{0pt} % ヘッダーの線を非表示
+\renewcommand{\footrulewidth}{0.4pt} % フッターの線を表示
+
 \begin{document}
 $if(has-frontmatter)$
 \frontmatter
@@ -61,6 +86,8 @@ $abstract$
 \end{abstract}
 $endif$
 $endif$
+
+\newpage
 
 $for(include-before)$
 $include-before$

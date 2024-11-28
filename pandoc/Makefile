@@ -4,19 +4,13 @@ TARGET = $(NAME)
 PANDOC = pandoc
 
 CONFIGDIR = config
-TEMPLATEDIR = templates
 FILTERSDIR = filters
 MARKDOWNDIR = sources
-
-RULESDIR = ../rules
-APPENDIXESDIR = ../appendix
-QASDIR = ./qas
 
 LOCAL_SOURCEDIR = sources
 
 COVER_DATA = cover.tex
 BACKCOVER_DATA = backcover.tex
-TEMPLATE = $(TEMPLATEDIR)/main.tex
 COVER_TEMPLATE = $(TEMPLATEDIR)/cover-template.tex
 BACKCOVER_TEMPLATE = $(TEMPLATEDIR)/backcover-template.tex
 NEWPAGE = $(MARKDOWNDIR)/newpage.md
@@ -136,6 +130,8 @@ $(QAS_UPDATED): $(QAS_ORIGINALS)
 #
 # PDF
 #
+TEMPLATEDIR = templates
+TEMPLATE = $(TEMPLATEDIR)/default.tex
 SOURCE = \
 	$(MARKDOWNDIR)/imagepath.md \
 	$(NEWPAGE) \
