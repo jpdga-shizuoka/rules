@@ -19,6 +19,7 @@ metadata:
     classoption: twoside
     geometry: a4paper, margin=20mm
     title: ディスクゴルフ公式規則
+    title_alt: Official Rules of Disc Golf
     version: 2025年版
     author: Professional Disc Golf Association
     copyright: The original copyright of this book is reserved by PDGA®.
