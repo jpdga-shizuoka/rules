@@ -78,14 +78,20 @@ $endif$
 $if(has-frontmatter)$
 \frontmatter
 $endif$
-$if(title)$
-\maketitle
-$if(abstract)$
-\begin{abstract}
-$abstract$
-\end{abstract}
-$endif$
-$endif$
+
+% 
+% 表紙
+% 
+\begin{titlepage}
+  \centering
+  \vspace*{10cm}
+  {\huge \textbf{$title$}}\\[0.5cm]
+  $if(version)$
+      {\Large \textit{$version$}}\\
+  $endif$
+  \vfill
+  {\small Copyright \copyright{} $copyright$}\\[0.5cm]
+\end{titlepage}
 
 \newpage
 
