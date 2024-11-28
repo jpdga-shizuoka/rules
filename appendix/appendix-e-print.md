@@ -46,7 +46,7 @@
 \dotline{ティーライン, Tee Line}{802.04.A}
 \dotline{ティーエリア, ティー, Teeing Area, Tee}{802.04.A}
 \dotline{スロー, Throw}{802.01.A}
-\dotline{トーナメント・オフィシャル, Tournament Official}{801.02.F}
+\dotline{トーナメントオフィシャル, Tournament Official}{801.02.F}
 \dotline{2mルール, Two-meter Rule}{805.02.A}
 \dotline{アップ, Up}{附則A.04.A}
 \dotline{警告, Warning}{801.02.D}
