@@ -81,7 +81,7 @@ APPENDIX_SOUECES = \
 	appendix-b.md \
 	appendix-c.md \
 	appendix-d.md \
-	appendix-e.md \
+	appendix-e-print.md \
 	appendix-f.md
 APPENDIX_FROM = ../appendix
 APPENDIX_TO = ./.appendix

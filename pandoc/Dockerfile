@@ -6,6 +6,6 @@ RUN apt update && apt install -y \
     update-ms-fonts && \
     fc-cache -f && \
     tlmgr update --self --all && \
-    tlmgr install collection-langjapanese enumitem
+    tlmgr install collection-langjapanese enumitem titlesec
 RUN python3 -m venv /home/venv && \
     /home/venv/bin/pip install panflute
