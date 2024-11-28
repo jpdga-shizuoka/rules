@@ -1,6 +1,6 @@
 # はじめに
 
-本[ディスクゴルフ公式規則](index)は、
+本[ディスクゴルフ公式規則](ordg/index)は、
 [PDGA Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)の邦訳版です。
 
 
