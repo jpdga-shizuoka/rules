@@ -1,11 +1,12 @@
 #!/bin/sh
 #
 # これはホストOS用です
+# ターゲットOS上で、bashが立ち上がります
 #
 docker run --rm --entrypoint="bash" \
     -v $(pwd):/data \
     -v $(pwd)/../rules:/rules \
-    -v $(pwd)/../qas:/qas \
     -v $(pwd)/../appendix:/appendix \
+    -v $(pwd)/../qas:/qas \
     -v $(pwd)/../src:/images \
-    -it pandoc "$@"
+    -it ordg "$@"

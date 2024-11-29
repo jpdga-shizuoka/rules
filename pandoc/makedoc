@@ -1,10 +1,12 @@
 #!/bin/sh
 #
 # これはホストOS用です
+# ターゲットOSの環境を使ってPDFのビルドを行います
 #
 docker run --rm --entrypoint="./.makedoc" \
     -v $(pwd):/data \
     -v $(pwd)/../rules:/rules \
-    -v $(pwd)/../qas:/qas \
     -v $(pwd)/../appendix:/appendix \
-    -it pandoc "$@"
+    -v $(pwd)/../qas:/qas \
+    -v $(pwd)/../src:/images \
+    -it ordg "$@"
