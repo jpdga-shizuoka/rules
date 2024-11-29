@@ -1,13 +1,16 @@
-NAME   = ディスクゴルフの公式規則
-TARGET = $(NAME)
+#
+# Pandocを使って、マークダウンファイルからPDFを生成する
+#
+TITLE = OfficialRulesOfDiscGolf
+VERSION = 2025
+TARGET = $(TITLE)-$(VERSION).pdf
 
 PANDOC = pandoc
-
-CONFIGDIR = config
-FILTERSDIR = filters
-MARKDOWNDIR = sources
+CONFIGS = config
+FILTERS = filters
+LOCAL_SOURCES = sources
 #
-#
+# Rules
 #
 RULES_SOUECES = \
 	800.md \
@@ -58,7 +61,7 @@ RULES_WORKS = $(addprefix $(RULES_TO)/, $(RULES_SOUECES))
 RULES_LIST = $(RULES_WORKS)
 RULES_UPDATED = .rules-updated
 $(RULES_UPDATED): $(RULES_ORIGINALS)
-	filters/delete-subsections $(RULES_FROM) $(RULES_TO) && \
+	$(FILTERS)/delete-subsections $(RULES_FROM) $(RULES_TO) && \
 	touch $(RULES_UPDATED)
 
 #
@@ -79,7 +82,7 @@ APPENDIX_LIST = $(APPENDIX_WORKS)
 APPENDIX_UPDATED = .appendix-updated
 
 $(APPENDIX_UPDATED): $(APPENDIX_ORIGINALS)
-	filters/delete-subsections $(APPENDIX_FROM) $(APPENDIX_TO) && \
+	$(FILTERS)/delete-subsections $(APPENDIX_FROM) $(APPENDIX_TO) && \
 	touch $(APPENDIX_UPDATED)
 
 #
@@ -116,25 +119,25 @@ QAS_FROM = ../qas
 QAS_TO = ./.qas
 QAS_ORIGINALS = $(addprefix $(QAS_FROM)/, $(QAS_SOUECES))
 QAS_WORKS = $(addprefix $(QAS_TO)/, $(QAS_SOUECES))
-QAS_LIST = $(MARKDOWNDIR)/qas.md $(QAS_WORKS)
+QAS_LIST = $(LOCAL_SOURCES)/qas.md $(QAS_WORKS)
 QAS_UPDATED = .qas-updated
 
 $(QAS_UPDATED): $(QAS_ORIGINALS)
-	filters/remove-link $(QAS_FROM) $(QAS_TO) && \
+	$(FILTERS)/remove-link $(QAS_FROM) $(QAS_TO) && \
 	touch $(QAS_UPDATED)
 
 #
 # PDF
 #
-NEWPAGE = $(MARKDOWNDIR)/newpage.md
+NEWPAGE = $(LOCAL_SOURCES)/newpage.md
 TEMPLATEDIR = templates
 TEMPLATE = $(TEMPLATEDIR)/default.tex
 SOURCE = \
-	$(MARKDOWNDIR)/imagepath.md \
+	$(LOCAL_SOURCES)/imagepath.md \
 	$(NEWPAGE) \
-	$(MARKDOWNDIR)/preface.md \
+	$(LOCAL_SOURCES)/preface.md \
 	$(NEWPAGE) \
-	$(MARKDOWNDIR)/update.md \
+	$(LOCAL_SOURCES)/update.md \
 	$(NEWPAGE) \
 	$(RULES_LIST) \
 	$(NEWPAGE) \
@@ -142,20 +145,15 @@ SOURCE = \
 	$(NEWPAGE) \
 	$(QAS_LIST)
 
-$(TARGET).pdf: $(RULES_UPDATED) $(APPENDIX_UPDATED) $(QAS_UPDATED) $(SOURCE)
+$(TARGET): $(RULES_UPDATED) $(APPENDIX_UPDATED) $(QAS_UPDATED) $(SOURCE) $(CONFIGS)/*
 	$(PANDOC) \
-		-d $(CONFIGDIR)/filters.yaml \
-		-d $(CONFIGDIR)/body.yaml \
-		-o $(TARGET).pdf \
+		-d $(CONFIGS)/filters.yaml \
+		-d $(CONFIGS)/body.yaml \
+		-o $(TARGET) \
 		$(SOURCE)
 
-#
-#
-#
 clean:
-	rm -f $(TARGET).pdf \
-	$(RULES_UPDATED) $(RULES_TO)/* \
-	$(APPENDIX_UPDATED) $(APPENDIX_TO)/* \
-	$(QAS_UPDATED) $(QAS_TO)/*
+	rm -f $(TARGET) $(RULES_UPDATED) $(APPENDIX_UPDATED) $(QAS_UPDATED) && \
+	rm -fr $(RULES_TO) $(APPENDIX_TO) $(QAS_TO)
 
-all: clean $(TARGET).pdf
+all: clean $(TARGET)
