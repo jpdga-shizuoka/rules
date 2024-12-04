@@ -1,8 +1,8 @@
 # 附則E 索引
 
 \begingroup
-\setlength{\parskip}{0pt}
 \dotline{適応ディスクゴルフ, Adaptive Disc Golf}{附則F.01.B}
+\setlength{\parskip}{0pt}
 \dotline{オールスクウェア, All Square}{附則A.04.A}
 \dotline{アウェープレーヤー, Away Player}{802.02.C}
 \dotline{バスケット型ターゲット, Basket Target}{807.A}

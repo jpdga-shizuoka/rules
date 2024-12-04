@@ -103,6 +103,7 @@ QAS_SOUECES = \
 	put.md \
 	ob.md \
 	cas.md \
+	haz.md \
 	com.md \
 	sco.md \
 	aba.md \
