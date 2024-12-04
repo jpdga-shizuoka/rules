@@ -2,7 +2,7 @@
 
 本書はPDGAが公開する[Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)の全訳です。
 ただし本書の編集時点(2024年11月)では、2025年版の全文が未だPDGAから公表されていないため、
-既存の2024年版にPDGAの
+既存の2024年版にPDGA発表した
 [*Updated for 2025*](https://www.pdga.com/news/official-rules-disc-golf-and-competition-manual-disc-golf-events-updated-2025)
 による変更点を加え2025年版としました。
 正式な全文版とは若干異なるところがあるかも知れませんが、その点予めご承知おき下さい。
@@ -29,7 +29,7 @@
 
 ## 公開資料
 
-* 本書ならびに "ディスクゴルフ大会のための競技マニュアル" は
+* 本書は
 [[**こちら**](https://jpdga-shizuoka.github.io/documents/)]
 で閲覧できます。
 * 本書作成による成果は
