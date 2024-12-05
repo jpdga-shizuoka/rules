@@ -209,8 +209,6 @@ function replaceLinkPlugIn(md) {
               const type = token.type;
               if (type === 'link_open') {
                 replaceAttr(token, 'href', replace, state.env);
-              } else if (type === 'image') {
-                replaceAttr(token, 'src', replace, state.env);
               }
             });
           }
@@ -223,23 +221,24 @@ function replaceLinkPlugIn(md) {
 
 function replaceAttr(token, attrName, replace, env) {
   token.attrs.forEach(attr => {
-    if (attr[0] === attrName) {
-      if (attr[0] === 'href' && !external.test(attr[1]) ) {
-        attr[0] = 'routerLink'; // replace href with routerLink
-        attr[1] = replace(attr[1], env, token);
-      }
+    if (!external.test(attr[1])) {  //外部参照でない場合は、内部参照として
+      attr[0] = 'routerLink';       // href を routerLink に置き換える
+      attr[1] = replace(attr[1], env, token);
     }
   });
 }
 
 function replaceLink(link, env) {
-  const pattern = /(\w*)+\#(\w+)/;
-  const result = link.match(pattern);
+  result = link.match(/^\/?ordg\/(\w*)/);
   if (result != null) {
     return '/' + result[1];
-  } else {
-    return '/' + link;
   }
+  result = link.match(/(\w*)+\#(\w+)/);
+  if (result != null) {
+    console.log(result[1])
+    return '/' + result[1];
+  }
+  return '/' + link;
 }
 
 //

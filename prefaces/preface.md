@@ -1,13 +1,13 @@
 # はじめに
 
-本[ディスクゴルフ公式規則](ordg/index)は、
+本[ディスクゴルフ公式規則](index)は、
 [PDGA Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)を全訳したオンライン版です。
 オフライン版(PDF形式)は[[こちら](https://jpdga-shizuoka.github.io/documents/)]
 で閲覧できます。
 
 ## 目次
 
-* [PDGAディスクゴルフ公式規則](/index)
+* [PDGAディスクゴルフ公式規則](index)
     * [800 ゲームの説明](800)
     * [801 規則の適用](801)
     * [802 ディスクを投げる](802)
