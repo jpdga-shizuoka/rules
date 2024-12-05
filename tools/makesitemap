@@ -1,0 +1,115 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+
+// List of routes extracted from Angular's route configuration
+const routes = [
+  '',
+  'preface',
+  'index',
+  '800',
+  '801',
+  '80101',
+  '80102',
+  '80103',
+  '802',
+  '80201',
+  '80202',
+  '80203',
+  '80204',
+  '80205',
+  '80206',
+  '80207',
+  '803',
+  '80301',
+  '80302',
+  '80303',
+  '804',
+  '80401',
+  '805',
+  '80501',
+  '80502',
+  '80503',
+  '806',
+  '80601',
+  '80602',
+  '80603',
+  '80604',
+  '80605',
+  '807',
+  '808',
+  '809',
+  '80901',
+  '80902',
+  '80903',
+  '810',
+  '811',
+  '812',
+  '813',
+  '81301',
+  '81302',
+  'qa-index',
+  'qa-app',
+  'qa-thr',
+  'qa-tee',
+  'qa-lie',
+  'qa-mar',
+  'qa-sta',
+  'qa-obs',
+  'qa-man',
+  'qa-pos',
+  'qa-2m',
+  'qa-los',
+  'qa-put',
+  'qa-ob',
+  'qa-cas',
+  'qa-haz',
+  'qa-com',
+  'qa-sco',
+  'qa-aba',
+  'qa-pro',
+  'qa-pra',
+  'qa-int',
+  'qa-mis',
+  'qa-cou',
+  'qa-equ',
+  'qa-mat',
+  'qa-dou',
+  'qa-cmp',
+  'appendix-a',
+  'appendix-b',
+  'appendix-c',
+  'appendix-e',
+  'appendix-d',
+  'appendix-f',
+  'obstacles',
+  'reliefs',
+  'penalties',
+  'enforcement',
+  'obhazardinbounds',
+  'mandatory',
+  'relief-from-ob',
+  'postface',
+];
+
+// Base URL of the site
+const baseUrl = 'https://jpdga-shizuoka.github.io/rules/';
+
+// Generate XML
+let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+sitemap += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+routes.forEach((path) => {
+  sitemap += `  <url>\n`;
+  sitemap += `    <loc>${baseUrl}${path}</loc>\n`;
+  sitemap += `    <changefreq>monthly</changefreq>\n`;
+  sitemap += `    <priority>0.8</priority>\n`;
+  sitemap += `  </url>\n`;
+});
+
+sitemap += `</urlset>`;
+
+// Write to sitemap.xml
+fs.writeFileSync('sitemap.xml', sitemap);
+
+console.log('Sitemap.xml generated successfully!');
