@@ -276,7 +276,7 @@ function isRule(id) {
 function isQa(id) {
   const LIST = [
     'app','thr','tim','tee','lie','mar','sta','obs','man','pos','2m','los',
-    'put','ob','cas','com','sco','aba','pro','pra','int','mis','cou','equ',
+    'put','ob','cas','haz','com','sco','aba','pro','pra','int','mis','cou','equ',
     'mat', 'dou', 'cmp'
   ];
   return LIST.includes(id);
