@@ -73,6 +73,7 @@ const QAS_LIST = [
   'put',
   'ob',
   'cas',
+  'haz',
   'com',
   'sco',
   'aba',
@@ -112,7 +113,6 @@ const md = require('markdown-it')({
 })
 .use(require('markdown-it-footnote'))
 .use(require('markdown-it-ins'))
-.use(require('markdown-it-strikethrough-alt'))
 .use(require('markdown-it-container'), 'app-table')
 .use(require('markdown-it-span'))
 .use(replaceLinkPlugIn);
@@ -133,7 +133,10 @@ function createComponents(sources, srcPath) {
   sources.forEach(id => {
     const filepath = Path.join(srcPath, id + '.md');
     const mdContent = fs.readFileSync(filepath, 'utf8');
-    const htmlContent = md.render(mdContent);
+    const emailRegex = /([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+    const htmlContent = md.render(mdContent)
+        .replace(emailRegex,  // メールアドレス中の'@'を'&#64;'に置き換え
+            (match, localPart, domainPart) => `${localPart}&#64;${domainPart}`);
 
     makeToc(srcPath === 'qas' ? 'qa-' + id : id, mdContent);
     makeHtml(id, htmlContent, srcPath);
@@ -206,8 +209,6 @@ function replaceLinkPlugIn(md) {
               const type = token.type;
               if (type === 'link_open') {
                 replaceAttr(token, 'href', replace, state.env);
-              } else if (type === 'image') {
-                replaceAttr(token, 'src', replace, state.env);
               }
             });
           }
@@ -220,23 +221,24 @@ function replaceLinkPlugIn(md) {
 
 function replaceAttr(token, attrName, replace, env) {
   token.attrs.forEach(attr => {
-    if (attr[0] === attrName) {
-      if (attr[0] === 'href' && !external.test(attr[1]) ) {
-        attr[0] = 'routerLink'; // replace href with routerLink
-        attr[1] = replace(attr[1], env, token);
-      }
+    if (!external.test(attr[1])) {  //外部参照でない場合は、内部参照として
+      attr[0] = 'routerLink';       // href を routerLink に置き換える
+      attr[1] = replace(attr[1], env, token);
     }
   });
 }
 
 function replaceLink(link, env) {
-  const pattern = /(\w*)+\#(\w+)/;
-  const result = link.match(pattern);
+  result = link.match(/^\/?ordg\/(\w*)/);
   if (result != null) {
     return '/' + result[1];
-  } else {
-    return '/' + link;
   }
+  result = link.match(/(\w*)+\#(\w+)/);
+  if (result != null) {
+    console.log(result[1])
+    return '/' + result[1];
+  }
+  return '/' + link;
 }
 
 //
@@ -274,7 +276,7 @@ function isRule(id) {
 function isQa(id) {
   const LIST = [
     'app','thr','tim','tee','lie','mar','sta','obs','man','pos','2m','los',
-    'put','ob','cas','com','sco','aba','pro','pra','int','mis','cou','equ',
+    'put','ob','cas','haz','com','sco','aba','pro','pra','int','mis','cou','equ',
     'mat', 'dou', 'cmp'
   ];
   return LIST.includes(id);

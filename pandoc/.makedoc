@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# これはターゲットOS用です
+# python用の環境設定をした後
+# PDFのビルドを行います
+#
+. /home/venv/bin/activate
+make "$@"

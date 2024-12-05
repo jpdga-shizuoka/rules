@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://jpdga-shizuoka.github.io/rules/sitemap.xml
