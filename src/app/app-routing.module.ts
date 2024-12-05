@@ -65,6 +65,7 @@ import { QaLosComponent } from './qas/qalos.component';
 import { QaPutComponent } from './qas/qaput.component';
 import { QaObComponent } from './qas/qaob.component';
 import { QaCasComponent } from './qas/qacas.component';
+import { QaHazComponent } from './qas/qahaz.component';
 import { QaComComponent } from './qas/qacom.component';
 import { QaScoComponent } from './qas/qasco.component';
 import { QaAbaComponent } from './qas/qaaba.component';
@@ -146,6 +147,7 @@ const routes: Routes = [
   { path: 'qa-put', component: QaPutComponent },
   { path: 'qa-ob', component: QaObComponent },
   { path: 'qa-cas', component: QaCasComponent },
+  { path: 'qa-haz', component: QaHazComponent },
   { path: 'qa-com', component: QaComComponent },
   { path: 'qa-sco', component: QaScoComponent },
   { path: 'qa-aba', component: QaAbaComponent },

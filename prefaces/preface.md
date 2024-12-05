@@ -1,20 +1,13 @@
 # はじめに
 
-本[ディスクゴルフ公式規則](index)は,
-[PDGA Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)の邦訳版です.
-
-
-## 近況
-
-* [2024年公式規則&競技マニュアル更新](https://drive.google.com/file/d/1boR4HMhim6qYjtv6jsai1r2QLZv4tUoS/view)
-* [2023年附則F:ディスクゴルフの適応規則追加](https://drive.google.com/file/d/1pqpwrATw00Vn5M8o2lb5KQckR_As1M9E/view)
-* [2023年公式規則&競技マニュアル更新](https://docs.google.com/presentation/d/e/2PACX-1vRQKajZr0Ye-F5OrV6IqhB38CLAZqR4_dsFH_J4EXrgopZ83imYkrmh1MvLdnoB-Hw9EiXG8ktZnCPp/pub)
-* [2022年804.01マンダトリーの経路更新](https://docs.google.com/presentation/d/e/2PACX-1vSiGej3PzUmYvI-gD5ylHzCo_ixT3W7UpntrLrqsZIOx-D4vW0lrYNmKDUuzqFqYXMyM4t_2wPDdwjV/pub?start=false&loop=false&delayms=3000)
-* [2022年公式規則&競技マニュアル更新](https://docs.google.com/presentation/d/e/2PACX-1vRvDwv6ThGpV3tHZipAZ0m_BtGrZu2tNZfGRW7YJUIgbGo4MQuu0MWdwRfGlxehqsO8McxybQdY2RCf/pub)
+本[ディスクゴルフ公式規則](index)は、
+[PDGA Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)を全訳したオンライン版です。
+オフライン版(PDF形式)は[[こちら](https://jpdga-shizuoka.github.io/documents/)]
+で閲覧できます。
 
 ## 目次
 
-* [PDGAディスクゴルフ公式規則](/index)
+* [PDGAディスクゴルフ公式規則](index)
     * [800 ゲームの説明](800)
     * [801 規則の適用](801)
     * [802 ディスクを投げる](802)

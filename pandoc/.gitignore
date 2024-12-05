@@ -1,0 +1,11 @@
+/*.pdf
+/*.aux
+/*.tex
+/*.lot
+/*.toc
+.rules/
+.rules-updated
+.appendix/
+.appendix-updated
+.qas/
+.qas-updated
