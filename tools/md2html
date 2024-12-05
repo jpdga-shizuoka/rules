@@ -73,6 +73,7 @@ const QAS_LIST = [
   'put',
   'ob',
   'cas',
+  'haz',
   'com',
   'sco',
   'aba',
