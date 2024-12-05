@@ -52,7 +52,6 @@
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-ins": "^4.0.0",
     "markdown-it-span": "github:jpdga-shizuoka/markdown-it-span#duplicate-colon-issue",
-    "markdown-it-strikethrough-alt": "~1.0.0",
     "ts-node": "~8.3.0",
     "typescript": "~5.5.4"
   }
