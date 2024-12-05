@@ -14,11 +14,11 @@ LOCAL_SOURCES = sources
 #
 RULES_SOUECES = \
 	800.md \
-	801.md \
+	801-print.md \
 	80101.md \
 	80102.md \
 	80103.md \
-	802.md \
+	802-print.md \
 	80201.md \
 	80202.md \
 	80203.md \
@@ -26,17 +26,17 @@ RULES_SOUECES = \
 	80205.md \
 	80206.md \
 	80207.md \
-	803.md \
+	803-print.md \
 	80301.md \
 	80302.md \
 	80303.md \
-	804.md \
+	804-print.md \
 	80401.md \
-	805.md \
+	805-print.md \
 	80501.md \
 	80502.md \
 	80503.md \
-	806.md \
+	806-print.md \
 	80601.md \
 	80602.md \
 	80603.md \
@@ -44,14 +44,14 @@ RULES_SOUECES = \
 	80605.md \
 	807.md \
 	808.md \
-	809.md \
+	809-print.md \
 	80901.md \
 	80902.md \
 	80903.md \
 	810.md \
 	811.md \
 	812.md \
-	813.md \
+	813-print.md \
 	81301.md \
 	81302.md
 RULES_FROM = ../rules
