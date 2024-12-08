@@ -33,7 +33,7 @@
 [[**こちら**](https://jpdga-shizuoka.github.io/documents/)]
 で閲覧できます。
 * 本書作成による成果は
-[[**こちら**](https://github.com/jpdga-shizuoka/rurles/pandoc)]
+[[**こちら**](https://github.com/jpdga-shizuoka/rules)]
 で閲覧できます。
 * 本書のオンライン版は
 [[**こちら**](https://jpdga-shizuoka.github.io/rules/index)]
