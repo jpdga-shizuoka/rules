@@ -3,13 +3,22 @@
 本書はPDGAが公開する[Official Rules of Disc Golf](https://www.pdga.com/rules/official-rules-disc-golf)の全訳です。
 ただし本書の編集時点(2024年11月)では、2025年版の全文が未だPDGAから公表されていないため、
 既存の2024年版にPDGAが発表した
-[*Updated for 2025*](https://www.pdga.com/news/official-rules-disc-golf-and-competition-manual-disc-golf-events-updated-2025)
+[**Updated for 2025**](https://www.pdga.com/news/official-rules-disc-golf-and-competition-manual-disc-golf-events-updated-2025)
 による変更点を加え2025年版としました。
 正式な全文版とは若干異なるところがあるかも知れませんが、その点予めご承知おき下さい。
 
 ## 2025年版について
 
-次章に上記 *Updated for 2025* から本公式規則に関わる部分を抜粋しましたので、詳細はそちらを参照して下さい。
+次章に上記 **Updated for 2025** から本公式規則に関わる部分を抜粋しましたので、詳細はそちらを参照して下さい。
+
+## 2025年版（改訂1）について
+
+上記 **Updated for 2025** では、[`801.02.A`](#規則の執行)が削除対象に指定されていましたが、
+2025年1月16日付の[オンライン版](https://www.pdga.com/rules/official-rules-disc-golf/80102)では、復活していたのでそれに倣い削除を取り消しました。
+内容的にも **Updated for 2025** の記載が間違っていたと判断しました。
+
+また同`801.02`の項番の一部が入れ替えわっていたので、本版でも同様に入れ替えました。
+記載内容は変わっていません。
 
 ## 表記について
 
@@ -39,4 +48,4 @@
 [[**こちら**](https://jpdga-shizuoka.github.io/rules/index)]
 で閲覧できます。
 
-\hfill 2024年12月
+\hfill 2025年2月
